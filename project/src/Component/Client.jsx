@@ -1,10 +1,7 @@
-
-
 import React from "react";
 import { motion } from "framer-motion";
-import { FaCrown } from "react-icons/fa";
 
-// ✅ Import your logos
+// Client logos
 import logoFinfinity from "./photos/Finfinitylogo.png";
 import logoDronacharya from "./photos/Dronacharyalogo.png";
 import logoPolicy from "./photos/policylogo.png";
@@ -12,93 +9,93 @@ import logoHindustan from "./photos/Hindustanlogo.png";
 import anton from "./photos/anton1.png";
 import returnofidea from "./photos/returnofidea.jpg";
 import jiffy from "./photos/jiffy.png";
+
 export default function Clients() {
   const fadeIn = {
-    hidden: { opacity: 0, y: 60, scale: 0.95 },
+    hidden: { opacity: 0, y: 30 },
     visible: (i = 1) => ({
       opacity: 1,
       y: 0,
-      scale: 1,
-      transition: { delay: i * 0.2, duration: 1, ease: "easeOut" },
+      transition: { delay: i * 0.08, duration: 0.6, ease: "easeOut" },
     }),
   };
 
-  // ✅ Client logos + names
   const clients = [
-    { name: "Policy Bazaar", logo: logoPolicy },
+    { name: "Anton Paar", logo: anton },
     { name: "Hindustan Times", logo: logoHindustan },
+    { name: "Policy Bazaar", logo: logoPolicy },
     { name: "Finfinity", logo: logoFinfinity },
-    { name: "Dronacharya College, Gurugram, India", logo: logoDronacharya },
-    { name: "Anton paar", logo: anton },
+    { name: "Dronacharya College", logo: logoDronacharya },
     { name: "Return of Idea", logo: returnofidea },
-    { name: " Jiffy", logo: jiffy }
+    { name: "Jiffy", logo: jiffy },
   ];
 
   return (
-    <div className="w-full bg-gradient-to-br from-white via-[#fafafa] to-[#ececec] text-gray-900">
-      {/* Hero Section */}
-      <section className="relative w-full min-h-[55vh] sm:min-h-[65vh] lg:min-h-[75vh] flex items-center justify-center text-center overflow-hidden bg-gradient-to-br from-[#0b1a2a] via-[#132b45] to-[#1e3a5a] text-white">
-        <div className="absolute -top-20 -left-20 w-56 h-56 sm:w-72 sm:h-72 lg:w-96 lg:h-96 bg-yellow-500/20 blur-3xl rounded-full animate-pulse"></div>
-        <div className="absolute bottom-0 right-0 w-64 h-64 sm:w-96 sm:h-96 lg:w-[500px] lg:h-[500px] bg-yellow-600/10 blur-3xl rounded-full animate-pulse"></div>
+    <div className="relative bg-[#050507] text-white overflow-hidden">
+      {/* Background Glow */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(124,58,237,0.15),transparent_60%)]"></div>
 
-        <div className="relative z-10 px-4 sm:px-4 sm:px-6 md:px-10 lg:px-12 lg:px-16">
-          <motion.h1
-            initial="hidden"
-            animate="visible"
-            variants={fadeIn}
-            className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-600 text-transparent bg-clip-text drop-shadow-[0_0_25px_rgba(255,215,0,0.5)]"
-          >
-            Our Clients
-          </motion.h1>
-          <motion.p
-            initial="hidden"
-            animate="visible"
-            variants={fadeIn}
-            className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto opacity-90"
-          >
-            Partnering with <span className="text-yellow-400 font-semibold">industry leaders</span> to drive growth, innovation, and long-term success.
-          </motion.p>
-        </div>
+      {/* Hero */}
+      <section className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-36 lg:pt-40 pb-14 text-center">
+        <motion.p
+          initial="hidden"
+          animate="visible"
+          variants={fadeIn}
+          className="text-xs tracking-[0.3em] text-purple-400 mb-4 uppercase"
+        >
+          Our Clients
+        </motion.p>
+
+        <motion.h1
+          initial="hidden"
+          animate="visible"
+          variants={fadeIn}
+          custom={2}
+          className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight"
+        >
+          Trusted by teams that
+          <br />
+          <span className="bg-gradient-to-r from-purple-400 to-indigo-500 text-transparent bg-clip-text">
+            close.
+          </span>
+        </motion.h1>
+
+        <motion.p
+          initial="hidden"
+          animate="visible"
+          variants={fadeIn}
+          custom={3}
+          className="mt-6 text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed"
+        >
+          From scientific instruments to media, finance, and education —
+          revenue teams across industries build their pipeline on VitalHawks
+          data.
+        </motion.p>
       </section>
 
-      {/* Client Showcase */}
-      <section className="max-w-7xl mx-auto py-24 px-4 sm:px-6 md:px-10 lg:px-12">
-        <motion.h2
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeIn}
-          className="text-2xl sm:text-3xl md:text-5xl font-bold text-center mb-8 lg:mb-12 lg:mb-20 text-[#0e2338] bg-gradient-to-r from-[#0e2338] via-[#152c46] to-[#1c3c59] text-transparent bg-clip-text"
-        >
-          Trusted By Leading Brands
-        </motion.h2>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:p-6 sm:gap-5 sm:p-4 sm:p-6 lg:p-8 lg:gap-12">
+      {/* Logo Grid */}
+      <section className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
           {clients.map((client, i) => (
             <motion.div
-              key={i}
+              key={client.name}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeIn}
               custom={i}
-              whileHover={{ scale: 1.08, rotate: 1 }}
-              className="relative backdrop-blur-xl bg-white/70 shadow-2xl rounded-3xl p-5 sm:p-5 sm:p-4 sm:p-6 lg:p-8 lg:p-10 flex flex-col items-center justify-center text-center border border-yellow-200 hover:border-yellow-500 transition-all duration-500 group"
+              className="rounded-2xl border border-white/10 bg-white/95 p-5 flex flex-col items-center justify-center text-center
+              opacity-90 hover:opacity-100 hover:border-purple-400/40 transition duration-300"
             >
-              {/* Crown */}
-              <FaCrown className="absolute -top-5 text-3xl text-yellow-400 drop-shadow-md group-hover:scale-125 transition-transform duration-500" />
-
-              {/* Logo */}
-              <div className="relative w-28 h-28 flex items-center justify-center rounded-full bg-gradient-to-br from-yellow-100 via-white to-yellow-50 shadow-inner group-hover:shadow-lg transition-all duration-500">
+              <div className="h-16 flex items-center justify-center">
                 <img
                   src={client.logo}
                   alt={client.name}
-                  className="max-h-14 object-contain drop-shadow-md"
+                  loading="lazy"
+                  className="max-h-12 max-w-[140px] w-auto object-contain"
                 />
               </div>
-
-              {/* Name */}
-              <p className="mt-6 text-lg font-semibold text-gray-800 group-hover:text-[#0e2338] transition-colors duration-300">
+              <p className="mt-3 text-sm font-medium text-gray-700">
                 {client.name}
               </p>
             </motion.div>
@@ -106,38 +103,51 @@ export default function Clients() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="relative bg-gradient-to-r from-[#0b1a2a] via-[#132b45] to-[#1e3a5a] py-28 px-4 sm:px-4 sm:px-6 md:px-10 lg:px-12 lg:px-16 text-white text-center overflow-hidden">
-        <div className="absolute top-0 left-0 w-56 h-56 sm:w-80 sm:h-80 lg:w-[400px] lg:h-[400px] bg-yellow-500/10 blur-3xl rounded-full animate-pulse"></div>
-        <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-yellow-600/10 blur-3xl rounded-full animate-pulse"></div>
+      {/* Stats */}
+      <section className="relative z-10 border-t border-white/10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+          <div>
+            <h2 className="text-4xl font-semibold">
+              7<span className="text-purple-500">+</span>
+            </h2>
+            <p className="text-gray-500 mt-2 text-sm">Industries served</p>
+          </div>
+          <div>
+            <h2 className="text-4xl font-semibold">
+              95<span className="text-purple-500">%</span>
+            </h2>
+            <p className="text-gray-500 mt-2 text-sm">Data accuracy</p>
+          </div>
+          <div>
+            <h2 className="text-4xl font-semibold">48h</h2>
+            <p className="text-gray-500 mt-2 text-sm">Brief to verified list</p>
+          </div>
+        </div>
+      </section>
 
-        <div className="relative z-10">
-          <motion.h2
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeIn}
-            className="text-2xl sm:text-3xl md:text-5xl font-extrabold mb-8 bg-gradient-to-r from-yellow-300 via-yellow-500 to-yellow-600 text-transparent bg-clip-text drop-shadow-[0_0_25px_rgba(255,215,0,0.4)]"
-          >
-            Become a Client
-          </motion.h2>
-          <motion.p
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeIn}
-            className="text-base sm:text-lg md:text-xl mb-8 lg:mb-12 max-w-2xl mx-auto opacity-90"
-          >
-            Ready to <span className="text-yellow-400 font-bold">supercharge your sales pipeline</span> with verified B2B data and backend research support? Let’s grow together.
-          </motion.p>
-          <motion.a
-            href="/Contact"
-            whileHover={{ scale: 1.1, boxShadow: "0px 0px 25px rgba(255,215,0,0.8)" }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-block bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 hover:shadow-[0_0_25px_rgba(255,215,0,0.7)] text-white font-semibold px-12 py-5 rounded-full shadow-lg transition-all duration-500"
-          >
-            Supercharge Your Sales →
-          </motion.a>
+      {/* CTA */}
+      <section className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+        <div className="relative rounded-2xl border border-white/10 bg-gradient-to-br from-[#0b0b12] to-[#0a0a10] p-6 md:p-8 lg:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_right,rgba(120,80,255,0.12),transparent_60%)]"></div>
+
+          <div className="relative z-10 max-w-xl">
+            <h2 className="text-2xl md:text-4xl font-light text-gray-200 leading-tight">
+              Become our next client.
+            </h2>
+            <p className="mt-2 text-gray-400 text-base leading-relaxed">
+              Verified decision-maker data and backend research support —
+              built around your exact ICP.
+            </p>
+          </div>
+
+          <div className="relative z-10 mt-2 md:mt-0 shrink-0">
+            <a
+              href="/Contact"
+              className="inline-block px-6 py-3 rounded-lg bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-sm font-medium shadow-md hover:scale-105 transition"
+            >
+              Supercharge your sales →
+            </a>
+          </div>
         </div>
       </section>
     </div>
