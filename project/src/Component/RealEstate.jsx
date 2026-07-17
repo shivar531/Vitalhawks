@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import useSeo from "../utils/useSeo";
 import { Link } from "react-router-dom";
 
 const faqs = [
@@ -31,22 +32,14 @@ const faqs = [
 export default function RealEstate() {
   const [open, setOpen] = useState(null);
 
-  useEffect(() => {
-    document.title =
-      "Real Estate Company Database India | Builder & Developer Contacts — VitalHawks";
-    const meta = document.querySelector('meta[name="description"]');
-    const prev = meta ? meta.getAttribute("content") : null;
-    if (meta)
-      meta.setAttribute(
-        "content",
-        "Verified real estate contact lists — direct mobile numbers and work emails of builders, developers, project heads and procurement leaders at Indian real estate and EPC companies. 95% accuracy, next-morning delivery."
-      );
-    return () => {
-      document.title =
-        "VitalHawks | Verified B2B Contact Data — Direct Mobiles & Work Emails";
-      if (meta && prev) meta.setAttribute("content", prev);
-    };
-  }, []);
+  useSeo({
+    title: "Real Estate Company Database India | VitalHawks",
+    description:
+      "Verified real estate contacts — direct mobiles and work emails of builders, developers and project heads. Brokers excluded. 95% accuracy.",
+    path: "/real-estate-database",
+    faqs,
+  });
+
 
   return (
     <div className="relative bg-[#050507] text-white overflow-hidden">

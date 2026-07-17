@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import useSeo from "../utils/useSeo";
 import { Link } from "react-router-dom";
 
 const faqs = [
@@ -27,21 +28,14 @@ const faqs = [
 export default function FinancialServices() {
   const [open, setOpen] = useState(null);
 
-  useEffect(() => {
-    document.title =
-      "B2B Contact Data for Financial Services | CFO & Founder Lists — VitalHawks";
-    const meta = document.querySelector('meta[name="description"]');
-    const prev = meta ? meta.getAttribute("content") : null;
-    if (meta)
-      meta.setAttribute(
-        "content",
-        "Verified contact lists for financial services sales teams — direct mobiles and work emails of CFOs, founders, and finance leaders. 95% accuracy, delivered in 48 hours."
-      );
-    return () => {
-      document.title = "VitalHawks | Verified B2B Contact Data — Direct Mobiles & Work Emails";
-      if (meta && prev) meta.setAttribute("content", prev);
-    };
-  }, []);
+  useSeo({
+    title: "B2B Contact Data for Financial Services | VitalHawks",
+    description:
+      "Verified contact lists for finance sales teams — direct mobiles and work emails of CFOs and finance leaders. 95% accuracy, next-morning delivery.",
+    path: "/financial-services",
+    faqs,
+  });
+
 
   return (
     <div className="relative bg-[#050507] text-white overflow-hidden">

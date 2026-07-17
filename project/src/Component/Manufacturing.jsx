@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import useSeo from "../utils/useSeo";
 import { Link } from "react-router-dom";
 
 const faqs = [
@@ -31,22 +32,14 @@ const faqs = [
 export default function Manufacturing() {
   const [open, setOpen] = useState(null);
 
-  useEffect(() => {
-    document.title =
-      "B2B Manufacturing Database India | R&D, Quality & Plant Head Contacts — VitalHawks";
-    const meta = document.querySelector('meta[name="description"]');
-    const prev = meta ? meta.getAttribute("content") : null;
-    if (meta)
-      meta.setAttribute(
-        "content",
-        "Verified manufacturing contact lists — direct mobile numbers and work emails of R&D heads, quality heads, and plant heads across pharma, chemicals, plastics, and textiles. 95% accuracy, next-morning delivery."
-      );
-    return () => {
-      document.title =
-        "VitalHawks | Verified B2B Contact Data — Direct Mobiles & Work Emails";
-      if (meta && prev) meta.setAttribute("content", prev);
-    };
-  }, []);
+  useSeo({
+    title: "B2B Manufacturing Database India | VitalHawks",
+    description:
+      "Verified manufacturing contacts — direct mobiles and work emails of R&D, quality and plant heads across pharma, chemicals, plastics and textiles.",
+    path: "/manufacturing-database",
+    faqs,
+  });
+
 
   return (
     <div className="relative bg-[#050507] text-white overflow-hidden">

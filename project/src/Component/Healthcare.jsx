@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import useSeo from "../utils/useSeo";
 import { Link } from "react-router-dom";
 
 const faqs = [
@@ -31,22 +32,14 @@ const faqs = [
 export default function Healthcare() {
   const [open, setOpen] = useState(null);
 
-  useEffect(() => {
-    document.title =
-      "Healthcare Contact Database India | Hospital & Diagnostics Decision-Makers — VitalHawks";
-    const meta = document.querySelector('meta[name="description"]');
-    const prev = meta ? meta.getAttribute("content") : null;
-    if (meta)
-      meta.setAttribute(
-        "content",
-        "Verified healthcare contact lists — direct mobile numbers and work emails of hospital directors, CIOs, procurement and administration heads across hospitals, diagnostics chains and clinics. 95% accuracy, next-morning delivery."
-      );
-    return () => {
-      document.title =
-        "VitalHawks | Verified B2B Contact Data — Direct Mobiles & Work Emails";
-      if (meta && prev) meta.setAttribute("content", prev);
-    };
-  }, []);
+  useSeo({
+    title: "Healthcare Contact Database India | VitalHawks",
+    description:
+      "Verified healthcare contacts — direct mobiles and work emails of hospital directors, CIOs and procurement heads. 95% accuracy, next-morning delivery.",
+    path: "/healthcare-database",
+    faqs,
+  });
+
 
   return (
     <div className="relative bg-[#050507] text-white overflow-hidden">

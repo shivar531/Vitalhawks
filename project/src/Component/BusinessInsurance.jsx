@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import useSeo from "../utils/useSeo";
 import { Link } from "react-router-dom";
 
 const faqs = [
@@ -31,22 +32,14 @@ const faqs = [
 export default function BusinessInsurance() {
   const [open, setOpen] = useState(null);
 
-  useEffect(() => {
-    document.title =
-      "B2B Contact Data for Insurance Companies | Verified Lists — VitalHawks";
-    const meta = document.querySelector('meta[name="description"]');
-    const prev = meta ? meta.getAttribute("content") : null;
-    if (meta)
-      meta.setAttribute(
-        "content",
-        "Verified contact lists for insurance sales teams — direct mobile numbers and work emails of decision-makers at insurers, brokers, agencies, and InsurTech firms. 95% accuracy, next-morning delivery."
-      );
-    return () => {
-      document.title =
-        "VitalHawks | Verified B2B Contact Data — Direct Mobiles & Work Emails";
-      if (meta && prev) meta.setAttribute("content", prev);
-    };
-  }, []);
+  useSeo({
+    title: "B2B Contact Data for Insurance Companies | VitalHawks",
+    description:
+      "Verified contact lists for insurance sales teams — direct mobiles and work emails of decision-makers at insurers, brokers and InsurTech. 95% accuracy.",
+    path: "/insurance-contact-data",
+    faqs,
+  });
+
 
   return (
     <div className="relative bg-[#050507] text-white overflow-hidden">

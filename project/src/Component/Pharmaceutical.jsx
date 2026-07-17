@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import useSeo from "../utils/useSeo";
 import { Link } from "react-router-dom";
 
 const faqs = [
@@ -31,22 +32,14 @@ const faqs = [
 export default function Pharmaceutical() {
   const [open, setOpen] = useState(null);
 
-  useEffect(() => {
-    document.title =
-      "Pharmaceutical Company Database India | R&D & Quality Head Contacts — VitalHawks";
-    const meta = document.querySelector('meta[name="description"]');
-    const prev = meta ? meta.getAttribute("content") : null;
-    if (meta)
-      meta.setAttribute(
-        "content",
-        "Verified pharmaceutical contact lists — direct mobile numbers and work emails of R&D heads, QA/QC heads, regulatory affairs and plant leaders at Indian pharma companies. 95% accuracy, next-morning delivery."
-      );
-    return () => {
-      document.title =
-        "VitalHawks | Verified B2B Contact Data — Direct Mobiles & Work Emails";
-      if (meta && prev) meta.setAttribute("content", prev);
-    };
-  }, []);
+  useSeo({
+    title: "Pharmaceutical Company Database India | VitalHawks",
+    description:
+      "Verified pharma contacts — direct mobiles and work emails of R&D, QA/QC, regulatory and plant heads at Indian pharma companies. 95% accuracy.",
+    path: "/pharmaceutical-database",
+    faqs,
+  });
+
 
   return (
     <div className="relative bg-[#050507] text-white overflow-hidden">

@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import useSeo from "../utils/useSeo";
 import { Link } from "react-router-dom";
 
 const faqs = [
@@ -31,22 +32,14 @@ const faqs = [
 export default function ITCompanies() {
   const [open, setOpen] = useState(null);
 
-  useEffect(() => {
-    document.title =
-      "IT Company Database India | CTO, CIO & Enterprise IT Contacts — VitalHawks";
-    const meta = document.querySelector('meta[name="description"]');
-    const prev = meta ? meta.getAttribute("content") : null;
-    if (meta)
-      meta.setAttribute(
-        "content",
-        "Verified IT and SaaS contact lists — direct mobile numbers and work emails of CTOs, CIOs, IT heads and engineering leaders at Indian IT services, SaaS and enterprise technology companies. 95% accuracy, next-morning delivery."
-      );
-    return () => {
-      document.title =
-        "VitalHawks | Verified B2B Contact Data — Direct Mobiles & Work Emails";
-      if (meta && prev) meta.setAttribute("content", prev);
-    };
-  }, []);
+  useSeo({
+    title: "IT Company Database India | CTO & CIO Contacts | VitalHawks",
+    description:
+      "Verified IT and SaaS contacts — direct mobiles and work emails of CTOs, CIOs and engineering leaders at Indian technology companies. 95% accuracy.",
+    path: "/it-company-database",
+    faqs,
+  });
+
 
   return (
     <div className="relative bg-[#050507] text-white overflow-hidden">
