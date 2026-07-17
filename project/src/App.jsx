@@ -20,6 +20,11 @@ const Privacy = lazy(() => import('./Component/Privacy.jsx'));
 const FinancialServices = lazy(() => import('./Component/FinancialServices.jsx'));
 const BusinessInsurance = lazy(() => import('./Component/BusinessInsurance.jsx'));
 const Manufacturing = lazy(() => import('./Component/Manufacturing.jsx'));
+const ProcurementDatabase = lazy(() => import('./Component/ProcurementDatabase.jsx'));
+const HRDatabase = lazy(() => import('./Component/HRDatabase.jsx'));
+const CEODatabase = lazy(() => import('./Component/CEODatabase.jsx'));
+const CIODatabase = lazy(() => import('./Component/CIODatabase.jsx'));
+const CFODatabase = lazy(() => import('./Component/CFODatabase.jsx'));
 const RealEstate = lazy(() => import('./Component/RealEstate.jsx'));
 const ITCompanies = lazy(() => import('./Component/ITCompanies.jsx'));
 const Healthcare = lazy(() => import('./Component/Healthcare.jsx'));
@@ -48,6 +53,11 @@ function App() {
             <Route path="/financial-services" element={<FinancialServices />} />
             <Route path="/insurance-contact-data" element={<BusinessInsurance />} />
             <Route path="/manufacturing-database" element={<Manufacturing />} />
+            <Route path="/procurement-head-database" element={<ProcurementDatabase />} />
+            <Route path="/hr-director-database" element={<HRDatabase />} />
+            <Route path="/ceo-database" element={<CEODatabase />} />
+            <Route path="/cio-database" element={<CIODatabase />} />
+            <Route path="/cfo-database" element={<CFODatabase />} />
             <Route path="/real-estate-database" element={<RealEstate />} />
             <Route path="/it-company-database" element={<ITCompanies />} />
             <Route path="/healthcare-database" element={<Healthcare />} />
