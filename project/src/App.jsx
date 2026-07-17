@@ -19,6 +19,11 @@ const SampleList = lazy(() => import('./Component/SampleList.jsx'));
 const Privacy = lazy(() => import('./Component/Privacy.jsx'));
 const FinancialServices = lazy(() => import('./Component/FinancialServices.jsx'));
 const BusinessInsurance = lazy(() => import('./Component/BusinessInsurance.jsx'));
+const Manufacturing = lazy(() => import('./Component/Manufacturing.jsx'));
+const RealEstate = lazy(() => import('./Component/RealEstate.jsx'));
+const ITCompanies = lazy(() => import('./Component/ITCompanies.jsx'));
+const Healthcare = lazy(() => import('./Component/Healthcare.jsx'));
+const Pharmaceutical = lazy(() => import('./Component/Pharmaceutical.jsx'));
 
 function App() {
   return (
@@ -42,6 +47,11 @@ function App() {
             <Route path="/Privacy" element={<Privacy />} />
             <Route path="/financial-services" element={<FinancialServices />} />
             <Route path="/insurance-contact-data" element={<BusinessInsurance />} />
+            <Route path="/manufacturing-database" element={<Manufacturing />} />
+            <Route path="/real-estate-database" element={<RealEstate />} />
+            <Route path="/it-company-database" element={<ITCompanies />} />
+            <Route path="/healthcare-database" element={<Healthcare />} />
+            <Route path="/pharmaceutical-database" element={<Pharmaceutical />} />
           </Routes>
         </Suspense>
 
