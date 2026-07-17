@@ -1,4 +1,5 @@
 import React from "react";
+import useSeo from "../utils/useSeo";
 import { motion } from "framer-motion";
 
 // Client logos
@@ -11,6 +12,13 @@ import returnofidea from "./photos/returnofidea.jpg";
 import jiffy from "./photos/jiffy.png";
 
 export default function Clients() {
+  useSeo({
+    title: "Our Clients | B2B Teams We Work With | VitalHawks",
+    description:
+      "B2B revenue teams across scientific instruments, media, finance and education build their pipeline on VitalHawks verified contact data.",
+    path: "/Client",
+  });
+
   const fadeIn = {
     hidden: { opacity: 0, y: 30 },
     visible: (i = 1) => ({

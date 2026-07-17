@@ -2,11 +2,19 @@
 
 
 import React, { useState } from "react";
+import useSeo from "../utils/useSeo";
 import { FiShield, FiCheck, FiPlus, FiMinus } from "react-icons/fi";
 import Plan from "./Plan";
 import { Link } from "react-router-dom";
 import Popupform from "./Popupform";
 export default function Pricing() {
+  useSeo({
+    title: "Pricing | Verified B2B Contact Data | VitalHawks",
+    description:
+      "Simple pricing for verified B2B contact data — one flat rate per verified lead, direct mobile and work email included. 95% accuracy guaranteed.",
+    path: "/Pricing",
+  });
+
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(0);
 

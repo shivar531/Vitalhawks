@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import useSeo from "../utils/useSeo";
 import { FiSliders, FiCheckCircle, FiArrowRight } from "react-icons/fi";
 import { FiShield, FiClock, FiBarChart2 } from "react-icons/fi";
 import Popupform from "./Popupform";
@@ -6,6 +7,13 @@ import Popupform from "./Popupform";
 import { Link } from "react-router-dom";
 
 export default function HowItWorks() {
+  useSeo({
+    title: "How VitalHawks Works | Verified B2B Contact Lists",
+    description:
+      "See how VitalHawks builds verified B2B contact lists — hand-researched, human-verified direct mobiles and work emails, delivered in 24-48 hours.",
+    path: "/Industries",
+  });
+
   const [open, setOpen] = useState(false);
   return (
     <>

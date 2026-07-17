@@ -1,4 +1,5 @@
 import React from "react";
+import useSeo from "../utils/useSeo";
 import { Link } from "react-router-dom";
 
 const sections = [
@@ -41,6 +42,13 @@ const sections = [
 ];
 
 export default function Privacy() {
+  useSeo({
+    title: "Privacy Policy | VitalHawks",
+    description:
+      "How VitalHawks collects, uses and protects personal data — aligned with India DPDP Act 2023 and GDPR. Access, correction and deletion rights explained.",
+    path: "/Privacy",
+  });
+
   return (
     <section className="relative bg-[#050507] text-white min-h-screen overflow-hidden">
       {/* Background Glow */}

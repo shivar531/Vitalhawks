@@ -1,8 +1,16 @@
 import React, { useState } from "react";
+import useSeo from "../utils/useSeo";
 import { FiMail, FiPhone } from "react-icons/fi";
 import emailjs from "@emailjs/browser";
 
 export default function ContactPage() {
+  useSeo({
+    title: "Contact VitalHawks | Get a Verified Sample List",
+    description:
+      "Tell us who you need to reach and get a verified B2B contact list in 24-48 hours. Email info@vitalhawks.com or message us on WhatsApp.",
+    path: "/Contact",
+  });
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
