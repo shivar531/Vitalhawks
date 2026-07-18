@@ -17,6 +17,7 @@ const Plan = lazy(() => import('./Component/Plan.jsx'));
 const Popupform = lazy(() => import('./Component/Popupform.jsx'));
 const SampleList = lazy(() => import('./Component/SampleList.jsx'));
 const Privacy = lazy(() => import('./Component/Privacy.jsx'));
+const Testimonials = lazy(() => import('./Component/Testimonials.jsx'));
 const FinancialServices = lazy(() => import('./Component/FinancialServices.jsx'));
 const BusinessInsurance = lazy(() => import('./Component/BusinessInsurance.jsx'));
 const Manufacturing = lazy(() => import('./Component/Manufacturing.jsx'));
@@ -50,6 +51,7 @@ function App() {
             <Route path="/Popupform" element={<Popupform />} />
             <Route path="/SampleList" element={<SampleList />} />
             <Route path="/Privacy" element={<Privacy />} />
+            <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/financial-services" element={<FinancialServices />} />
             <Route path="/insurance-contact-data" element={<BusinessInsurance />} />
             <Route path="/manufacturing-database" element={<Manufacturing />} />
