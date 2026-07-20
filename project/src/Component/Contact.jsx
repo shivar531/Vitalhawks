@@ -182,6 +182,25 @@ export default function ContactPage() {
               <span className="text-gray-500">→</span>
             </div>
 
+            {/* BOOK A CALL CARD */}
+            <a
+              href="https://calendly.com/shiva-vitalhawks/15min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-between p-4 sm:p-6 rounded-2xl bg-white/5 border border-white/10 mb-6 lg:mb-10 hover:bg-white/10 transition"
+            >
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-purple-500/10 border border-purple-500/20">
+                  <FiPhone className="text-purple-400" />
+                </div>
+                <div>
+                  <p className="text-xs text-gray-500">BOOK A CALL</p>
+                  <p className="text-gray-200">Pick a time — 15-min video call</p>
+                </div>
+              </div>
+              <span className="text-gray-500">→</span>
+            </a>
+
             {/* STATS */}
             <div className="grid grid-cols-3 gap-4">
               {[

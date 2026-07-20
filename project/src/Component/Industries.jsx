@@ -425,14 +425,7 @@ export default function HowItWorks() {
 
                 {/* CTA BUTTON */}
 
-                <button
-
-                  onClick={() => setOpen(true)}
-
-className="px-5 py-2 rounded-lg bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-sm font-medium shadow-md hover:scale-[1.03] transition">
-                  Book a call
-
-                </button>
+                <a href="https://calendly.com/shiva-vitalhawks/15min" target="_blank" rel="noopener noreferrer" className="px-5 py-2 rounded-lg bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-sm font-medium shadow-md hover:scale-[1.03] transition">Book a call</a>
 
                 {/* TRUST TEXT */}
 
@@ -745,17 +738,7 @@ className="px-5 py-2 rounded-lg bg-gradient-to-r from-purple-500 to-indigo-500 t
 
     <div className="relative z-10 mt-4 flex justify-center">
 
-      <button
-
-        onClick={() => setOpen(true)}
-
-        className="px-6 py-3 rounded-lg bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-sm font-medium shadow-md hover:scale-105 transition"
-
-      >
-
-        Book a call
-
-      </button>
+      <a href="https://calendly.com/shiva-vitalhawks/15min" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-lg bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-sm font-medium shadow-md hover:scale-105 transition">Book a call</a>
 
     </div>
 

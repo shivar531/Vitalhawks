@@ -292,16 +292,7 @@ export default function Pricing() {
             <div className="p-5 sm:p-5 sm:p-4 sm:p-6 lg:p-8 lg:p-10">
               {/* BUTTON */}
 
-              <button
-                onClick={() => {
-                  console.log("clicked"); // debug
-                  setOpen(true);
-                }}
-
-                className="px-6 py-3 rounded-lg bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-sm font-medium shadow-md hover:scale-105 transition"
-              >
-                Book a call
-              </button>
+              <a href="https://calendly.com/shiva-vitalhawks/15min" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-lg bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-sm font-medium shadow-md hover:scale-105 transition">Book a call</a>
 
               {/* MODAL */}
 
