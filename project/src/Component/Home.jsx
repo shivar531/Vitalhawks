@@ -2,17 +2,35 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Popupform from "./Popupform";
 
-const logos = [
-  "Saas & Software",
-  "Financial Services ",
-  "Enterprise IT ",
-  "BFSI ",
-  "Management Consultion ",
-  "Cybersecurity ",
-  "Healthcare IT ",
-  "Manufacturing ",
-  "Pofessional Services ",
-  "Staffing & Recruiting ",
+// ---------------------------------------------------------------
+// CHECK THESE THREE NUMBERS AGAINST YOUR RECORDS BEFORE COMMITTING.
+// ---------------------------------------------------------------
+const delivered = [
+  {
+    roles: "Founders & Co-founders",
+    volume: "50,102",
+  },
+  {
+    roles: "CFOs & Finance Heads",
+    volume: "31,123",
+  },
+  {
+    roles: "CTOs & Tech Leaders",
+    volume: "22,345",
+  },
+];
+
+const industries = [
+  "SaaS & Software",
+  "Financial Services",
+  "Enterprise IT",
+  "BFSI",
+  "Management Consulting",
+  "Cybersecurity",
+  "Healthcare IT",
+  "Manufacturing",
+  "Professional Services",
+  "Staffing & Recruiting",
 ];
 
 export default function Hero() {
@@ -103,27 +121,78 @@ export default function Hero() {
 
       <section className="bg-[#050507] text-white px-4 sm:px-6 lg:px-8 py-14 sm:py-20 lg:py-24">
         <div className="max-w-7xl mx-auto">
-          {/* TRUSTED BY */}
+          {/* DELIVERED SO FAR */}
           <div className="mb-8 lg:mb-12 lg:mb-20">
             <p className="text-xs tracking-[0.3em] text-purple-400 mb-4">
-              TRUSTED BY
+              DELIVERED IN THE LAST 12 MONTHS
             </p>
 
             <h3 className="text-gray-400 text-base sm:text-lg mb-6 lg:mb-10">
-              350+ B2B teams trust VitalHawks to fill their pipeline with the
-              right people.
+              Verified decision-maker contacts, pan India — built role by role.
+            </h3>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {delivered.map((d, i) => (
+                <div
+                  key={i}
+                  className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-white/20 transition duration-300"
+                >
+                  <p className="text-4xl font-light text-white mb-2">
+                    {d.volume}
+                  </p>
+                  <p className="text-sm text-gray-200">{d.roles}</p>
+                </div>
+              ))}
+
+              {/* NEXT COULD BE YOURS */}
+              <a
+                href="https://calendly.com/shiva-vitalhawks/15min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col justify-center p-6 rounded-2xl bg-purple-500/10 border border-purple-500/30 hover:bg-purple-500/20 hover:border-purple-500/50 transition duration-300"
+              >
+                <p className="text-2xl font-light text-white mb-2">
+                  Next could be yours.
+                </p>
+                <p className="text-sm text-gray-300 mb-5">
+                  Tell us who you need to reach.
+                </p>
+                <span className="inline-flex items-center gap-2 text-sm text-purple-300">
+                  Book a call
+                  <span className="group-hover:translate-x-1 transition">
+                    →
+                  </span>
+                </span>
+              </a>
+            </div>
+
+            <p className="text-sm text-gray-500 mt-6">
+              Every contact is human-verified and covered by our 95% accuracy
+              guarantee — anything inaccurate is replaced free.
+            </p>
+          </div>
+
+          {/* INDUSTRIES */}
+          <div className="mb-8 lg:mb-12 lg:mb-20">
+            <p className="text-xs tracking-[0.3em] text-purple-400 mb-4">
+              INDUSTRIES WE SERVE
+            </p>
+
+            <h3 className="text-gray-400 text-base sm:text-lg mb-6 lg:mb-10">
+              B2B teams across these sectors trust VitalHawks to fill their
+              pipeline with the right people.
             </h3>
 
             {/* Logos Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:p-6">
-              {logos.map((logo, i) => (
+              {industries.map((industry, i) => (
                 <div
                   key={i}
                   className="flex items-center justify-center min-h-16 rounded-xl px-3 py-3 text-center 
                 bg-white/5 border border-white/10 text-gray-500 
                 hover:text-white hover:border-white/20 transition duration-300"
                 >
-                  {logo}
+                  {industry}
                 </div>
               ))}
             </div>
