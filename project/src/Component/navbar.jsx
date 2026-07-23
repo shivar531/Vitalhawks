@@ -3,27 +3,22 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 // import logo from "./photos/finalewhite.png";
 import logo from "./photos/finalewhite_1.png";
-
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
   const links = [
     { name: "Services", path: "/" },
     { name: "Industry", path: "/Industries" },
     { name: "Pricing", path: "/Pricing" },
-    { name: "Contact", path: "/contact" },
+    { name: "Contact", path: "/Contact" },
   ];
-
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "auto";
     return () => {
       document.body.style.overflow = "auto";
     };
   }, [isOpen]);
-
   const navLinkClass = ({ isActive }) =>
     `relative group transition duration-300 ${isActive ? "text-white" : "text-gray-400"}`;
-
   return (
     <header className="fixed top-3 left-1/2 -translate-x-1/2 z-50 w-[94%] sm:w-[90%] max-w-7xl">
       <div className="flex items-center justify-between px-4 sm:px-6 py-2 rounded-2xl bg-black/70 backdrop-blur-xl border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.6)]">
@@ -35,7 +30,6 @@ export default function Navbar() {
             className="h-14 w-auto object-contain opacity-90 hover:opacity-100 transition duration-300"
           />
         </NavLink>
-
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-[11px] lg:text-[12px] tracking-[0.15em] uppercase">
           {links.map((item) => (
@@ -45,7 +39,6 @@ export default function Navbar() {
             </NavLink>
           ))}
         </nav>
-
         {/* Mobile Icon */}
         <button
           type="button"
@@ -56,7 +49,6 @@ export default function Navbar() {
           {isOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
-
       {/* Mobile Menu */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ${
