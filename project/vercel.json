@@ -1,5 +1,18 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "vitalhawks.com" }],
+      "destination": "https://www.vitalhawks.com/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    {
+      "source": "/((?!assets/|.*\\.[a-zA-Z0-9]+$).*)",
+      "destination": "/index.html"
+    }
   ]
 }
