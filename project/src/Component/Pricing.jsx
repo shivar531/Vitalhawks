@@ -3,7 +3,7 @@
 
 import React, { useState } from "react";
 import useSeo from "../utils/useSeo";
-import { FiShield, FiCheck, FiPlus, FiMinus } from "react-icons/fi";
+import { FiShield, FiCheck, FiPlus, FiMinus, FiVideo } from "react-icons/fi";
 import Plan from "./Plan";
 import { Link } from "react-router-dom";
 import Popupform from "./Popupform";
@@ -94,6 +94,50 @@ export default function Pricing() {
     included. No subscriptions, no surprises.
 
   </p>
+
+  {/* BOOK A CALL CTA */}
+
+  <div className="flex justify-center mb-6 lg:mb-10">
+
+    <a
+
+      href="https://calendly.com/shiva-vitalhawks/15min"
+
+      target="_blank"
+
+      rel="noopener noreferrer"
+
+      className="group inline-flex items-center gap-3 px-6 py-3.5 rounded-2xl border border-purple-500/30 bg-purple-500/10 backdrop-blur-xl hover:bg-purple-500/20 hover:border-purple-500/50 transition"
+
+    >
+
+      <span className="w-10 h-10 flex items-center justify-center rounded-xl bg-purple-500/20 border border-purple-500/30 shrink-0">
+
+        <FiVideo className="text-purple-300" />
+
+      </span>
+
+      <span className="text-left">
+
+        <span className="block text-[11px] tracking-[0.2em] text-purple-300">
+
+          NOT SURE WHICH PLAN?
+
+        </span>
+
+        <span className="block text-sm sm:text-base text-gray-100">
+
+          Book a 15-min video call — we'll size it for you
+
+        </span>
+
+      </span>
+
+      <span className="text-purple-300 group-hover:translate-x-1 transition">→</span>
+
+    </a>
+
+  </div>
 
   {/* Pricing Boxes */}
 
