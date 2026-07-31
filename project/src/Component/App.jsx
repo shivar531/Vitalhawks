@@ -33,6 +33,11 @@ const LushaAlternative = lazy(() => import('./Component/LushaAlternative.jsx'));
 const ZoomInfoAlternative = lazy(() => import('./Component/ZoomInfoAlternative.jsx'));
 const RocketReachAlternative = lazy(() => import('./Component/RocketReachAlternative.jsx'));
 const SignalHireAlternative = lazy(() => import('./Component/SignalHireAlternative.jsx'));
+const CognismAlternative = lazy(() => import('./Component/CognismAlternative.jsx'));
+const SeamlessAlternative = lazy(() => import('./Component/SeamlessAlternative.jsx'));
+const UpLeadAlternative = lazy(() => import('./Component/UpLeadAlternative.jsx'));
+const KasprAlternative = lazy(() => import('./Component/KasprAlternative.jsx'));
+const AmplizAlternative = lazy(() => import('./Component/AmplizAlternative.jsx'));
 const NotFound = lazy(() => import('./Component/NotFound.jsx'));
 
 function App() {
@@ -70,6 +75,11 @@ function App() {
             <Route path="/zoominfo-alternative-india" element={<ZoomInfoAlternative />} />
             <Route path="/rocketreach-alternative-india" element={<RocketReachAlternative />} />
             <Route path="/signalhire-alternative-india" element={<SignalHireAlternative />} />
+            <Route path="/cognism-alternative-india" element={<CognismAlternative />} />
+            <Route path="/seamless-ai-alternative-india" element={<SeamlessAlternative />} />
+            <Route path="/uplead-alternative-india" element={<UpLeadAlternative />} />
+            <Route path="/kaspr-alternative-india" element={<KasprAlternative />} />
+            <Route path="/ampliz-alternative-india" element={<AmplizAlternative />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
