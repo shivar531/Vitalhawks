@@ -33,6 +33,7 @@ const LushaAlternative = lazy(() => import('./Component/LushaAlternative.jsx'));
 const ZoomInfoAlternative = lazy(() => import('./Component/ZoomInfoAlternative.jsx'));
 const RocketReachAlternative = lazy(() => import('./Component/RocketReachAlternative.jsx'));
 const SignalHireAlternative = lazy(() => import('./Component/SignalHireAlternative.jsx'));
+const NotFound = lazy(() => import('./Component/NotFound.jsx'));
 
 function App() {
   return (
@@ -69,6 +70,7 @@ function App() {
             <Route path="/zoominfo-alternative-india" element={<ZoomInfoAlternative />} />
             <Route path="/rocketreach-alternative-india" element={<RocketReachAlternative />} />
             <Route path="/signalhire-alternative-india" element={<SignalHireAlternative />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
         <Footer />
