@@ -89,6 +89,15 @@ export default function ContactPage() {
       .then(() => {
         alert("Message sent successfully!");
 
+        // Google Ads: count a successful lead submit as a conversion
+        if (window.gtag) {
+          window.gtag("event", "conversion", {
+            send_to: "AW-18349280524/Hbz3CKDmu9YcEIyaz61E",
+            value: 1.0,
+            currency: "INR",
+          });
+        }
+
         setFormData({
           name: "",
           email: "",
