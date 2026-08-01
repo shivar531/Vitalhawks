@@ -28,6 +28,9 @@ const CIODatabase = lazy(() => import('./Component/CIODatabase.jsx'));
 const CEODatabase = lazy(() => import('./Component/CEODatabase.jsx'));
 const HRDatabase = lazy(() => import('./Component/HRDatabase.jsx'));
 const ProcurementDatabase = lazy(() => import('./Component/ProcurementDatabase.jsx'));
+const CMODatabase = lazy(() => import('./Component/CMODatabase.jsx'));
+const SalesHeadDatabase = lazy(() => import('./Component/SalesHeadDatabase.jsx'));
+const COODatabase = lazy(() => import('./Component/COODatabase.jsx'));
 const ApolloAlternative = lazy(() => import('./Component/ApolloAlternative.jsx'));
 const LushaAlternative = lazy(() => import('./Component/LushaAlternative.jsx'));
 const ZoomInfoAlternative = lazy(() => import('./Component/ZoomInfoAlternative.jsx'));
@@ -70,6 +73,9 @@ function App() {
             <Route path="/ceo-database" element={<CEODatabase />} />
             <Route path="/hr-director-database" element={<HRDatabase />} />
             <Route path="/procurement-head-database" element={<ProcurementDatabase />} />
+            <Route path="/cmo-database" element={<CMODatabase />} />
+            <Route path="/sales-head-database" element={<SalesHeadDatabase />} />
+            <Route path="/coo-database" element={<COODatabase />} />
             <Route path="/apollo-alternative-india" element={<ApolloAlternative />} />
             <Route path="/lusha-alternative-india" element={<LushaAlternative />} />
             <Route path="/zoominfo-alternative-india" element={<ZoomInfoAlternative />} />
