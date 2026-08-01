@@ -201,6 +201,30 @@ export const pages = [
     priority: '0.9',
     changefreq: 'monthly',
   },
+  {
+    path: '/cmo-database',
+    title: 'CMO Database India | Verified CMO & Marketing Head Contacts',
+    description:
+      'Verified CMO and marketing head contacts across India — direct mobile numbers and work emails at 95% accuracy, delivered next morning.',
+    priority: '0.9',
+    changefreq: 'monthly',
+  },
+  {
+    path: '/sales-head-database',
+    title: 'Sales Head Database India | VP Sales & CRO Contacts',
+    description:
+      'Verified sales head, VP Sales and CRO contacts across India — direct mobile numbers and work emails at 95% accuracy, delivered next morning.',
+    priority: '0.9',
+    changefreq: 'monthly',
+  },
+  {
+    path: '/coo-database',
+    title: 'COO Database India | Verified COO & Operations Head Contacts',
+    description:
+      'Verified COO and operations head contacts across India — direct mobile numbers and work emails at 95% accuracy, delivered next morning.',
+    priority: '0.9',
+    changefreq: 'monthly',
+  },
 
   // --- competitor comparison pages -----------------------------------------
   {
@@ -240,6 +264,48 @@ export const pages = [
     title: 'SignalHire Alternative for India | VitalHawks',
     description:
       'A SignalHire alternative focused on India — verified decision-maker mobile numbers and work emails at 95% accuracy, delivered in 48 hours with no credit system.',
+    priority: '0.9',
+    changefreq: 'monthly',
+  },
+
+  // --- competitor comparison pages (batch 2) -------------------------------
+  {
+    path: '/cognism-alternative-india',
+    title: 'Cognism Alternative in India | VitalHawks',
+    description:
+      'A done-for-you Cognism alternative for Indian B2B teams — hand-verified direct mobiles and work emails at 95% accuracy, delivered next morning. No seats, no credits.',
+    priority: '0.9',
+    changefreq: 'monthly',
+  },
+  {
+    path: '/seamless-ai-alternative-india',
+    title: 'Seamless.AI Alternative in India | VitalHawks',
+    description:
+      'A done-for-you Seamless.AI alternative for Indian B2B teams — hand-verified direct mobiles and work emails, no credits to burn, delivered next morning at 95% accuracy.',
+    priority: '0.9',
+    changefreq: 'monthly',
+  },
+  {
+    path: '/uplead-alternative-india',
+    title: 'UpLead Alternative in India | VitalHawks',
+    description:
+      'A done-for-you UpLead alternative for Indian B2B teams — hand-verified direct mobiles and work emails delivered as a finished list at 95% accuracy, next morning.',
+    priority: '0.9',
+    changefreq: 'monthly',
+  },
+  {
+    path: '/kaspr-alternative-india',
+    title: 'Kaspr Alternative in India | VitalHawks',
+    description:
+      'A done-for-you Kaspr alternative for Indian B2B teams — a full hand-verified list of decision-maker mobiles and emails, no per-profile LinkedIn reveals or credits.',
+    priority: '0.9',
+    changefreq: 'monthly',
+  },
+  {
+    path: '/ampliz-alternative-india',
+    title: 'Ampliz Alternative in India | VitalHawks',
+    description:
+      'A done-for-you Ampliz alternative for Indian B2B teams — hand-verified direct mobiles and work emails delivered to your brief at 95% accuracy, no platform to run.',
     priority: '0.9',
     changefreq: 'monthly',
   },
