@@ -23,6 +23,9 @@ const Pharmaceutical = lazy(() => import('./Component/Pharmaceutical.jsx'));
 const Healthcare = lazy(() => import('./Component/Healthcare.jsx'));
 const ITCompanies = lazy(() => import('./Component/ITCompanies.jsx'));
 const RealEstate = lazy(() => import('./Component/RealEstate.jsx'));
+const SaaSDatabase = lazy(() => import('./Component/SaaSDatabase.jsx'));
+const CybersecurityDatabase = lazy(() => import('./Component/CybersecurityDatabase.jsx'));
+const LogisticsDatabase = lazy(() => import('./Component/LogisticsDatabase.jsx'));
 const CFODatabase = lazy(() => import('./Component/CFODatabase.jsx'));
 const CIODatabase = lazy(() => import('./Component/CIODatabase.jsx'));
 const CEODatabase = lazy(() => import('./Component/CEODatabase.jsx'));
@@ -41,6 +44,10 @@ const SeamlessAlternative = lazy(() => import('./Component/SeamlessAlternative.j
 const UpLeadAlternative = lazy(() => import('./Component/UpLeadAlternative.jsx'));
 const KasprAlternative = lazy(() => import('./Component/KasprAlternative.jsx'));
 const AmplizAlternative = lazy(() => import('./Component/AmplizAlternative.jsx'));
+const ClearbitAlternative = lazy(() => import('./Component/ClearbitAlternative.jsx'));
+const HunterAlternative = lazy(() => import('./Component/HunterAlternative.jsx'));
+const SnovAlternative = lazy(() => import('./Component/SnovAlternative.jsx'));
+const AdaptAlternative = lazy(() => import('./Component/AdaptAlternative.jsx'));
 const NotFound = lazy(() => import('./Component/NotFound.jsx'));
 
 function App() {
@@ -68,6 +75,9 @@ function App() {
             <Route path="/healthcare-database" element={<Healthcare />} />
             <Route path="/it-company-database" element={<ITCompanies />} />
             <Route path="/real-estate-database" element={<RealEstate />} />
+            <Route path="/saas-companies-database" element={<SaaSDatabase />} />
+            <Route path="/cybersecurity-companies-database" element={<CybersecurityDatabase />} />
+            <Route path="/logistics-database" element={<LogisticsDatabase />} />
             <Route path="/cfo-database" element={<CFODatabase />} />
             <Route path="/cio-database" element={<CIODatabase />} />
             <Route path="/ceo-database" element={<CEODatabase />} />
@@ -86,6 +96,10 @@ function App() {
             <Route path="/uplead-alternative-india" element={<UpLeadAlternative />} />
             <Route path="/kaspr-alternative-india" element={<KasprAlternative />} />
             <Route path="/ampliz-alternative-india" element={<AmplizAlternative />} />
+            <Route path="/clearbit-alternative-india" element={<ClearbitAlternative />} />
+            <Route path="/hunter-alternative-india" element={<HunterAlternative />} />
+            <Route path="/snov-io-alternative-india" element={<SnovAlternative />} />
+            <Route path="/adapt-io-alternative-india" element={<AdaptAlternative />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
