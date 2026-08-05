@@ -34,26 +34,12 @@ export default function Popupform({ isOpen, onClose }) {
   const validateForm = () => {
     const newErrors = {};
 
-    if (!formData.name.trim()) {
-      newErrors.name = "Full name is required";
-    }
-
+    // Only a valid work email is required so we can reply.
+    // Everything else is optional — people can submit with minimal details.
     if (!formData.email.trim()) {
-      newErrors.email = "Work email is required";
+      newErrors.email = "Work email is required so we can reply";
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newErrors.email = "Enter a valid email address";
-    }
-
-    if (!formData.company.trim()) {
-      newErrors.company = "Company name is required";
-    }
-
-    if (!formData.plan) {
-      newErrors.plan = "Please select a plan";
-    }
-
-    if (!formData.targetRoles.trim()) {
-      newErrors.targetRoles = "Target roles are required";
     }
 
     setErrors(newErrors);
@@ -272,7 +258,7 @@ function Input({
         value={value}
         onChange={onChange}
         placeholder={placeholder}
-        className="w-full px-3 py-2 text-sm rounded-lg bg-white/10 border border-white/10 text-white placeholder-gray-400 outline-none focus:border-purple-500"
+        className={`w-full px-3 py-2 text-sm rounded-lg bg-white/10 text-white placeholder-gray-400 outline-none focus:border-purple-500 border ${error ? "border-red-500/60" : "border-white/10"}`}
       />
 
       {error && <p className="text-red-400 text-xs mt-1">{error}</p>}
