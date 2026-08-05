@@ -309,4 +309,64 @@ export const pages = [
     priority: '0.9',
     changefreq: 'monthly',
   },
+
+  // --- industry pages (batch 2) --------------------------------------------
+  {
+    path: '/saas-companies-database',
+    title: 'SaaS Company Database India | Verified Decision-Maker Contacts',
+    description:
+      'Verified contacts of decision-makers at Indian SaaS and software companies — direct mobiles and work emails of founders, sales, marketing and growth leaders. 95% accuracy, 48-hour delivery.',
+    priority: '0.9',
+    changefreq: 'monthly',
+  },
+  {
+    path: '/cybersecurity-companies-database',
+    title: 'Cybersecurity Company Database India | Verified CISO Contacts',
+    description:
+      'Verified contacts across the Indian cybersecurity space — direct mobiles and work emails of CISOs, security heads and decision-makers at security vendors and enterprises. 95% accuracy, 48-hour delivery.',
+    priority: '0.9',
+    changefreq: 'monthly',
+  },
+  {
+    path: '/logistics-database',
+    title: 'Logistics & Supply Chain Database India | Verified Contacts',
+    description:
+      'Verified contacts of founders, operations and supply chain leaders at Indian logistics, 3PL, freight and warehousing companies. Direct mobiles and work emails, 95% accuracy, 48-hour delivery.',
+    priority: '0.9',
+    changefreq: 'monthly',
+  },
+
+  // --- competitor comparison pages (batch 3) -------------------------------
+  {
+    path: '/clearbit-alternative-india',
+    title: 'Clearbit Alternative in India | VitalHawks',
+    description:
+      'A done-for-you Clearbit alternative for Indian B2B teams — hand-verified direct mobiles and work emails of net-new decision-makers, not just enrichment. 95% accuracy, next morning.',
+    priority: '0.9',
+    changefreq: 'monthly',
+  },
+  {
+    path: '/hunter-alternative-india',
+    title: 'Hunter.io Alternative in India | VitalHawks',
+    description:
+      'A done-for-you Hunter.io alternative for Indian B2B teams — hand-verified work emails and direct mobile numbers of the right decision-makers, not just email guesses. 95% accuracy, next morning.',
+    priority: '0.9',
+    changefreq: 'monthly',
+  },
+  {
+    path: '/snov-io-alternative-india',
+    title: 'Snov.io Alternative in India | VitalHawks',
+    description:
+      'A done-for-you Snov.io alternative for Indian B2B teams — hand-verified direct mobiles and work emails delivered as a finished list, no credits to manage. 95% accuracy, next morning.',
+    priority: '0.9',
+    changefreq: 'monthly',
+  },
+  {
+    path: '/adapt-io-alternative-india',
+    title: 'Adapt.io Alternative in India | VitalHawks',
+    description:
+      'A done-for-you Adapt.io alternative for Indian B2B teams — hand-verified direct mobiles and work emails delivered as a finished list, no credits or extensions to run. 95% accuracy, next morning.',
+    priority: '0.9',
+    changefreq: 'monthly',
+  },
 ]
