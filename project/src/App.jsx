@@ -34,6 +34,7 @@ const ProcurementDatabase = lazy(() => import('./Component/ProcurementDatabase.j
 const CMODatabase = lazy(() => import('./Component/CMODatabase.jsx'));
 const SalesHeadDatabase = lazy(() => import('./Component/SalesHeadDatabase.jsx'));
 const COODatabase = lazy(() => import('./Component/COODatabase.jsx'));
+const DoneForYouLists = lazy(() => import('./Component/DoneForYouLists.jsx'));
 const ApolloAlternative = lazy(() => import('./Component/ApolloAlternative.jsx'));
 const LushaAlternative = lazy(() => import('./Component/LushaAlternative.jsx'));
 const ZoomInfoAlternative = lazy(() => import('./Component/ZoomInfoAlternative.jsx'));
@@ -86,6 +87,7 @@ function App() {
             <Route path="/cmo-database" element={<CMODatabase />} />
             <Route path="/sales-head-database" element={<SalesHeadDatabase />} />
             <Route path="/coo-database" element={<COODatabase />} />
+            <Route path="/done-for-you-lead-lists" element={<DoneForYouLists />} />
             <Route path="/apollo-alternative-india" element={<ApolloAlternative />} />
             <Route path="/lusha-alternative-india" element={<LushaAlternative />} />
             <Route path="/zoominfo-alternative-india" element={<ZoomInfoAlternative />} />
