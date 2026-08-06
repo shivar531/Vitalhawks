@@ -26,47 +26,38 @@ export default function ContactPage() {
 
   const [errors, setErrors] = useState({});
 
+  const fieldOrder = ["name", "email", "company", "need", "target", "size", "message"];
+
   const validateForm = () => {
     const newErrors = {};
 
-    if (!formData.name.trim()) {
-      newErrors.name = "Full name is required";
-    }
-
+    // Only a valid work email is required so we can reply.
+    // Everything else is optional — people can submit with minimal details.
     if (!formData.email.trim()) {
-      newErrors.email = "Work email is required";
+      newErrors.email = "Work email is required so we can reply";
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newErrors.email = "Enter a valid email address";
     }
 
-    if (!formData.company.trim()) {
-      newErrors.company = "Company name is required";
-    }
-
-    if (!formData.need) {
-      newErrors.need = "Please select what you need";
-    }
-
-    if (!formData.target.trim()) {
-      newErrors.target = "Target roles & industry is required";
-    }
-
-    if (!formData.size) {
-      newErrors.size = "Please select list size";
-    }
-
-    if (!formData.message.trim()) {
-      newErrors.message = "Message is required";
-    }
-
     setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
+    return newErrors;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!validateForm()) return;
+    const newErrors = validateForm();
+    if (Object.keys(newErrors).length > 0) {
+      const firstErrorField = fieldOrder.find((f) => newErrors[f]);
+      if (firstErrorField) {
+        const el = document.getElementsByName(firstErrorField)[0];
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth", block: "center" });
+          setTimeout(() => el.focus({ preventScroll: true }), 350);
+        }
+      }
+      return;
+    }
 
     setLoading(true);
 
@@ -232,8 +223,15 @@ export default function ContactPage() {
           <div className="p-5 sm:p-4 sm:p-6 lg:p-8 rounded-3xl bg-[#0b0b12] border border-white/10">
             <h3 className="text-2xl font-light mb-2">Send us a message</h3>
             <p className="text-gray-400 mb-8 text-sm">
-              Fill in your brief and we'll get back within a few hours.
+              Just your email is required — share as much or as little as you
+              like, and we'll get back within a few hours.
             </p>
+
+            {Object.keys(errors).length > 0 && (
+              <div className="mb-4 rounded-xl border border-red-500/40 bg-red-500/10 px-4 py-3 text-sm text-red-300">
+                Please fill in the highlighted fields below, then hit Send.
+              </div>
+            )}
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid md:grid-cols-2 gap-4">
@@ -244,7 +242,7 @@ export default function ContactPage() {
                     value={formData.name}
                     placeholder="Full name"
                     onChange={handleChange}
-                    className="w-full p-3 rounded-xl bg-white/5 border border-white/10 text-white outline-none"
+                    className={`w-full p-3 rounded-xl bg-white/5 text-white outline-none border ${errors.name ? "border-red-500/60" : "border-white/10"}`}
                   />
                   {errors.name && (
                     <p className="text-red-400 text-xs mt-1">{errors.name}</p>
@@ -258,7 +256,7 @@ export default function ContactPage() {
                     value={formData.email}
                     placeholder="Work email"
                     onChange={handleChange}
-                    className="w-full p-3 rounded-xl bg-white/5 border border-white/10 text-white outline-none"
+                    className={`w-full p-3 rounded-xl bg-white/5 text-white outline-none border ${errors.email ? "border-red-500/60" : "border-white/10"}`}
                   />
                   {errors.email && (
                     <p className="text-red-400 text-xs mt-1">{errors.email}</p>
@@ -274,7 +272,7 @@ export default function ContactPage() {
                     value={formData.company}
                     placeholder="Company"
                     onChange={handleChange}
-                    className="w-full p-3 rounded-xl bg-white/5 border border-white/10 text-white outline-none"
+                    className={`w-full p-3 rounded-xl bg-white/5 text-white outline-none border ${errors.company ? "border-red-500/60" : "border-white/10"}`}
                   />
                   {errors.company && (
                     <p className="text-red-400 text-xs mt-1">
@@ -298,7 +296,7 @@ export default function ContactPage() {
                   name="need"
                   value={formData.need}
                   onChange={handleChange}
-                  className="w-full p-3 rounded-xl bg-[#11111a] border border-white/10 text-gray-300 outline-none"
+                  className={`w-full p-3 rounded-xl bg-[#11111a] text-gray-300 outline-none border ${errors.need ? "border-red-500/60" : "border-white/10"}`}
                 >
                   <option value="">What do you need?</option>
                   <option value="Verified contact list - mobile + email">
@@ -329,7 +327,7 @@ export default function ContactPage() {
                   value={formData.target}
                   placeholder="Target roles & industry"
                   onChange={handleChange}
-                  className="w-full p-3 rounded-xl bg-white/5 border border-white/10 text-white outline-none"
+                  className={`w-full p-3 rounded-xl bg-white/5 text-white outline-none border ${errors.target ? "border-red-500/60" : "border-white/10"}`}
                 />
                 {errors.target && (
                   <p className="text-red-400 text-xs mt-1">{errors.target}</p>
@@ -341,7 +339,7 @@ export default function ContactPage() {
                   name="size"
                   value={formData.size}
                   onChange={handleChange}
-                  className="w-full p-3 rounded-xl bg-[#11111a] border border-white/10 text-gray-300 outline-none"
+                  className={`w-full p-3 rounded-xl bg-[#11111a] text-gray-300 outline-none border ${errors.size ? "border-red-500/60" : "border-white/10"}`}
                 >
                   <option value="">List size needed</option>
                   <option value="Starter — 3,000 leads · ₹1,06,200">
@@ -379,7 +377,7 @@ export default function ContactPage() {
                   rows="4"
                   placeholder="Anything else?"
                   onChange={handleChange}
-                  className="w-full p-3 rounded-xl bg-white/5 border border-white/10 text-white outline-none resize-none"
+                  className={`w-full p-3 rounded-xl bg-white/5 text-white outline-none resize-none border ${errors.message ? "border-red-500/60" : "border-white/10"}`}
                 />
                 {errors.message && (
                   <p className="text-red-400 text-xs mt-1">{errors.message}</p>
