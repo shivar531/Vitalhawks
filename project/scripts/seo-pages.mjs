@@ -160,6 +160,16 @@ export const pages = [
     changefreq: 'monthly',
   },
 
+  // --- service / value pages -----------------------------------------------
+  {
+    path: '/done-for-you-lead-lists',
+    title: 'Done-for-You B2B Lead Lists India | VitalHawks',
+    description:
+      'Stop your reps building lists. VitalHawks delivers done-for-you verified prospect lists — direct mobile numbers and work emails at 95% accuracy, next morning. No seats, no credits.',
+    priority: '0.9',
+    changefreq: 'monthly',
+  },
+
   // --- role / seniority pages ----------------------------------------------
   {
     path: '/cfo-database',
