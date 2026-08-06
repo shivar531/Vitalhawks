@@ -56,7 +56,7 @@ function App() {
       <ScrollToTop />
       <div>
         <Navbar />
-        <Suspense fallback={<PageLoader />}>
+        <Suspense fallback={<div className="min-h-screen"><PageLoader /></div>}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Industries" element={<Industries />} />
