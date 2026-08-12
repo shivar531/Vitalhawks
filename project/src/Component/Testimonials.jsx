@@ -20,6 +20,30 @@ const clientLogos = [
   { name: "Jiffy", img: jiffy },
 ];
 
+const testimonials = [
+  {
+    quote:
+      "One of the biggest problems we had was that our salespeople were spending a significant part of their day researching prospects instead of speaking with them. VitalHawks gave us a ready-to-use list of relevant companies and decision-makers, which meant our team could start prospecting instead of spending hours building the list.",
+    role: "Business Development Head",
+    company: "B2B Financial Services",
+    initials: "BD",
+  },
+  {
+    quote:
+      "We didn't need another huge database with thousands of random contacts. We had very specific requirements around industry, company size, location and job roles. VitalHawks built the database around our criteria, so the list was much closer to the companies and people we actually wanted to target.",
+    role: "Marketing Head",
+    company: "SaaS Company",
+    initials: "MH",
+  },
+  {
+    quote:
+      "The biggest value for us was the time we got back. Instead of spending hours finding companies, researching contacts and putting lists together, our team could start with prospects already organized around our target market. That allowed our salespeople to spend more of their day actually selling.",
+    role: "Marketing Director",
+    company: "",
+    initials: "MD",
+  },
+];
+
 export default function Testimonials() {
   useSeo({
     title: "Client Testimonials | VitalHawks",
@@ -72,10 +96,38 @@ export default function Testimonials() {
             <div>
               <p className="text-sm text-gray-200">Business Development Head</p>
               <p className="text-xs text-gray-500">
-                Client since 2025 · shared over WhatsApp
+                Client since 2025
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* More testimonials */}
+      <section className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-14">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {testimonials.map((t, i) => (
+            <div
+              key={i}
+              className="rounded-2xl border border-white/10 bg-gradient-to-b from-white/5 to-white/[0.02] p-6 flex flex-col"
+            >
+              <div className="text-purple-500 text-3xl mb-4 leading-none">“</div>
+              <p className="text-gray-300 text-sm leading-relaxed mb-6 flex-1">
+                {t.quote}
+              </p>
+              <div className="border-t border-white/10 pt-4 flex items-center gap-3">
+                <div className="w-9 h-9 rounded-full bg-purple-500/20 flex items-center justify-center text-xs shrink-0">
+                  {t.initials}
+                </div>
+                <div>
+                  <p className="text-sm text-gray-200">{t.role}</p>
+                  {t.company && (
+                    <p className="text-xs text-gray-500">{t.company}</p>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -124,11 +176,11 @@ export default function Testimonials() {
 
             <div className="rounded-2xl border border-white/10 bg-gradient-to-b from-white/5 to-white/[0.02] p-6">
               <p className="text-xl font-semibold text-purple-300 mb-2">
-                95% or free
+                95% accuracy
               </p>
               <p className="text-gray-400 text-sm leading-relaxed">
-                If more than 5% of your list is wrong, we replace those contacts
-                free. In writing, on every order.
+                Every list is 95% accurate — and if more than 5% is wrong, we
+                replace those contacts free. In writing, on every order.
               </p>
             </div>
           </div>
