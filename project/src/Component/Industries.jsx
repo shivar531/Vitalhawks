@@ -348,7 +348,7 @@ export default function HowItWorks() {
             </p>
 
             <Link
-  to="/contact"
+   to="/Contact"
   className="px-6 py-3 rounded-xl bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-medium hover:scale-105 transition inline-block"
 >
   Get full sample list
