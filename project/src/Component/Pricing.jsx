@@ -273,7 +273,7 @@ export default function Pricing() {
 
         <div className="md:text-right">
           <Link
-            to="/contact"
+          to="/Contact"
             className="px-8 py-3 rounded-xl bg-gradient-to-r from-purple-500 to-indigo-500 text-white hover:opacity-90 transition inline-block"
           >
             Talk to us
