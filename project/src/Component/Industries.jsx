@@ -783,7 +783,7 @@ export default function HowItWorks() {
 </section>
 
       {/* Browse by industry and role */}
-      <section className="relative z-10 border-t border-white/10">
+      <section className="relative z-10 bg-[#050507] border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <h2 className="text-2xl md:text-3xl font-light text-gray-200">
             Pick your industry, pick your role
