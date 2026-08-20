@@ -6,6 +6,30 @@ import Popupform from "./Popupform";
 
 import { Link } from "react-router-dom";
 
+const BROWSE_INDUSTRIES = [
+  { name: "Financial services", path: "/financial-services" },
+  { name: "Insurance", path: "/insurance-contact-data" },
+  { name: "Manufacturing", path: "/manufacturing-database" },
+  { name: "Pharmaceutical", path: "/pharmaceutical-database" },
+  { name: "Healthcare", path: "/healthcare-database" },
+  { name: "IT companies", path: "/it-company-database" },
+  { name: "Real estate", path: "/real-estate-database" },
+  { name: "SaaS companies", path: "/saas-companies-database" },
+  { name: "Cybersecurity", path: "/cybersecurity-companies-database" },
+  { name: "Logistics & supply chain", path: "/logistics-database" },
+];
+
+const BROWSE_ROLES = [
+  { name: "CEOs & founders", path: "/ceo-database" },
+  { name: "CFOs & finance heads", path: "/cfo-database" },
+  { name: "CIOs & CTOs", path: "/cio-database" },
+  { name: "CMOs & marketing heads", path: "/cmo-database" },
+  { name: "COOs & operations heads", path: "/coo-database" },
+  { name: "HR directors", path: "/hr-director-database" },
+  { name: "Procurement heads", path: "/procurement-head-database" },
+  { name: "Sales heads", path: "/sales-head-database" },
+];
+
 export default function HowItWorks() {
   useSeo({
     title: "How VitalHawks Works | Verified B2B Contact Lists",
@@ -348,7 +372,7 @@ export default function HowItWorks() {
             </p>
 
             <Link
-   to="/Contact"
+  to="/Contact"
   className="px-6 py-3 rounded-xl bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-medium hover:scale-105 transition inline-block"
 >
   Get full sample list
@@ -757,6 +781,53 @@ export default function HowItWorks() {
 </div>
 
 </section>
+
+      {/* Browse by industry and role */}
+      <section className="relative z-10 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <h2 className="text-2xl md:text-3xl font-light text-gray-200">
+            Pick your industry, pick your role
+          </h2>
+          <p className="mt-3 text-gray-400 text-base leading-relaxed max-w-2xl">
+            Each one shows what data we hold, and you can ask for a sample from
+            any of them.
+          </p>
+
+          <div className="mt-10">
+            <p className="text-xs tracking-[0.2em] text-purple-400 uppercase mb-4">
+              By industry
+            </p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+              {BROWSE_INDUSTRIES.map((i) => (
+                <Link
+                  key={i.path}
+                  to={i.path}
+                  className="block px-4 py-3 rounded-lg border border-white/10 bg-white/5 text-sm text-gray-300 hover:text-white hover:border-purple-500/40 transition"
+                >
+                  {i.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-10">
+            <p className="text-xs tracking-[0.2em] text-purple-400 uppercase mb-4">
+              By role
+            </p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+              {BROWSE_ROLES.map((r) => (
+                <Link
+                  key={r.path}
+                  to={r.path}
+                  className="block px-4 py-3 rounded-lg border border-white/10 bg-white/5 text-sm text-gray-300 hover:text-white hover:border-purple-500/40 transition"
+                >
+                  {r.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
     </>
   );
