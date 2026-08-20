@@ -273,12 +273,51 @@ export default function Pricing() {
 
         <div className="md:text-right">
           <Link
-          to="/Contact"
+            to="/Contact"
             className="px-8 py-3 rounded-xl bg-gradient-to-r from-purple-500 to-indigo-500 text-white hover:opacity-90 transition inline-block"
           >
             Talk to us
           </Link>
         </div>
+
+      </div>
+
+      {/* Divider */}
+      <div className="border-t border-white/10"></div>
+
+      {/* Two ways to start */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:p-5 sm:p-6 lg:p-8 lg:p-10">
+
+        <Link
+          to="/Plan"
+          className="block rounded-2xl border border-white/10 bg-white/5 p-6 lg:p-8 hover:border-purple-500/40 transition"
+        >
+          <p className="text-xs tracking-[0.25em] text-purple-400 mb-3">
+            PLANS &amp; PACKAGES
+          </p>
+          <h3 className="text-xl sm:text-2xl font-light mb-2 text-gray-200">
+            Pick a package that fits your volume
+          </h3>
+          <p className="text-gray-400 text-sm leading-relaxed">
+            One-off lists, or ongoing monthly delivery of verified contacts.
+          </p>
+        </Link>
+
+        <Link
+          to="/SampleList"
+          className="block rounded-2xl border border-purple-500/20 bg-purple-500/5 p-6 lg:p-8 hover:border-purple-500/50 transition"
+        >
+          <p className="text-xs tracking-[0.25em] text-purple-400 mb-3">
+            FREE SAMPLE LIST
+          </p>
+          <h3 className="text-xl sm:text-2xl font-light mb-2 text-gray-200">
+            Not ready to buy? Take a sample first
+          </h3>
+          <p className="text-gray-400 text-sm leading-relaxed">
+            Check the mobile numbers and emails yourself before you spend
+            anything.
+          </p>
+        </Link>
 
       </div>
 
