@@ -8,6 +8,23 @@ import useSeo from "../utils/useSeo";
  * we describe what each tool is genuinely good at, then explain
  * the structural difference: they sell software, we deliver a list.
  */
+const ALL_ALTERNATIVES = [
+  { name: "Apollo", path: "/apollo-alternative-india" },
+  { name: "ZoomInfo", path: "/zoominfo-alternative-india" },
+  { name: "Lusha", path: "/lusha-alternative-india" },
+  { name: "Cognism", path: "/cognism-alternative-india" },
+  { name: "Clearbit", path: "/clearbit-alternative-india" },
+  { name: "Hunter", path: "/hunter-alternative-india" },
+  { name: "Snov.io", path: "/snov-io-alternative-india" },
+  { name: "UpLead", path: "/uplead-alternative-india" },
+  { name: "RocketReach", path: "/rocketreach-alternative-india" },
+  { name: "Seamless.AI", path: "/seamless-ai-alternative-india" },
+  { name: "SignalHire", path: "/signalhire-alternative-india" },
+  { name: "Kaspr", path: "/kaspr-alternative-india" },
+  { name: "Adapt.io", path: "/adapt-io-alternative-india" },
+  { name: "Ampliz", path: "/ampliz-alternative-india" },
+];
+
 export default function AlternativeLayout({ data }) {
   const [open, setOpen] = useState(null);
 
@@ -355,6 +372,30 @@ export default function AlternativeLayout({ data }) {
             >
               Request a sample
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Other alternatives */}
+      <section className="relative z-10 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+          <h2 className="text-2xl md:text-3xl font-light text-gray-200">
+            See how we compare to others
+          </h2>
+          <p className="mt-3 text-gray-400 text-base leading-relaxed max-w-2xl">
+            Take a sample and use it yourself, rather than us telling you all
+            the good things about us. We&apos;d love to hear from you.
+          </p>
+          <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+            {ALL_ALTERNATIVES.filter((a) => a.path !== data.path).map((a) => (
+              <Link
+                key={a.path}
+                to={a.path}
+                className="block px-4 py-3 rounded-lg border border-white/10 bg-white/5 text-sm text-gray-300 hover:text-white hover:border-purple-500/40 transition"
+              >
+                {a.name} alternative
+              </Link>
+            ))}
           </div>
         </div>
       </section>
