@@ -3,6 +3,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/home",
+      "destination": "https://www.vitalhawks.com/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "vitalhawks.com" }],
       "destination": "https://www.vitalhawks.com/:path*",
