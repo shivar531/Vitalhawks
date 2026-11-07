@@ -3,7 +3,7 @@
 
 import React, { useState } from "react";
 import useSeo from "../utils/useSeo";
-import { FiShield, FiCheck, FiPlus, FiMinus, FiVideo } from "react-icons/fi";
+import { FiShield, FiCheck, FiX, FiPlus, FiMinus, FiVideo, FiZap, FiDatabase, FiUpload, FiRefreshCw, FiPhoneOff, FiLock, FiGlobe, FiFileText, FiCreditCard } from "react-icons/fi";
 import Plan from "./Plan";
 import { Link } from "react-router-dom";
 import Popupform from "./Popupform";
@@ -29,11 +29,11 @@ export default function Pricing() {
     },
     {
       q: "What's included in every lead?",
-      a: "Verified mobile number, work email, LinkedIn profile, job title, and company name — all human-verified."
+      a: "Verified mobile number, work email, LinkedIn profile, job title, company name, company size, revenue range and tech stack — delivered as an Excel and CSV file ready to import into your CRM."
     },
     {
       q: "How long does delivery take?",
-      a: "Delivered within 24–48 hours. No rush fees — it's standard."
+      a: "Delivered within 24–48 hours as standard. Need it faster? Add rush delivery and get your list within 12 hours."
     },
     {
       q: "Can I filter by role, industry, or location?",
@@ -42,6 +42,14 @@ export default function Pricing() {
     {
       q: "What is the launch offer?",
       a: "Our first 20 US customers get 20% off any plan — $1.00 per lead instead of $1.25 on the Starter plan. All prices are in USD with no taxes added."
+    },
+    {
+      q: "How do I pay?",
+      a: "Start with a free sample list. Once you're happy, we send an invoice in USD and payment is 100% upfront by bank transfer or card. Your list is delivered within 24–48 hours of payment."
+    },
+    {
+      q: "Is your data compliant?",
+      a: "Yes. US mobile numbers are scrubbed against the National Do Not Call Registry, we honor CCPA opt-out and deletion requests, our practices are GDPR-aligned, and all data comes from public and business sources only."
     }
   ];
 
@@ -325,6 +333,122 @@ export default function Pricing() {
 
   </div>
 </section>
+
+    {/* ADD-ONS */}
+    <section className="bg-[#050507] text-white px-4 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-14">
+      <div className="max-w-7xl mx-auto">
+        <div className="mb-8 lg:mb-12">
+          <p className="text-xs tracking-[0.35em] text-purple-400 mb-4">ADD-ONS</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">Make your list work harder</h2>
+          <p className="text-gray-400 max-w-2xl">What's included free, and optional extras you can add to any plan.</p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {[
+            { icon: <FiZap />, name: "Rush delivery", price: "+$0.15", unit: "per lead", desc: "Your list delivered within 12 hours instead of 24–48." },
+            { icon: <FiDatabase />, name: "Company data", price: "Free", unit: "included", desc: "Company size, revenue range and tech stack for every contact." },
+            { icon: <FiUpload />, name: "CRM-ready file", price: "Free", unit: "included", desc: "Excel and CSV, ready to import straight into HubSpot, Salesforce, Pipedrive or Zoho." },
+            { icon: <FiRefreshCw />, name: "Monthly re-verification", price: "$0.25", unit: "per lead / month", desc: "We re-check your list every month and replace contacts who've moved on." },
+          ].map((a, i) => (
+            <div key={i} className="rounded-2xl border border-white/10 bg-[#0b0b12] p-6">
+              <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-purple-500/15 text-purple-300 mb-5">{a.icon}</div>
+              <p className="text-gray-200 font-medium mb-1">{a.name}</p>
+              <p className="text-2xl font-light text-white">
+                {a.price} <span className="text-xs text-gray-500">{a.unit}</span>
+              </p>
+              <p className="text-gray-400 text-sm mt-3 leading-relaxed">{a.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* COMPARISON */}
+    <section className="bg-[#050507] text-white px-4 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-14">
+      <div className="max-w-5xl mx-auto">
+        <div className="mb-8 lg:mb-12 text-center">
+          <p className="text-xs tracking-[0.35em] text-purple-400 mb-4">HOW WE COMPARE</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">The only guarantee on mobile numbers</h2>
+          <p className="text-gray-400 max-w-2xl mx-auto">See what you actually pay for a mobile number that works.</p>
+        </div>
+
+        <div className="overflow-x-auto rounded-2xl border border-white/10">
+          <table className="w-full min-w-[640px] text-sm text-left">
+            <thead className="bg-white/5 text-gray-400">
+              <tr>
+                <th className="px-5 py-4 font-normal"></th>
+                <th className="px-5 py-4 font-normal">Price</th>
+                <th className="px-5 py-4 font-normal">Contract</th>
+                <th className="px-5 py-4 font-normal">Mobile guarantee</th>
+                <th className="px-5 py-4 font-normal">List built for you</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-white/10 text-gray-300">
+              {[
+                { name: "ZoomInfo", price: "From ~$15,000 / year", contract: "Annual only", guarantee: false, built: false },
+                { name: "Apollo", price: "~$3 per mobile", contract: "Monthly seats", guarantee: false, built: false },
+                { name: "Lusha", price: "~$1 per contact", contract: "Monthly seats", guarantee: false, built: false },
+                { name: "VitalHawks", price: "$1.25 per lead", contract: "None — pay per list", guarantee: true, built: true, us: true },
+              ].map((r, i) => (
+                <tr key={i} className={r.us ? "bg-purple-500/10 text-white" : ""}>
+                  <td className={`px-5 py-4 ${r.us ? "font-medium text-purple-300" : ""}`}>{r.name}</td>
+                  <td className="px-5 py-4">{r.price}</td>
+                  <td className="px-5 py-4">{r.contract}</td>
+                  <td className="px-5 py-4">{r.guarantee ? <FiCheck className="text-green-400" /> : <FiX className="text-gray-600" />}</td>
+                  <td className="px-5 py-4">{r.built ? <FiCheck className="text-green-400" /> : <FiX className="text-gray-600" />}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-xs text-gray-500 mt-4 text-center">
+          Competitor pricing based on publicly available information, November 2026. Prices may vary by plan.
+        </p>
+      </div>
+    </section>
+
+    {/* COMPLIANCE + PAYMENT */}
+    <section className="bg-[#050507] text-white px-4 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-14">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5">
+
+        <div className="rounded-2xl border border-white/10 bg-[#0b0b12] p-6 lg:p-8">
+          <p className="text-xs tracking-[0.25em] text-emerald-400 mb-4">COMPLIANCE</p>
+          <h3 className="text-2xl sm:text-3xl font-light mb-6">Data you can use with confidence</h3>
+          <ul className="space-y-4 text-sm text-gray-300">
+            {[
+              { icon: <FiPhoneOff />, t: "DNC-scrubbed mobiles", d: "US numbers checked against the National Do Not Call Registry." },
+              { icon: <FiLock />, t: "CCPA opt-outs honored", d: "Anyone who asks to be removed is deleted from our data." },
+              { icon: <FiGlobe />, t: "GDPR-aligned", d: "Practices aligned with GDPR for international contacts." },
+              { icon: <FiShield />, t: "Public & business sources only", d: "No scraped personal data — ever." },
+            ].map((c, i) => (
+              <li key={i} className="flex gap-3">
+                <span className="text-emerald-400 mt-0.5">{c.icon}</span>
+                <span><span className="text-gray-100">{c.t}</span><span className="block text-gray-500">{c.d}</span></span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="rounded-2xl border border-white/10 bg-[#0b0b12] p-6 lg:p-8">
+          <p className="text-xs tracking-[0.25em] text-purple-400 mb-4">PAYMENT</p>
+          <h3 className="text-2xl sm:text-3xl font-light mb-6">Simple, upfront billing</h3>
+          <ul className="space-y-4 text-sm text-gray-300">
+            {[
+              { icon: <FiCheck />, t: "Free sample first", d: "Check the data yourself before you pay anything." },
+              { icon: <FiFileText />, t: "Invoiced in USD", d: "No taxes added, no hidden fees." },
+              { icon: <FiCreditCard />, t: "Bank transfer or card", d: "100% upfront. List delivered within 24–48 hours of payment." },
+              { icon: <FiX />, t: "No contracts, no seats", d: "Pay per list. Come back whenever you need more." },
+            ].map((c, i) => (
+              <li key={i} className="flex gap-3">
+                <span className="text-purple-300 mt-0.5">{c.icon}</span>
+                <span><span className="text-gray-100">{c.t}</span><span className="block text-gray-500">{c.d}</span></span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+      </div>
+    </section>
 
     {/* FAQ */}
     <section className="bg-[#050507] text-white px-4 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-14">
