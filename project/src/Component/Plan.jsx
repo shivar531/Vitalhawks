@@ -3,12 +3,12 @@ import { FiCheck } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 const plans = [
-  { name: "Starter", leads: "3,000", price: "₹90,000", note: "+ ₹16,200 GST · Total ₹1,06,200" },
-  { name: "Growth", leads: "5,000", price: "₹1,50,000", note: "+ ₹27,000 GST · Total ₹1,77,000" },
-  { name: "Advanced", leads: "7,000", price: "₹2,10,000", note: "+ ₹37,800 GST · Total ₹2,47,800" },
-  { name: "Pro", leads: "10,000", price: "₹3,00,000", note: "+ ₹54,000 GST · Total ₹3,54,000" },
-  { name: "Scale", leads: "15,000", price: "₹4,50,000", note: "+ ₹81,000 GST · Total ₹5,31,000" },
-  { name: "Enterprise", leads: "20,000", price: "₹6,00,000", note: "+ ₹1,08,000 GST · Total ₹7,08,000" },
+  { name: "Starter", leads: "3,000", price: "$3,750", perLead: "$1.25", launch: "$3,000", launchPerLead: "$1.00" },
+  { name: "Growth", leads: "5,000", price: "$6,000", perLead: "$1.20", launch: "$4,800", launchPerLead: "$0.96" },
+  { name: "Advanced", leads: "7,000", price: "$8,050", perLead: "$1.15", launch: "$6,440", launchPerLead: "$0.92" },
+  { name: "Pro", leads: "10,000", price: "$11,000", perLead: "$1.10", launch: "$8,800", launchPerLead: "$0.88" },
+  { name: "Scale", leads: "15,000", price: "$15,750", perLead: "$1.05", launch: "$12,600", launchPerLead: "$0.84" },
+  { name: "Enterprise", leads: "20,000", price: "$20,000", perLead: "$1.00", launch: "$16,000", launchPerLead: "$0.80" },
 ];
 
 export default function PricingSection() {
@@ -27,8 +27,8 @@ export default function PricingSection() {
           </h2>
 
           <p className="text-gray-400 max-w-2xl">
-            Every plan includes verified mobile numbers, direct emails, LinkedIn profiles —
-            and a 95% accuracy guarantee with free replacements.
+            Every plan includes verified mobile numbers, direct emails and LinkedIn profiles.
+            95% accurate at delivery. Every wrong mobile number replaced free.
           </p>
         </div>
 
@@ -68,12 +68,17 @@ export default function PricingSection() {
               {/* PRICE */}
               <p className="text-xl text-white font-medium">{plan.price}</p>
 
-              {/* NOTE */}
-              <p className="text-xs text-gray-500 mb-4">{plan.note}</p>
-
               {/* PER LEAD */}
+              <p className="text-xs text-gray-500 mb-4">
+                {plan.perLead} per verified lead
+              </p>
+
+              {/* LAUNCH OFFER */}
               <p className="text-sm text-green-400 mb-6">
-                ₹30 per verified lead
+                Launch offer: {plan.launch} ({plan.launchPerLead}/lead)
+                <span className="block text-xs text-gray-500 mt-1">
+                  20% off for our first 20 US customers
+                </span>
               </p>
 
               <div className="border-t border-white/10 mb-6"></div>
@@ -103,12 +108,12 @@ export default function PricingSection() {
 
                 <li className="flex items-center gap-2 text-green-400">
                   <FiCheck />
-                  95% accuracy guarantee
+                  95% accurate at delivery
                 </li>
 
                 <li className="flex items-center gap-2 text-green-400">
                   <FiCheck />
-                  Free replacements if below 95%
+                  Every wrong mobile number replaced free
                 </li>
               </ul>
 
@@ -132,7 +137,7 @@ export default function PricingSection() {
 
         {/* FOOTER */}
         <p className="text-center text-gray-500 text-sm mt-10">
-          All prices in INR · 18% GST applicable · Prices shown are base + GST breakdown
+          All prices in USD · No taxes added · Free replacement applies to mobile numbers
         </p>
 
       </div>
