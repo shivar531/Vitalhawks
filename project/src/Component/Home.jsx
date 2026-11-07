@@ -2,22 +2,15 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Popupform from "./Popupform";
 
-// ---------------------------------------------------------------
-// CHECK THESE THREE NUMBERS AGAINST YOUR RECORDS BEFORE COMMITTING.
-// ---------------------------------------------------------------
 const delivered = [
-  {
-    roles: "Founders & Co-founders",
-    volume: "50,102",
-  },
-  {
-    roles: "CFOs & Finance Heads",
-    volume: "31,123",
-  },
-  {
-    roles: "CTOs & Tech Leaders",
-    volume: "22,345",
-  },
+  { roles: "CEOs & Managing Directors", volume: "100,000+" },
+  { roles: "Marketing Heads & CMOs", volume: "80,000+" },
+  { roles: "Founders & Co-founders", volume: "50,102" },
+  { roles: "HR Heads & CHROs", volume: "50,000+" },
+  { roles: "Sales Heads & VPs of Sales", volume: "45,000+" },
+  { roles: "CFOs & Finance Heads", volume: "31,123" },
+  { roles: "COOs & Operations Heads", volume: "30,000+" },
+  { roles: "CTOs & Tech Leaders", volume: "22,345" },
 ];
 
 const industries = [
@@ -127,11 +120,15 @@ export default function Hero() {
               DELIVERED IN THE LAST 12 MONTHS
             </p>
 
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light mb-3">
+              400,000+ verified decision-makers delivered
+            </h2>
+
             <h3 className="text-gray-400 text-base sm:text-lg mb-6 lg:mb-10">
-              Verified decision-maker contacts, pan India — built role by role.
+              Verified decision-maker contacts, built role by role.
             </h3>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {delivered.map((d, i) => (
                 <div
                   key={i}
@@ -167,8 +164,8 @@ export default function Hero() {
             </div>
 
             <p className="text-sm text-gray-500 mt-6">
-              Every contact is human-verified and covered by our 95% accuracy
-              guarantee — anything inaccurate is replaced free.
+              Every contact is human-verified. 95% accurate at delivery — every
+              wrong mobile number replaced free.
             </p>
           </div>
 
