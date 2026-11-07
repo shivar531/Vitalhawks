@@ -342,23 +342,23 @@ export default function ContactPage() {
                   className={`w-full p-3 rounded-xl bg-[#11111a] text-gray-300 outline-none border ${errors.size ? "border-red-500/60" : "border-white/10"}`}
                 >
                   <option value="">List size needed</option>
-                  <option value="Starter — 3,000 leads · ₹1,06,200">
-                    Starter — 3,000 leads · ₹1,06,200
+                  <option value="Starter — 3,000 leads · $3,750">
+                    Starter — 3,000 leads · $3,750
                   </option>
-                  <option value="Growth — 5,000 leads · ₹1,77,000">
-                    Growth — 5,000 leads · ₹1,77,000
+                  <option value="Growth — 5,000 leads · $6,000">
+                    Growth — 5,000 leads · $6,000
                   </option>
-                  <option value="Advanced — 7,000 leads · ₹2,47,800">
-                    Advanced — 7,000 leads · ₹2,47,800
+                  <option value="Advanced — 7,000 leads · $8,050">
+                    Advanced — 7,000 leads · $8,050
                   </option>
-                  <option value="Pro — 10,000 leads · ₹3,54,000">
-                    Pro — 10,000 leads · ₹3,54,000
+                  <option value="Pro — 10,000 leads · $11,000">
+                    Pro — 10,000 leads · $11,000
                   </option>
-                  <option value="Scale — 15,000 leads · ₹5,31,000">
-                    Scale — 15,000 leads · ₹5,31,000
+                  <option value="Scale — 15,000 leads · $15,750">
+                    Scale — 15,000 leads · $15,750
                   </option>
-                  <option value="Enterprise — 20,000 leads · ₹7,08,000">
-                    Enterprise — 20,000 leads · ₹7,08,000
+                  <option value="Enterprise — 20,000 leads · $20,000">
+                    Enterprise — 20,000 leads · $20,000
                   </option>
                   <option value="Custom — 20,000+ leads">
                     Custom — 20,000+ leads
