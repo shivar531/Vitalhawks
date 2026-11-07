@@ -11,7 +11,7 @@ export default function Pricing() {
   useSeo({
     title: "Pricing | Verified B2B Contact Data | VitalHawks",
     description:
-      "Simple pricing for verified B2B contact data — one flat rate per verified lead, direct mobile and work email included. 95% accuracy guaranteed.",
+      "Simple pricing for verified B2B contact data — $1.25 per verified lead, direct mobile and work email included. 95% accurate at delivery, every wrong mobile number replaced free.",
     path: "/Pricing",
   });
 
@@ -20,12 +20,12 @@ export default function Pricing() {
 
   const faqs = [
     {
-      q: "What is the 95% accuracy guarantee?",
-      a: "We guarantee that at least 95% of the mobile numbers and emails in your list will be accurate and reachable. If more than 5% is incorrect, we replace them free — no questions asked."
+      q: "What is your accuracy guarantee?",
+      a: "Your list is 95% accurate at delivery. On top of that, every wrong mobile number is replaced free — no questions asked. Free replacement applies to mobile numbers."
     },
     {
       q: "How do I claim a replacement?",
-      a: "Simply flag the inaccurate contacts and send them back. We verify and replace them within 24–48 hours."
+      a: "Simply flag the wrong mobile numbers and send them back. We verify and replace them within 24–48 hours."
     },
     {
       q: "What's included in every lead?",
@@ -40,8 +40,8 @@ export default function Pricing() {
       a: "Yes — you define your exact target and we build the list accordingly."
     },
     {
-      q: "Are prices inclusive of GST?",
-      a: "No — 18% GST is added at checkout. Full breakdown is shown upfront."
+      q: "What is the launch offer?",
+      a: "Our first 20 US customers get 20% off any plan — $1.00 per lead instead of $1.25 on the Starter plan. All prices are in USD with no taxes added."
     }
   ];
 
@@ -149,7 +149,7 @@ export default function Pricing() {
 
       <h3 className="text-4xl font-semibold">
 
-        ₹30{" "}
+        $1.25{" "}
 
         <span className="text-sm text-gray-400 font-normal">
 
@@ -175,13 +175,13 @@ export default function Pricing() {
 
         <p className="text-emerald-400 font-medium">
 
-          95% accuracy guaranteed
+          95% accurate at delivery
 
         </p>
 
         <p className="text-xs text-gray-400">
 
-          Free replacements if accuracy drops below 95%
+          Every wrong mobile number replaced free
 
         </p>
 
@@ -195,7 +195,7 @@ export default function Pricing() {
 
   <p className="text-xs text-gray-500">
 
-    Mobile number + email included · GST 18% extra
+    Mobile number + email included · Launch offer: $1.00/lead for our first 20 US customers
 
   </p>
 
@@ -221,11 +221,11 @@ export default function Pricing() {
           </p>
 
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-light mb-4">
-            95% accuracy — or we fix it.
+            95% accurate. Every wrong mobile replaced free.
           </h2>
 
           <p className="text-gray-400 text-base max-w-lg">
-            If more than 5% of your data is incorrect, we replace it — no delays.
+            Your list is 95% accurate at delivery. Find a wrong mobile number? We replace it — every single one.
           </p>
         </div>
 
