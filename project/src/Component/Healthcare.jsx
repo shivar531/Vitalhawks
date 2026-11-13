@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: "Which healthcare sub-sectors do you cover?",
-    a: "Multi-speciality and super-speciality hospitals, diagnostics and pathology chains, imaging centres, clinic networks, day-care and speciality centres, and healthcare technology platforms — across metros and Tier-2 cities alike.",
+    a: "Multi-speciality and super-speciality hospitals, diagnostics and pathology chains, imaging centres, clinic networks, day-care and speciality centres, and healthcare technology platforms — in major cities and smaller markets alike.",
   },
   {
     q: "Do you provide direct mobile numbers?",
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "Is the data handled compliantly?",
-    a: "Our data practices are aligned with India's DPDP Act 2023, and with GDPR for international operations. See our Privacy Policy for full details.",
+    a: "US mobile numbers are scrubbed against the National Do Not Call Registry, we honor CCPA opt-out and deletion requests, and our practices are aligned with GDPR. See our Privacy Policy for full details.",
   },
 ];
 
@@ -33,7 +33,7 @@ export default function Healthcare() {
   const [open, setOpen] = useState(null);
 
   useSeo({
-    title: "Healthcare Contact Database India | VitalHawks",
+    title: "Healthcare Contact Database | VitalHawks",
     description:
       "Verified healthcare contacts — direct mobiles and work emails of hospital directors, CIOs and procurement heads. 95% accuracy, next-morning delivery.",
     path: "/healthcare-database",

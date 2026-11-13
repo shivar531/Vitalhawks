@@ -18,7 +18,7 @@ export default function SampleList() {
     },
     {
       question: "Target location?",
-      placeholder: "e.g. India, US, Global",
+      placeholder: "e.g. US, California, Global",
       key: "location",
     },
     {

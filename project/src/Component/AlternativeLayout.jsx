@@ -9,20 +9,20 @@ import useSeo from "../utils/useSeo";
  * the structural difference: they sell software, we deliver a list.
  */
 const ALL_ALTERNATIVES = [
-  { name: "Apollo", path: "/apollo-alternative-india" },
-  { name: "ZoomInfo", path: "/zoominfo-alternative-india" },
-  { name: "Lusha", path: "/lusha-alternative-india" },
-  { name: "Cognism", path: "/cognism-alternative-india" },
-  { name: "Clearbit", path: "/clearbit-alternative-india" },
-  { name: "Hunter", path: "/hunter-alternative-india" },
-  { name: "Snov.io", path: "/snov-io-alternative-india" },
-  { name: "UpLead", path: "/uplead-alternative-india" },
-  { name: "RocketReach", path: "/rocketreach-alternative-india" },
-  { name: "Seamless.AI", path: "/seamless-ai-alternative-india" },
-  { name: "SignalHire", path: "/signalhire-alternative-india" },
-  { name: "Kaspr", path: "/kaspr-alternative-india" },
-  { name: "Adapt.io", path: "/adapt-io-alternative-india" },
-  { name: "Ampliz", path: "/ampliz-alternative-india" },
+  { name: "Apollo", path: "/apollo-alternative" },
+  { name: "ZoomInfo", path: "/zoominfo-alternative" },
+  { name: "Lusha", path: "/lusha-alternative" },
+  { name: "Cognism", path: "/cognism-alternative" },
+  { name: "Clearbit", path: "/clearbit-alternative" },
+  { name: "Hunter", path: "/hunter-alternative" },
+  { name: "Snov.io", path: "/snov-io-alternative" },
+  { name: "UpLead", path: "/uplead-alternative" },
+  { name: "RocketReach", path: "/rocketreach-alternative" },
+  { name: "Seamless.AI", path: "/seamless-ai-alternative" },
+  { name: "SignalHire", path: "/signalhire-alternative" },
+  { name: "Kaspr", path: "/kaspr-alternative" },
+  { name: "Adapt.io", path: "/adapt-io-alternative" },
+  { name: "Ampliz", path: "/ampliz-alternative" },
 ];
 
 export default function AlternativeLayout({ data }) {
@@ -48,7 +48,7 @@ export default function AlternativeLayout({ data }) {
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight">
           Looking for a<br />
           <span className="bg-gradient-to-r from-purple-400 to-indigo-500 text-transparent bg-clip-text">
-            {data.competitor} alternative in India?
+            {data.competitor} alternative?
           </span>
         </h1>
 
@@ -183,15 +183,15 @@ export default function AlternativeLayout({ data }) {
         </div>
       </section>
 
-      {/* India case */}
+      {/* Why done-for-you */}
       <section className="relative z-10 border-t border-white/10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
           <h2 className="text-3xl sm:text-4xl font-semibold mb-3">
-            Why India is a different problem
+            Why a database isn't enough
           </h2>
           <p className="text-gray-400 max-w-2xl mb-10">
-            Global databases are built for global coverage. Indian B2B has
-            quirks they aren't shaped for.
+            Databases are built for breadth. Reaching the right decision-maker
+            takes more than that.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -200,18 +200,18 @@ export default function AlternativeLayout({ data }) {
                 Mobile-first, not inbox-first
               </h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Indian decision-makers run their day on WhatsApp and mobile
-                calls. A work email you can't follow up by phone is half a
+                The fastest conversations start with a phone call. A work
+                email you can't follow up by phone is half a
                 contact.
               </p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
               <h3 className="font-semibold mb-2 text-purple-300">
-                Beyond the tech hubs
+                Beyond the obvious companies
               </h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Bengaluru and Hyderabad are covered by everyone. Manufacturers,
-                hospitals and regional firms in Tier-2 cities are where global
+                Well-known tech companies are covered by everyone. Manufacturers,
+                hospitals and regional firms are where database
                 coverage thins — and where we research by hand.
               </p>
             </div>
@@ -251,7 +251,7 @@ export default function AlternativeLayout({ data }) {
                 Talk to us if…
               </p>
               <p className="text-gray-300 text-sm leading-relaxed">
-                you sell into India, you need direct mobile numbers that
+                you need direct mobile numbers that
                 actually connect, you'd rather brief someone than run searches
                 yourself, or you want a list you can start calling tomorrow
                 morning without cleaning it first.
@@ -271,7 +271,7 @@ export default function AlternativeLayout({ data }) {
             500–600 verified contacts a day. Every day. For three weeks.
           </h2>
           <p className="text-gray-400 max-w-3xl mb-8 leading-relaxed">
-            A leading Indian insurance marketplace needed verified contacts
+            A leading insurance marketplace needed verified contacts
             delivered continuously, at volume, without their team stopping to
             clean data. We delivered 500–600 hand-verified contacts every
             working day for three consecutive weeks — no drop in accuracy from

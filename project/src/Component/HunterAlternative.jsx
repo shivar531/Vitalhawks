@@ -3,12 +3,12 @@ import AlternativeLayout from "./AlternativeLayout";
 
 const data = {
   competitor: "Hunter",
-  path: "/hunter-alternative-india",
-  title: "Hunter.io Alternative in India | VitalHawks",
+  path: "/hunter-alternative",
+  title: "Hunter.io Alternative | VitalHawks",
   description:
-    "A done-for-you alternative to Hunter.io for Indian B2B teams — hand-verified work emails and direct mobile numbers of the right decision-makers, not just email guesses from a domain. 95% accuracy, next morning.",
+    "A done-for-you alternative to Hunter.io for B2B sales teams — hand-verified work emails and direct mobile numbers of the right decision-makers, not just email guesses from a domain. 95% accuracy, next morning.",
   heroSub:
-    "Hunter is a fast, clean way to find email patterns from a domain. But if you need the right named decision-makers in India — with direct mobile numbers, not just a best-guess email — a done-for-you list may fit better.",
+    "Hunter is a fast, clean way to find email patterns from a domain. But if you need the right named decision-makers — with direct mobile numbers, not just a best-guess email — a done-for-you list may fit better.",
   fairPlay:
     "Hunter.io does one thing very well: given a company domain, it finds and verifies likely email addresses, and it does so quickly with a generous free tier and a simple interface. For a lightweight, self-serve way to find and check work emails at known companies, it's an excellent tool.",
   stayIf:
@@ -20,8 +20,8 @@ const data = {
     { label: "Finding the right person", them: "You still decide who to target", us: "We identify the right decision-makers for you" },
     { label: "Accuracy guarantee", them: "See Hunter's current terms", us: "95% guaranteed - wrong contacts replaced free" },
     { label: "Verification", them: "Automated email verification", us: "Checked by a person before every delivery" },
-    { label: "India & direct mobiles", them: "Email-only; no direct mobile numbers", us: "India-focused, direct mobile on every contact" },
-    { label: "Best suited to", them: "Self-serve email finding at known companies", us: "Multi-channel India lists with mobiles, done for you" },
+    { label: "Direct mobiles", them: "Email-only; no direct mobile numbers", us: "Direct mobile on every contact, hand-verified" },
+    { label: "Best suited to", them: "Self-serve email finding at known companies", us: "Multi-channel lists with mobiles, done for you" },
   ],
   tableNote:
     "Hunter.io details reflect the vendor's publicly published plans and widely reported product behaviour. Hunter publishes transparent self-serve pricing - check their site for current figures, as plans change.",

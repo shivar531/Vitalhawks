@@ -3,13 +3,88 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/apollo-alternative-india",
+      "destination": "/apollo-alternative",
+      "permanent": true
+    },
+    {
+      "source": "/lusha-alternative-india",
+      "destination": "/lusha-alternative",
+      "permanent": true
+    },
+    {
+      "source": "/zoominfo-alternative-india",
+      "destination": "/zoominfo-alternative",
+      "permanent": true
+    },
+    {
+      "source": "/rocketreach-alternative-india",
+      "destination": "/rocketreach-alternative",
+      "permanent": true
+    },
+    {
+      "source": "/signalhire-alternative-india",
+      "destination": "/signalhire-alternative",
+      "permanent": true
+    },
+    {
+      "source": "/cognism-alternative-india",
+      "destination": "/cognism-alternative",
+      "permanent": true
+    },
+    {
+      "source": "/seamless-ai-alternative-india",
+      "destination": "/seamless-ai-alternative",
+      "permanent": true
+    },
+    {
+      "source": "/uplead-alternative-india",
+      "destination": "/uplead-alternative",
+      "permanent": true
+    },
+    {
+      "source": "/kaspr-alternative-india",
+      "destination": "/kaspr-alternative",
+      "permanent": true
+    },
+    {
+      "source": "/ampliz-alternative-india",
+      "destination": "/ampliz-alternative",
+      "permanent": true
+    },
+    {
+      "source": "/clearbit-alternative-india",
+      "destination": "/clearbit-alternative",
+      "permanent": true
+    },
+    {
+      "source": "/hunter-alternative-india",
+      "destination": "/hunter-alternative",
+      "permanent": true
+    },
+    {
+      "source": "/snov-io-alternative-india",
+      "destination": "/snov-io-alternative",
+      "permanent": true
+    },
+    {
+      "source": "/adapt-io-alternative-india",
+      "destination": "/adapt-io-alternative",
+      "permanent": true
+    },
+    {
       "source": "/home",
       "destination": "https://www.vitalhawks.com/",
       "permanent": true
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "vitalhawks.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "vitalhawks.com"
+        }
+      ],
       "destination": "https://www.vitalhawks.com/:path*",
       "permanent": true
     }

@@ -21,9 +21,9 @@ export const pages = [
   // --- core ----------------------------------------------------------------
   {
     path: '/',
-    title: 'Verified B2B Contact Data India | VitalHawks',
+    title: 'Verified B2B Contact Data | VitalHawks',
     description:
-      'Verified decision-maker contact data across India — direct mobile numbers and work emails at 95% accuracy, delivered within 48 hours.',
+      'Verified decision-maker contact data — direct mobile numbers and work emails at 95% accuracy, delivered within 48 hours.',
     priority: '1.0',
     changefreq: 'weekly',
   },
@@ -31,7 +31,7 @@ export const pages = [
     path: '/Pricing',
     title: 'Pricing | Verified B2B Contact Data from Rs 22 per Contact',
     description:
-      'Transparent per-contact pricing for verified Indian decision-maker data. Direct mobiles and work emails, 95% accuracy, 48-hour delivery. No seat fees.',
+      'Transparent per-contact pricing for verified decision-maker data. Direct mobiles and work emails, 95% accuracy, 48-hour delivery. No seat fees.',
     priority: '0.9',
     changefreq: 'monthly',
   },
@@ -45,7 +45,7 @@ export const pages = [
   },
   {
     path: '/Industries',
-    title: 'B2B Contact Data by Industry | VitalHawks India',
+    title: 'B2B Contact Data by Industry | VitalHawks',
     description:
       'Verified decision-maker contact lists built for specific industries — financial services, insurance, manufacturing, pharma, healthcare, IT and real estate.',
     priority: '0.8',
@@ -55,7 +55,7 @@ export const pages = [
     path: '/Plan',
     title: 'Plans & Packages | VitalHawks Contact Data',
     description:
-      'Choose a contact data package that fits your outbound volume — one-off lists or ongoing monthly delivery of verified Indian decision-maker contacts.',
+      'Choose a contact data package that fits your outbound volume — one-off lists or ongoing monthly delivery of verified decision-maker contacts.',
     priority: '0.7',
     changefreq: 'monthly',
   },
@@ -73,7 +73,7 @@ export const pages = [
     path: '/Client',
     title: 'Our Clients | VitalHawks B2B Contact Data',
     description:
-      'The sales and marketing teams that rely on VitalHawks for verified decision-maker contact data across India.',
+      'The sales and marketing teams that rely on VitalHawks for verified decision-maker contact data.',
     priority: '0.6',
     changefreq: 'monthly',
   },
@@ -89,7 +89,7 @@ export const pages = [
     path: '/Privacy',
     title: 'Privacy Policy | VitalHawks',
     description:
-      'How VitalHawks collects, processes and protects data, aligned with India DPDP and GDPR requirements.',
+      'How VitalHawks collects, processes and protects data, aligned with CCPA, GDPR and DPDP requirements.',
     priority: '0.3',
     changefreq: 'yearly',
   },
@@ -105,57 +105,57 @@ export const pages = [
   // --- industry pages ------------------------------------------------------
   {
     path: '/financial-services',
-    title: 'Financial Services Contact Database India | VitalHawks',
+    title: 'Financial Services Contact Database | VitalHawks',
     description:
-      'Verified contacts of decision-makers at Indian banks, NBFCs, fintechs and financial services firms. Direct mobiles and work emails, 95% accuracy, 48-hour delivery.',
+      'Verified contacts of decision-makers at banks, lenders, fintechs and financial services firms. Direct mobiles and work emails, 95% accuracy, 48-hour delivery.',
     priority: '0.9',
     changefreq: 'monthly',
   },
   {
     path: '/insurance-contact-data',
-    title: 'Insurance Contact Data India | Verified Decision-Makers',
+    title: 'Insurance Contact Data | Verified Decision-Makers',
     description:
-      'Verified contact data for insurers, brokers and insurtech decision-makers across India. Direct mobile numbers and work emails at 95% accuracy, delivered in 48 hours.',
+      'Verified contact data for insurers, brokers and insurtech decision-makers. Direct mobile numbers and work emails at 95% accuracy, delivered in 48 hours.',
     priority: '0.9',
     changefreq: 'monthly',
   },
   {
     path: '/manufacturing-database',
-    title: 'Manufacturing Company Database India | Verified Contacts',
+    title: 'Manufacturing Company Database | Verified Contacts',
     description:
-      'Reach plant heads, operations leaders and procurement decision-makers at Indian manufacturers. Verified direct mobiles and work emails, delivered within 48 hours.',
+      'Reach plant heads, operations leaders and procurement decision-makers at manufacturers. Verified direct mobiles and work emails, delivered within 48 hours.',
     priority: '0.9',
     changefreq: 'monthly',
   },
   {
     path: '/pharmaceutical-database',
-    title: 'Pharmaceutical Company Database India | VitalHawks',
+    title: 'Pharmaceutical Company Database | VitalHawks',
     description:
-      'Verified decision-maker contacts at Indian pharmaceutical manufacturers, formulators and distributors. Direct mobiles and work emails at 95% accuracy.',
+      'Verified decision-maker contacts at pharmaceutical manufacturers, formulators and distributors. Direct mobiles and work emails at 95% accuracy.',
     priority: '0.9',
     changefreq: 'monthly',
   },
   {
     path: '/healthcare-database',
-    title: 'Healthcare Database India | Hospital Decision-Maker Contacts',
+    title: 'Healthcare Database | Hospital Decision-Maker Contacts',
     description:
-      'Verified contacts of hospital administrators, procurement heads and clinical decision-makers across India. Direct mobile numbers and work emails, 48-hour delivery.',
+      'Verified contacts of hospital administrators, procurement heads and clinical decision-makers. Direct mobile numbers and work emails, 48-hour delivery.',
     priority: '0.9',
     changefreq: 'monthly',
   },
   {
     path: '/it-company-database',
-    title: 'IT Company Database India | Verified Tech Decision-Makers',
+    title: 'IT Company Database | Verified Tech Decision-Makers',
     description:
-      'Verified contacts at Indian IT services firms, SaaS companies and technology providers. Direct mobiles and work emails of decision-makers, delivered in 48 hours.',
+      'Verified contacts at IT services firms, SaaS companies and technology providers. Direct mobiles and work emails of decision-makers, delivered in 48 hours.',
     priority: '0.9',
     changefreq: 'monthly',
   },
   {
     path: '/real-estate-database',
-    title: 'Real Estate Database India | Verified Developer Contacts',
+    title: 'Real Estate Database | Verified Developer Contacts',
     description:
-      'Verified contacts of developers, builders and real estate decision-makers across India. Direct mobile numbers and work emails at 95% accuracy, 48-hour turnaround.',
+      'Verified contacts of developers, builders and real estate decision-makers. Direct mobile numbers and work emails at 95% accuracy, 48-hour turnaround.',
     priority: '0.9',
     changefreq: 'monthly',
   },
@@ -163,7 +163,7 @@ export const pages = [
   // --- service / value pages -----------------------------------------------
   {
     path: '/done-for-you-lead-lists',
-    title: 'Done-for-You B2B Lead Lists India | VitalHawks',
+    title: 'Done-for-You B2B Lead Lists | VitalHawks',
     description:
       'Stop your reps building lists. VitalHawks delivers done-for-you verified prospect lists — direct mobile numbers and work emails at 95% accuracy, next morning. No seats, no credits.',
     priority: '0.9',
@@ -173,149 +173,149 @@ export const pages = [
   // --- role / seniority pages ----------------------------------------------
   {
     path: '/cfo-database',
-    title: 'CFO Database India | Verified CFO & Finance Head Contacts',
+    title: 'CFO Database | Verified CFO & Finance Head Contacts',
     description:
-      'Verified CFO and finance head contacts across India — direct mobile numbers and work emails at 95% accuracy. Over 31,000 CFO contacts delivered in 12 months.',
+      'Verified CFO and finance head contacts — direct mobile numbers and work emails at 95% accuracy. Over 31,000 CFO contacts delivered in 12 months.',
     priority: '1.0',
     changefreq: 'monthly',
   },
   {
     path: '/ceo-database',
-    title: 'CEO Database India | Verified Founder & CEO Contacts',
+    title: 'CEO Database | Verified Founder & CEO Contacts',
     description:
-      'Verified founder, co-founder and CEO contacts across India — direct mobiles and work emails. Over 50,000 founder contacts delivered in the last 12 months.',
+      'Verified founder, co-founder and CEO contacts — direct mobiles and work emails. Over 50,000 founder contacts delivered in the last 12 months.',
     priority: '1.0',
     changefreq: 'monthly',
   },
   {
     path: '/cio-database',
-    title: 'CIO Database India | Verified CIO & CTO Contacts',
+    title: 'CIO Database | Verified CIO & CTO Contacts',
     description:
-      'Verified CIO, CTO and technology head contacts across India — direct mobile numbers and work emails. Over 22,000 CTO contacts delivered in the last 12 months.',
+      'Verified CIO, CTO and technology head contacts — direct mobile numbers and work emails. Over 22,000 CTO contacts delivered in the last 12 months.',
     priority: '1.0',
     changefreq: 'monthly',
   },
   {
     path: '/hr-director-database',
-    title: 'HR Director Database India | Verified HR Head Contacts',
+    title: 'HR Director Database | Verified HR Head Contacts',
     description:
-      'Verified HR director and people leader contacts across India. Direct mobile numbers and work emails at 95% accuracy, delivered within 48 hours.',
+      'Verified HR director and people leader contacts. Direct mobile numbers and work emails at 95% accuracy, delivered within 48 hours.',
     priority: '0.9',
     changefreq: 'monthly',
   },
   {
     path: '/procurement-head-database',
-    title: 'Procurement Head Database India | Verified Buyer Contacts',
+    title: 'Procurement Head Database | Verified Buyer Contacts',
     description:
-      'Verified procurement head and purchase decision-maker contacts across Indian enterprises. Direct mobiles and work emails, 95% accuracy, 48-hour delivery.',
+      'Verified procurement head and purchase decision-maker contacts across enterprises. Direct mobiles and work emails, 95% accuracy, 48-hour delivery.',
     priority: '0.9',
     changefreq: 'monthly',
   },
   {
     path: '/cmo-database',
-    title: 'CMO Database India | Verified CMO & Marketing Head Contacts',
+    title: 'CMO Database | Verified CMO & Marketing Head Contacts',
     description:
-      'Verified CMO and marketing head contacts across India — direct mobile numbers and work emails at 95% accuracy, delivered next morning.',
+      'Verified CMO and marketing head contacts — direct mobile numbers and work emails at 95% accuracy, delivered next morning.',
     priority: '0.9',
     changefreq: 'monthly',
   },
   {
     path: '/sales-head-database',
-    title: 'Sales Head Database India | VP Sales & CRO Contacts',
+    title: 'Sales Head Database | VP Sales & CRO Contacts',
     description:
-      'Verified sales head, VP Sales and CRO contacts across India — direct mobile numbers and work emails at 95% accuracy, delivered next morning.',
+      'Verified sales head, VP Sales and CRO contacts — direct mobile numbers and work emails at 95% accuracy, delivered next morning.',
     priority: '0.9',
     changefreq: 'monthly',
   },
   {
     path: '/coo-database',
-    title: 'COO Database India | Verified COO & Operations Head Contacts',
+    title: 'COO Database | Verified COO & Operations Head Contacts',
     description:
-      'Verified COO and operations head contacts across India — direct mobile numbers and work emails at 95% accuracy, delivered next morning.',
+      'Verified COO and operations head contacts — direct mobile numbers and work emails at 95% accuracy, delivered next morning.',
     priority: '0.9',
     changefreq: 'monthly',
   },
 
   // --- competitor comparison pages -----------------------------------------
   {
-    path: '/apollo-alternative-india',
-    title: 'Apollo.io Alternative for India | VitalHawks',
+    path: '/apollo-alternative',
+    title: 'Apollo.io Alternative | VitalHawks',
     description:
-      'Apollo coverage of Indian decision-makers is thin on direct mobiles. VitalHawks delivers verified India contacts at 95% accuracy, priced in rupees, in 48 hours.',
+      'Apollo limits mobile reveals and leaves the cleanup to you. VitalHawks delivers hand-verified direct mobiles and work emails at 95% accuracy, in 48 hours.',
     priority: '0.9',
     changefreq: 'monthly',
   },
   {
-    path: '/lusha-alternative-india',
-    title: 'Lusha Alternative for India | Verified Mobile Numbers',
+    path: '/lusha-alternative',
+    title: 'Lusha Alternative | Verified Mobile Numbers',
     description:
-      'A Lusha alternative built for the Indian market — verified direct mobile numbers and work emails of decision-makers, no seat fees, delivered within 48 hours.',
+      'A done-for-you Lusha alternative — verified direct mobile numbers and work emails of decision-makers, no seat fees, delivered within 48 hours.',
     priority: '0.9',
     changefreq: 'monthly',
   },
   {
-    path: '/zoominfo-alternative-india',
-    title: 'ZoomInfo Alternative for India | VitalHawks',
+    path: '/zoominfo-alternative',
+    title: 'ZoomInfo Alternative | VitalHawks',
     description:
-      'ZoomInfo is priced for US teams and light on Indian coverage. VitalHawks delivers verified India decision-maker contacts at rupee pricing, 95% accuracy.',
+      'ZoomInfo starts around $15,000 a year on an annual contract. VitalHawks delivers verified decision-maker contacts at $1.25 per lead, no contract, 95% accuracy.',
     priority: '0.9',
     changefreq: 'monthly',
   },
   {
-    path: '/rocketreach-alternative-india',
-    title: 'RocketReach Alternative for India | VitalHawks',
+    path: '/rocketreach-alternative',
+    title: 'RocketReach Alternative | VitalHawks',
     description:
-      'A RocketReach alternative for Indian B2B sales teams — human-verified direct mobiles and work emails, 95% accuracy, delivered as a ready-to-use list in 48 hours.',
+      'A RocketReach alternative for B2B sales teams — human-verified direct mobiles and work emails, 95% accuracy, delivered as a ready-to-use list in 48 hours.',
     priority: '0.9',
     changefreq: 'monthly',
   },
   {
-    path: '/signalhire-alternative-india',
-    title: 'SignalHire Alternative for India | VitalHawks',
+    path: '/signalhire-alternative',
+    title: 'SignalHire Alternative | VitalHawks',
     description:
-      'A SignalHire alternative focused on India — verified decision-maker mobile numbers and work emails at 95% accuracy, delivered in 48 hours with no credit system.',
+      'A done-for-you SignalHire alternative — verified decision-maker mobile numbers and work emails at 95% accuracy, delivered in 48 hours with no credit system.',
     priority: '0.9',
     changefreq: 'monthly',
   },
 
   // --- competitor comparison pages (batch 2) -------------------------------
   {
-    path: '/cognism-alternative-india',
-    title: 'Cognism Alternative in India | VitalHawks',
+    path: '/cognism-alternative',
+    title: 'Cognism Alternative | VitalHawks',
     description:
-      'A done-for-you Cognism alternative for Indian B2B teams — hand-verified direct mobiles and work emails at 95% accuracy, delivered next morning. No seats, no credits.',
+      'A done-for-you Cognism alternative for B2B sales teams — hand-verified direct mobiles and work emails at 95% accuracy, delivered next morning. No seats, no credits.',
     priority: '0.9',
     changefreq: 'monthly',
   },
   {
-    path: '/seamless-ai-alternative-india',
-    title: 'Seamless.AI Alternative in India | VitalHawks',
+    path: '/seamless-ai-alternative',
+    title: 'Seamless.AI Alternative | VitalHawks',
     description:
-      'A done-for-you Seamless.AI alternative for Indian B2B teams — hand-verified direct mobiles and work emails, no credits to burn, delivered next morning at 95% accuracy.',
+      'A done-for-you Seamless.AI alternative for B2B sales teams — hand-verified direct mobiles and work emails, no credits to burn, delivered next morning at 95% accuracy.',
     priority: '0.9',
     changefreq: 'monthly',
   },
   {
-    path: '/uplead-alternative-india',
-    title: 'UpLead Alternative in India | VitalHawks',
+    path: '/uplead-alternative',
+    title: 'UpLead Alternative | VitalHawks',
     description:
-      'A done-for-you UpLead alternative for Indian B2B teams — hand-verified direct mobiles and work emails delivered as a finished list at 95% accuracy, next morning.',
+      'A done-for-you UpLead alternative for B2B sales teams — hand-verified direct mobiles and work emails delivered as a finished list at 95% accuracy, next morning.',
     priority: '0.9',
     changefreq: 'monthly',
   },
   {
-    path: '/kaspr-alternative-india',
-    title: 'Kaspr Alternative in India | VitalHawks',
+    path: '/kaspr-alternative',
+    title: 'Kaspr Alternative | VitalHawks',
     description:
-      'A done-for-you Kaspr alternative for Indian B2B teams — a full hand-verified list of decision-maker mobiles and emails, no per-profile LinkedIn reveals or credits.',
+      'A done-for-you Kaspr alternative for B2B sales teams — a full hand-verified list of decision-maker mobiles and emails, no per-profile LinkedIn reveals or credits.',
     priority: '0.9',
     changefreq: 'monthly',
   },
   {
-    path: '/ampliz-alternative-india',
-    title: 'Ampliz Alternative in India | VitalHawks',
+    path: '/ampliz-alternative',
+    title: 'Ampliz Alternative | VitalHawks',
     description:
-      'A done-for-you Ampliz alternative for Indian B2B teams — hand-verified direct mobiles and work emails delivered to your brief at 95% accuracy, no platform to run.',
+      'A done-for-you Ampliz alternative for B2B sales teams — hand-verified direct mobiles and work emails delivered to your brief at 95% accuracy, no platform to run.',
     priority: '0.9',
     changefreq: 'monthly',
   },
@@ -323,59 +323,59 @@ export const pages = [
   // --- industry pages (batch 2) --------------------------------------------
   {
     path: '/saas-companies-database',
-    title: 'SaaS Company Database India | Verified Decision-Maker Contacts',
+    title: 'SaaS Company Database | Verified Decision-Maker Contacts',
     description:
-      'Verified contacts of decision-makers at Indian SaaS and software companies — direct mobiles and work emails of founders, sales, marketing and growth leaders. 95% accuracy, 48-hour delivery.',
+      'Verified contacts of decision-makers at SaaS and software companies — direct mobiles and work emails of founders, sales, marketing and growth leaders. 95% accuracy, 48-hour delivery.',
     priority: '0.9',
     changefreq: 'monthly',
   },
   {
     path: '/cybersecurity-companies-database',
-    title: 'Cybersecurity Company Database India | Verified CISO Contacts',
+    title: 'Cybersecurity Company Database | Verified CISO Contacts',
     description:
-      'Verified contacts across the Indian cybersecurity space — direct mobiles and work emails of CISOs, security heads and decision-makers at security vendors and enterprises. 95% accuracy, 48-hour delivery.',
+      'Verified contacts across the cybersecurity space — direct mobiles and work emails of CISOs, security heads and decision-makers at security vendors and enterprises. 95% accuracy, 48-hour delivery.',
     priority: '0.9',
     changefreq: 'monthly',
   },
   {
     path: '/logistics-database',
-    title: 'Logistics & Supply Chain Database India | Verified Contacts',
+    title: 'Logistics & Supply Chain Database | Verified Contacts',
     description:
-      'Verified contacts of founders, operations and supply chain leaders at Indian logistics, 3PL, freight and warehousing companies. Direct mobiles and work emails, 95% accuracy, 48-hour delivery.',
+      'Verified contacts of founders, operations and supply chain leaders at logistics, 3PL, freight and warehousing companies. Direct mobiles and work emails, 95% accuracy, 48-hour delivery.',
     priority: '0.9',
     changefreq: 'monthly',
   },
 
   // --- competitor comparison pages (batch 3) -------------------------------
   {
-    path: '/clearbit-alternative-india',
-    title: 'Clearbit Alternative in India | VitalHawks',
+    path: '/clearbit-alternative',
+    title: 'Clearbit Alternative | VitalHawks',
     description:
-      'A done-for-you Clearbit alternative for Indian B2B teams — hand-verified direct mobiles and work emails of net-new decision-makers, not just enrichment. 95% accuracy, next morning.',
+      'A done-for-you Clearbit alternative for B2B sales teams — hand-verified direct mobiles and work emails of net-new decision-makers, not just enrichment. 95% accuracy, next morning.',
     priority: '0.9',
     changefreq: 'monthly',
   },
   {
-    path: '/hunter-alternative-india',
-    title: 'Hunter.io Alternative in India | VitalHawks',
+    path: '/hunter-alternative',
+    title: 'Hunter.io Alternative | VitalHawks',
     description:
-      'A done-for-you Hunter.io alternative for Indian B2B teams — hand-verified work emails and direct mobile numbers of the right decision-makers, not just email guesses. 95% accuracy, next morning.',
+      'A done-for-you Hunter.io alternative for B2B sales teams — hand-verified work emails and direct mobile numbers of the right decision-makers, not just email guesses. 95% accuracy, next morning.',
     priority: '0.9',
     changefreq: 'monthly',
   },
   {
-    path: '/snov-io-alternative-india',
-    title: 'Snov.io Alternative in India | VitalHawks',
+    path: '/snov-io-alternative',
+    title: 'Snov.io Alternative | VitalHawks',
     description:
-      'A done-for-you Snov.io alternative for Indian B2B teams — hand-verified direct mobiles and work emails delivered as a finished list, no credits to manage. 95% accuracy, next morning.',
+      'A done-for-you Snov.io alternative for B2B sales teams — hand-verified direct mobiles and work emails delivered as a finished list, no credits to manage. 95% accuracy, next morning.',
     priority: '0.9',
     changefreq: 'monthly',
   },
   {
-    path: '/adapt-io-alternative-india',
-    title: 'Adapt.io Alternative in India | VitalHawks',
+    path: '/adapt-io-alternative',
+    title: 'Adapt.io Alternative | VitalHawks',
     description:
-      'A done-for-you Adapt.io alternative for Indian B2B teams — hand-verified direct mobiles and work emails delivered as a finished list, no credits or extensions to run. 95% accuracy, next morning.',
+      'A done-for-you Adapt.io alternative for B2B sales teams — hand-verified direct mobiles and work emails delivered as a finished list, no credits or extensions to run. 95% accuracy, next morning.',
     priority: '0.9',
     changefreq: 'monthly',
   },

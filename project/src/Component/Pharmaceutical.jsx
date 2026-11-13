@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: "Which pharma sub-sectors do you cover?",
-    a: "Formulations and generics, APIs and intermediates, contract manufacturers (CDMO/CMO), nutraceuticals, Ayurvedic and herbal manufacturing, plus pharma packaging and machinery suppliers — including companies in clusters like Baddi, Sikkim, Ahmedabad, Hyderabad, and Vizag.",
+    a: "Formulations and generics, APIs and intermediates, contract manufacturers (CDMO/CMO), nutraceuticals, herbal and supplement manufacturing, plus pharma packaging and machinery suppliers — including plants well outside the major hubs.",
   },
   {
     q: "Do you provide direct mobile numbers?",
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "Is the data handled compliantly?",
-    a: "Our data practices are aligned with India's DPDP Act 2023, and with GDPR for international operations. See our Privacy Policy for full details.",
+    a: "US mobile numbers are scrubbed against the National Do Not Call Registry, we honor CCPA opt-out and deletion requests, and our practices are aligned with GDPR. See our Privacy Policy for full details.",
   },
 ];
 
@@ -33,9 +33,9 @@ export default function Pharmaceutical() {
   const [open, setOpen] = useState(null);
 
   useSeo({
-    title: "Pharmaceutical Company Database India | VitalHawks",
+    title: "Pharmaceutical Company Database | VitalHawks",
     description:
-      "Verified pharma contacts — direct mobiles and work emails of R&D, QA/QC, regulatory and plant heads at Indian pharma companies. 95% accuracy.",
+      "Verified pharma contacts — direct mobiles and work emails of R&D, QA/QC, regulatory and plant heads at pharma companies. 95% accuracy.",
     path: "/pharmaceutical-database",
     faqs,
   });
@@ -62,7 +62,7 @@ export default function Pharmaceutical() {
         <p className="mt-6 text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
           Direct mobile numbers and verified work emails of R&amp;D heads,
           QA and QC leaders, regulatory affairs heads, and plant leaders at
-          Indian pharma companies. Verified by hand, in your inbox by the next
+          pharma companies. Verified by hand, in your inbox by the next
           morning.
         </p>
 
@@ -110,12 +110,12 @@ export default function Pharmaceutical() {
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
               <h3 className="font-semibold mb-2 text-purple-300">
-                Beyond the metros
+                Beyond the big hubs
               </h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                India's pharma clusters run from Hyderabad and Ahmedabad to
-                Baddi, Sikkim, and Vizag. Global tools thin out fast outside the
-                metros — that's where we research by hand.
+                Pharma manufacturing runs well beyond the big hubs, into
+                regional plants and clusters. Global tools thin out fast outside the
+                big hubs — that's where we research by hand.
               </p>
             </div>
           </div>
@@ -153,7 +153,7 @@ export default function Pharmaceutical() {
                 <li>→ APIs and intermediates</li>
                 <li>→ Contract manufacturing (CDMO/CMO)</li>
                 <li>→ Nutraceuticals and supplements</li>
-                <li>→ Ayurvedic and herbal manufacturing</li>
+                <li>→ herbal and supplement manufacturing</li>
                 <li>→ Packaging and pharma machinery suppliers</li>
               </ul>
             </div>
@@ -171,7 +171,7 @@ export default function Pharmaceutical() {
             500–600 verified contacts a day. Every day. For three weeks.
           </h2>
           <p className="text-gray-400 max-w-3xl mb-8 leading-relaxed">
-            When a leading Indian marketplace needed verified contacts delivered
+            When a leading marketplace needed verified contacts delivered
             continuously, at volume, we delivered 500–600 hand-verified contacts
             every working day for three consecutive weeks — with no drop in
             accuracy from day one to day twenty-one. Whether you need one

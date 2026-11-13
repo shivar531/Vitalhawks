@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const faqs = [
   {
     q: "Which financial services roles can you find?",
-    a: "CFOs, finance directors, founders and co-founders, managing directors, heads of treasury, compliance heads, and partners — across NBFCs, fintechs, AMCs, insurance firms, M&A advisories, and CA/CS practices. You define the roles; we build the list around them.",
+    a: "CFOs, finance directors, founders and co-founders, managing directors, heads of treasury, compliance heads, and partners — across lenders, fintechs, asset managers, insurance firms, M&A advisories, and accounting firms. You define the roles; we build the list around them.",
   },
   {
     q: "How accurate is the data?",
@@ -17,11 +17,11 @@ const faqs = [
   },
   {
     q: "Do you provide direct mobile numbers, or just emails?",
-    a: "Both. Direct mobile numbers plus verified work emails on every contact — so your team can call, email, and follow up on WhatsApp without hitting gatekeepers.",
+    a: "Both. Direct mobile numbers plus verified work emails on every contact — so your team can call, email, and follow up by text without hitting gatekeepers.",
   },
   {
     q: "Is the data handled compliantly?",
-    a: "Yes — our data practices are aligned with India's DPDP Act 2023, and with GDPR for international operations. See our Privacy Policy for details.",
+    a: "Yes — US mobile numbers are scrubbed against the National Do Not Call Registry, we honor CCPA opt-out and deletion requests, and our practices are aligned with GDPR. See our Privacy Policy for details.",
   },
 ];
 
@@ -58,7 +58,7 @@ export default function FinancialServices() {
 
         <p className="mt-6 text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
           Direct mobile numbers and verified work emails of CFOs, founders, and
-          finance leaders — at NBFCs, fintechs, AMCs, insurers, and advisory
+          finance leaders — at lenders, fintechs, asset managers, insurers, and advisory
           firms. Verified by hand, delivered in 48 hours.
         </p>
 
@@ -131,7 +131,7 @@ export default function FinancialServices() {
             processed over 4,500 contacts — de-duplicated at the person level,
             filtered for role relevance, and verified by hand before delivery.
             We know where finance decision-makers sit, how their titles map
-            across NBFCs, fintechs, and advisory firms, and how to build a list
+            across lenders, fintechs, and advisory firms, and how to build a list
             your team can call the same day.
           </p>
 
@@ -174,7 +174,7 @@ export default function FinancialServices() {
               <h3 className="font-semibold mb-2">Tell us who you need</h3>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Roles, firm types, geography, company size — for example, "CFOs
-                at NBFCs with 100+ employees in Mumbai and Delhi NCR."
+                at lenders with 100+ employees in New York and Texas."
               </p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-6">

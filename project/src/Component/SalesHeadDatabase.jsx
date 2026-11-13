@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: "Can you filter sales leaders by industry and company size?",
-    a: "Yes. Every list is custom-built around your ICP — industry, company size, revenue band, and geography. We can deliver sales heads at 200+ employee IT firms in Pune, or BD heads at manufacturers in Gujarat, or whatever your target is.",
+    a: "Yes. Every list is custom-built around your ICP — industry, company size, revenue band, and geography. We can deliver sales heads at 200+ employee IT firms in Dallas, or BD heads at manufacturers in Michigan, or whatever your target is.",
   },
   {
     q: "Do you provide direct mobile numbers?",
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "Is the data handled compliantly?",
-    a: "Our data practices are aligned with India's DPDP Act 2023, and with GDPR for international operations. See our Privacy Policy for full details.",
+    a: "US mobile numbers are scrubbed against the National Do Not Call Registry, we honor CCPA opt-out and deletion requests, and our practices are aligned with GDPR. See our Privacy Policy for full details.",
   },
 ];
 
@@ -33,9 +33,9 @@ export default function SalesHeadDatabase() {
   const [open, setOpen] = useState(null);
 
   useSeo({
-    title: "Sales Head Database India | VP Sales & CRO Contacts | VitalHawks",
+    title: "Sales Head Database | VP Sales & CRO Contacts | VitalHawks",
     description:
-      "Verified sales head, VP Sales and CRO contacts across India — direct mobile numbers and work emails at 95% accuracy, delivered next morning.",
+      "Verified sales head, VP Sales and CRO contacts — direct mobile numbers and work emails at 95% accuracy, delivered next morning.",
     path: "/sales-head-database",
     faqs,
   });
@@ -59,7 +59,7 @@ export default function SalesHeadDatabase() {
         </h1>
 
         <p className="mt-6 text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
-          Direct mobile numbers and verified work emails of sales heads, VPs of Sales, and CROs across Indian companies — filtered by industry, company size, and geography. Verified by hand, in your inbox by the next morning.
+          Direct mobile numbers and verified work emails of sales heads, VPs of Sales, and CROs across the companies you target — filtered by industry, company size, and geography. Verified by hand, in your inbox by the next morning.
         </p>
 
         <div className="mt-10 flex items-center justify-center">
@@ -131,7 +131,7 @@ export default function SalesHeadDatabase() {
                 <li>→ BFSI, fintech and financial services</li>
                 <li>→ Healthcare and pharma</li>
                 <li>→ Real estate and infrastructure</li>
-                <li>→ Mid-sized companies beyond the metros</li>
+                <li>→ Mid-sized companies beyond the major cities</li>
               </ul>
             </div>
           </div>
@@ -146,7 +146,7 @@ export default function SalesHeadDatabase() {
             500–600 verified contacts a day. Every day. For three weeks.
           </h2>
           <p className="text-gray-400 max-w-3xl mb-8 leading-relaxed">
-            When a leading Indian marketplace needed verified contacts delivered
+            When a leading marketplace needed verified contacts delivered
             continuously, at volume, we delivered 500–600 hand-verified contacts
             every working day for three consecutive weeks — with no drop in
             accuracy from day one to day twenty-one. Whether you need one

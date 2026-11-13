@@ -3,12 +3,12 @@ import AlternativeLayout from "./AlternativeLayout";
 
 const data = {
   competitor: "Cognism",
-  path: "/cognism-alternative-india",
-  title: "Cognism Alternative in India | VitalHawks",
+  path: "/cognism-alternative",
+  title: "Cognism Alternative | VitalHawks",
   description:
-    "A done-for-you alternative to Cognism for Indian B2B teams — hand-verified direct mobiles and work emails, no annual seats, no credits, delivered next morning.",
+    "A done-for-you alternative to Cognism for B2B sales teams — hand-verified direct mobiles and work emails, no annual seats, no credits, delivered next morning.",
   heroSub:
-    "Cognism is a serious, compliance-first platform with strong phone-verified data. But if your focus is India and you'd rather receive a finished, verified list than run a subscription your team operates, a done-for-you service can fit better.",
+    "Cognism is a serious, compliance-first platform with strong phone-verified data. But if you'd rather receive a finished, verified list than run a subscription your team operates, a done-for-you service can fit better.",
   fairPlay:
     "Cognism is one of the most respected sales-intelligence platforms in the market. It is known for phone-verified mobile numbers, a strong GDPR and compliance posture, and solid coverage across the US and Europe. For an enterprise that wants a compliant self-serve platform it runs in-house, Cognism is an excellent choice.",
   stayIf:
@@ -21,7 +21,7 @@ const data = {
     { label: "Accuracy guarantee", them: "See Cognism's current terms", us: "95% guaranteed - wrong contacts replaced free" },
     { label: "Verification", them: "Phone-verified at database scale", us: "Checked by a person before every delivery" },
     { label: "Turnaround", them: "Instant export, then your team refines it", us: "Brief by 5 PM, list by 11 AM next day" },
-    { label: "India coverage", them: "Strongest in US and Europe", us: "Built specifically for Indian decision-makers" },
+    { label: "Direct mobiles", them: "Phone-verified data on a self-serve platform", us: "Direct mobile on every contact, hand-verified per brief" },
   ],
   tableNote:
     "Cognism details reflect the vendor's publicly reported product and positioning. Pricing is quote-based - check their site or your rep for current terms, as plans change.",
@@ -29,11 +29,11 @@ const data = {
   faqs: [
     {
       q: "Is VitalHawks a replacement for Cognism?",
-      a: "It depends on why you use it. If you subscribed mainly for contact data on Indian decision-makers, VitalHawks can replace that outright. If you rely on Cognism's platform and workflows, many teams keep it and use us for the India lists it covers less deeply.",
+      a: "It depends on why you use it. If you subscribed mainly for contact data on decision-makers, VitalHawks can replace that outright. If you rely on Cognism's platform and workflows, many teams keep it and use us for done-for-you lists with verified mobiles.",
     },
     {
       q: "How is your data different from Cognism's?",
-      a: "Cognism compiles and phone-verifies data at global scale, served through a self-serve platform. Our lists are researched per brief and verified by hand, with a focus on Indian decision-makers and direct mobile numbers. Different model, different strengths.",
+      a: "Cognism compiles and phone-verifies data at global scale, served through a self-serve platform. Our lists are researched per brief and verified by hand, with a focus on the right decision-makers and direct mobile numbers. Different model, different strengths.",
     },
     {
       q: "Do I need an annual contract?",

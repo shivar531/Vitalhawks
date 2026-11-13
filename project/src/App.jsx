@@ -88,20 +88,20 @@ function App() {
             <Route path="/sales-head-database" element={<SalesHeadDatabase />} />
             <Route path="/coo-database" element={<COODatabase />} />
             <Route path="/done-for-you-lead-lists" element={<DoneForYouLists />} />
-            <Route path="/apollo-alternative-india" element={<ApolloAlternative />} />
-            <Route path="/lusha-alternative-india" element={<LushaAlternative />} />
-            <Route path="/zoominfo-alternative-india" element={<ZoomInfoAlternative />} />
-            <Route path="/rocketreach-alternative-india" element={<RocketReachAlternative />} />
-            <Route path="/signalhire-alternative-india" element={<SignalHireAlternative />} />
-            <Route path="/cognism-alternative-india" element={<CognismAlternative />} />
-            <Route path="/seamless-ai-alternative-india" element={<SeamlessAlternative />} />
-            <Route path="/uplead-alternative-india" element={<UpLeadAlternative />} />
-            <Route path="/kaspr-alternative-india" element={<KasprAlternative />} />
-            <Route path="/ampliz-alternative-india" element={<AmplizAlternative />} />
-            <Route path="/clearbit-alternative-india" element={<ClearbitAlternative />} />
-            <Route path="/hunter-alternative-india" element={<HunterAlternative />} />
-            <Route path="/snov-io-alternative-india" element={<SnovAlternative />} />
-            <Route path="/adapt-io-alternative-india" element={<AdaptAlternative />} />
+            <Route path="/apollo-alternative" element={<ApolloAlternative />} />
+            <Route path="/lusha-alternative" element={<LushaAlternative />} />
+            <Route path="/zoominfo-alternative" element={<ZoomInfoAlternative />} />
+            <Route path="/rocketreach-alternative" element={<RocketReachAlternative />} />
+            <Route path="/signalhire-alternative" element={<SignalHireAlternative />} />
+            <Route path="/cognism-alternative" element={<CognismAlternative />} />
+            <Route path="/seamless-ai-alternative" element={<SeamlessAlternative />} />
+            <Route path="/uplead-alternative" element={<UpLeadAlternative />} />
+            <Route path="/kaspr-alternative" element={<KasprAlternative />} />
+            <Route path="/ampliz-alternative" element={<AmplizAlternative />} />
+            <Route path="/clearbit-alternative" element={<ClearbitAlternative />} />
+            <Route path="/hunter-alternative" element={<HunterAlternative />} />
+            <Route path="/snov-io-alternative" element={<SnovAlternative />} />
+            <Route path="/adapt-io-alternative" element={<AdaptAlternative />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

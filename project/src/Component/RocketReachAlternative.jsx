@@ -3,12 +3,12 @@ import AlternativeLayout from "./AlternativeLayout";
 
 const data = {
   competitor: "RocketReach",
-  path: "/rocketreach-alternative-india",
-  title: "RocketReach Alternative in India | VitalHawks",
+  path: "/rocketreach-alternative",
+  title: "RocketReach Alternative | VitalHawks",
   description:
-    "A done-for-you alternative to RocketReach for Indian B2B teams — hand-verified direct mobiles and work emails, no lookup allowances, delivered next morning.",
+    "A done-for-you alternative to RocketReach for B2B sales teams — hand-verified direct mobiles and work emails, no lookup allowances, delivered next morning.",
   heroSub:
-    "RocketReach is a solid lookup tool with famously transparent pricing. But its strength is breadth of profiles — and if your targets are Indian decision-makers who need a mobile number that rings, that's a different job.",
+    "RocketReach is a solid lookup tool with famously transparent pricing. But its strength is breadth of profiles — and if your targets are decision-makers who need a mobile number that rings, that's a different job.",
   fairPlay:
     "RocketReach has one of the largest profile databases in the category and the most transparent, self-serve pricing in the market — no sales calls, no quotes, published tiers you can read before you buy. For individuals and small teams doing profile lookups, that clarity is a real advantage.",
   stayIf:
@@ -21,15 +21,15 @@ const data = {
     { label: "Accuracy guarantee", them: "See RocketReach's current terms", us: "95% guaranteed - wrong contacts replaced free" },
     { label: "Verification", them: "Platform-verified at database scale", us: "Checked by a person before every delivery" },
     { label: "Turnaround", them: "Instant per lookup", us: "Brief by 5 PM, list by 11 AM next day" },
-    { label: "Best suited to", them: "Broad profile lookups, mainly North America", us: "India lists with direct mobiles, done for you" },
+    { label: "Best suited to", them: "Broad profile lookups, self-serve", us: "Verified lists with direct mobiles, done for you" },
   ],
   tableNote:
     "RocketReach details reflect the vendor's publicly published plans, including its documented tier structure where phone number access sits on higher plans. RocketReach publishes pricing openly - check their site for current figures.",
   asOf: "July 2026",
   faqs: [
     {
-      q: "Why consider an alternative for India specifically?",
-      a: "Industry reviews consistently note that phone coverage on global lookup tools thins significantly outside North America. Indian B2B runs on mobile — so if direct dials drive your outreach, that gap matters more here than anywhere.",
+      q: "Why consider an alternative for direct mobiles?",
+      a: "Lookup tools are built for breadth of profiles, and independent tests consistently find phone data is their weakest part. If direct dials drive your outreach, that gap costs you conversations — so we verify every mobile by hand.",
     },
     {
       q: "How is your model different?",
@@ -45,7 +45,7 @@ const data = {
     },
     {
       q: "Can you deliver at volume?",
-      a: "Yes — 500–600 hand-verified contacts a day, sustained. We ran exactly that for three consecutive weeks for a leading Indian insurance marketplace.",
+      a: "Yes — 500–600 hand-verified contacts a day, sustained. We ran exactly that for three consecutive weeks for a leading insurance marketplace.",
     },
   ],
 };

@@ -21,11 +21,11 @@ const faqs = [
   },
   {
     q: "Can you handle sustained, high-volume delivery?",
-    a: "Yes. We have delivered 500–600 hand-verified contacts every working day for three consecutive weeks for a leading Indian insurance marketplace, with no drop in accuracy from the first batch to the last.",
+    a: "Yes. We have delivered 500–600 hand-verified contacts every working day for three consecutive weeks for a leading insurance marketplace, with no drop in accuracy from the first batch to the last.",
   },
   {
     q: "Is the data handled compliantly?",
-    a: "Our data practices are aligned with India's DPDP Act 2023, and with GDPR for international operations. See our Privacy Policy for full details.",
+    a: "US mobile numbers are scrubbed against the National Do Not Call Registry, we honor CCPA opt-out and deletion requests, and our practices are aligned with GDPR. See our Privacy Policy for full details.",
   },
 ];
 
@@ -86,7 +86,7 @@ export default function BusinessInsurance() {
             500–600 verified contacts a day. Every day. For three weeks.
           </h2>
           <p className="text-gray-400 max-w-3xl mb-8 leading-relaxed">
-            A leading Indian insurance marketplace needed verified contacts
+            A leading insurance marketplace needed verified contacts
             delivered continuously, at volume, without their team stopping to
             clean data. We delivered 500–600 hand-verified contacts every
             working day for three consecutive weeks — direct mobile numbers and
@@ -148,7 +148,7 @@ export default function BusinessInsurance() {
               </h3>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Founders, principals, agency heads, and channel leaders —
-                including firms outside the metros that most global databases
+                including firms outside the major cities that most global databases
                 miss entirely.
               </p>
             </div>

@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: "Can you filter CEOs by industry and company size?",
-    a: "Yes. Every list is custom-built around your ICP — industry, company size, revenue band, and geography. We can deliver founders of 50-200 employee manufacturers in Gujarat, or SaaS CEOs in Bengaluru, or whatever your target is.",
+    a: "Yes. Every list is custom-built around your ICP — industry, company size, revenue band, and geography. We can deliver founders of 50-200 employee manufacturers in the Midwest, or SaaS CEOs in Austin, or whatever your target is.",
   },
   {
     q: "Do you provide direct mobile numbers?",
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "Is the data handled compliantly?",
-    a: "Our data practices are aligned with India's DPDP Act 2023, and with GDPR for international operations. See our Privacy Policy for full details.",
+    a: "US mobile numbers are scrubbed against the National Do Not Call Registry, we honor CCPA opt-out and deletion requests, and our practices are aligned with GDPR. See our Privacy Policy for full details.",
   },
 ];
 
@@ -33,9 +33,9 @@ export default function CEODatabase() {
   const [open, setOpen] = useState(null);
 
   useSeo({
-    title: "CEO Database India | Founder & MD Contacts | VitalHawks",
+    title: "CEO Database | Founder & MD Contacts | VitalHawks",
     description:
-      "Verified CEO contact lists — direct mobile numbers and work emails of CEOs, founders and managing directors at Indian companies. 95% accuracy, fast delivery.",
+      "Verified CEO contact lists — direct mobile numbers and work emails of CEOs, founders and managing directors at the companies you target. 95% accuracy, fast delivery.",
     path: "/ceo-database",
     faqs,
   });
@@ -80,7 +80,7 @@ export default function CEODatabase() {
             Why founder contacts are worth getting right
           </h2>
           <p className="text-gray-400 max-w-2xl mb-10">
-            In Indian mid-market companies, the founder still signs off on most purchases. Reach them and your sales cycle collapses.
+            In mid-market companies, the founder still signs off on most purchases. Reach them and your sales cycle collapses.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -105,7 +105,7 @@ export default function CEODatabase() {
                 Owner-run, not listed
               </h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                India's mid-market is full of profitable owner-run companies that global databases barely cover. Those are exactly the ones we research by hand.
+                The mid-market is full of profitable owner-run companies that big databases barely cover. Those are exactly the ones we research by hand.
               </p>
             </div>
           </div>
@@ -144,7 +144,7 @@ export default function CEODatabase() {
                 <li>→ Financial services and insurance</li>
                 <li>→ Healthcare and pharma</li>
                 <li>→ Real estate and construction</li>
-                <li>→ Owner-run mid-market firms across India</li>
+                <li>→ Owner-run mid-market firms</li>
               </ul>
             </div>
           </div>
@@ -161,7 +161,7 @@ export default function CEODatabase() {
             500–600 verified contacts a day. Every day. For three weeks.
           </h2>
           <p className="text-gray-400 max-w-3xl mb-8 leading-relaxed">
-            When a leading Indian marketplace needed verified contacts delivered
+            When a leading marketplace needed verified contacts delivered
             continuously, at volume, we delivered 500–600 hand-verified contacts
             every working day for three consecutive weeks — with no drop in
             accuracy from day one to day twenty-one. Whether you need one

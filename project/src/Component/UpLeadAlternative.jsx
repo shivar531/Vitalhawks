@@ -3,12 +3,12 @@ import AlternativeLayout from "./AlternativeLayout";
 
 const data = {
   competitor: "UpLead",
-  path: "/uplead-alternative-india",
-  title: "UpLead Alternative in India | VitalHawks",
+  path: "/uplead-alternative",
+  title: "UpLead Alternative | VitalHawks",
   description:
-    "A done-for-you alternative to UpLead for Indian B2B teams — hand-verified direct mobiles and work emails, no credits, delivered next morning.",
+    "A done-for-you alternative to UpLead for B2B sales teams — hand-verified direct mobiles and work emails, no credits, delivered next morning.",
   heroSub:
-    "UpLead is a clean, self-serve tool with real-time email verification. But if your market is India and you'd rather get a finished verified list than run a subscription, a done-for-you service can fit better.",
+    "UpLead is a clean, self-serve tool with real-time email verification. But if you'd rather get a finished verified list than run a subscription, a done-for-you service can fit better.",
   fairPlay:
     "UpLead is a well-regarded self-serve prospecting tool, known for real-time email verification, transparent pricing and a straightforward interface. For US-focused teams that want to build their own lists with clean, verified emails, it's a solid, no-nonsense choice.",
   stayIf:
@@ -21,7 +21,7 @@ const data = {
     { label: "Accuracy guarantee", them: "See UpLead's current terms", us: "95% guaranteed - wrong contacts replaced free" },
     { label: "Verification", them: "Real-time email verification at export", us: "Checked by a person before every delivery" },
     { label: "Turnaround", them: "Instant export, then your team refines it", us: "Brief by 5 PM, list by 11 AM next day" },
-    { label: "India coverage", them: "Strongest in the US", us: "Built specifically for Indian decision-makers" },
+    { label: "Direct mobiles", them: "Self-serve lookups; mobile coverage varies", us: "Direct mobile on every contact, hand-verified" },
   ],
   tableNote:
     "UpLead details reflect the vendor's publicly reported product and plans. Check their site for current figures, as plans change.",
@@ -29,11 +29,11 @@ const data = {
   faqs: [
     {
       q: "Is VitalHawks a replacement for UpLead?",
-      a: "If you use it mainly to source Indian contacts, yes — we deliver those as a finished list. If you value its self-serve email verification for US prospecting, many teams keep it and use us for India data and direct mobiles.",
+      a: "If you use it mainly to source contacts, yes — we deliver those as a finished list. If you value its self-serve email verification, many teams keep it and use us for direct mobiles and done-for-you lists.",
     },
     {
       q: "How is your data different from UpLead's?",
-      a: "UpLead verifies emails in real time as you export. Our lists are researched per brief and verified by hand, focused on Indian decision-makers and direct mobile numbers, and delivered ready to use.",
+      a: "UpLead verifies emails in real time as you export. Our lists are researched per brief and verified by hand, focused on the right decision-makers and direct mobile numbers, and delivered ready to use.",
     },
     {
       q: "Do I need a subscription?",

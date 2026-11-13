@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: "Can you filter procurement heads by industry and company size?",
-    a: "Yes. Every list is custom-built around your ICP — industry, company size, and geography. We can deliver purchase heads at pharma plants in Gujarat, or hospital procurement heads across a region, depending on your target.",
+    a: "Yes. Every list is custom-built around your ICP — industry, company size, and geography. We can deliver purchase heads at pharma plants in New Jersey, or hospital procurement heads across a region, depending on your target.",
   },
   {
     q: "Do you provide direct mobile numbers?",
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "Is the data handled compliantly?",
-    a: "Our data practices are aligned with India's DPDP Act 2023, and with GDPR for international operations. See our Privacy Policy for full details.",
+    a: "US mobile numbers are scrubbed against the National Do Not Call Registry, we honor CCPA opt-out and deletion requests, and our practices are aligned with GDPR. See our Privacy Policy for full details.",
   },
 ];
 
@@ -33,9 +33,9 @@ export default function ProcurementDatabase() {
   const [open, setOpen] = useState(null);
 
   useSeo({
-    title: "Procurement Head Database India | Purchase Contacts | VitalHawks",
+    title: "Procurement Head Database | Purchase Contacts | VitalHawks",
     description:
-      "Verified procurement contact lists — direct mobile numbers and work emails of procurement and purchase heads at Indian companies. 95% accuracy, fast delivery.",
+      "Verified procurement contact lists — direct mobile numbers and work emails of procurement and purchase heads at the companies you target. 95% accuracy, fast delivery.",
     path: "/procurement-head-database",
     faqs,
   });
@@ -161,7 +161,7 @@ export default function ProcurementDatabase() {
             500–600 verified contacts a day. Every day. For three weeks.
           </h2>
           <p className="text-gray-400 max-w-3xl mb-8 leading-relaxed">
-            When a leading Indian marketplace needed verified contacts delivered
+            When a leading marketplace needed verified contacts delivered
             continuously, at volume, we delivered 500–600 hand-verified contacts
             every working day for three consecutive weeks — with no drop in
             accuracy from day one to day twenty-one. Whether you need one

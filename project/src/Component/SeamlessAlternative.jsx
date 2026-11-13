@@ -3,12 +3,12 @@ import AlternativeLayout from "./AlternativeLayout";
 
 const data = {
   competitor: "Seamless.AI",
-  path: "/seamless-ai-alternative-india",
-  title: "Seamless.AI Alternative in India | VitalHawks",
+  path: "/seamless-ai-alternative",
+  title: "Seamless.AI Alternative | VitalHawks",
   description:
-    "A done-for-you alternative to Seamless.AI for Indian B2B teams — hand-verified direct mobiles and work emails, no credits to burn, delivered next morning.",
+    "A done-for-you alternative to Seamless.AI for B2B sales teams — hand-verified direct mobiles and work emails, no credits to burn, delivered next morning.",
   heroSub:
-    "Seamless.AI gives you real-time, self-serve search with a free tier. But if you sell into India and don't want your team burning credits cleaning results, a finished verified list may fit better.",
+    "Seamless.AI gives you real-time, self-serve search with a free tier. But if you don't want your team burning credits cleaning results, a finished verified list may fit better.",
   fairPlay:
     "Seamless.AI is a popular, self-serve sales tool built around real-time contact search and a large database, with a free tier that lets teams start quickly. For US-focused teams that want to prospect on their own and don't mind verifying results, it's a capable, low-friction option.",
   stayIf:
@@ -21,7 +21,7 @@ const data = {
     { label: "Accuracy guarantee", them: "See Seamless.AI's current terms", us: "95% guaranteed - wrong contacts replaced free" },
     { label: "Verification", them: "Algorithmic, verified at search time", us: "Checked by a person before every delivery" },
     { label: "Turnaround", them: "Instant results, then your team cleans them", us: "Brief by 5 PM, list by 11 AM next day" },
-    { label: "India coverage", them: "Strongest in the US", us: "Built specifically for Indian decision-makers" },
+    { label: "Direct mobiles", them: "Self-serve lookups; mobile coverage varies", us: "Direct mobile on every contact, hand-verified" },
   ],
   tableNote:
     "Seamless.AI details reflect the vendor's publicly reported product and plans. Check their site for current figures, as plans change.",
@@ -29,11 +29,11 @@ const data = {
   faqs: [
     {
       q: "Is VitalHawks a replacement for Seamless.AI?",
-      a: "If you use it mainly to source Indian contacts, yes — we deliver those as a finished list. If you like its real-time self-serve search for US prospecting, many teams keep it and use us for India data.",
+      a: "If you use it mainly to source contacts, yes — we deliver those as a finished list. If you like its real-time self-serve search, many teams keep it and use us for verified lists with direct mobiles.",
     },
     {
       q: "How is your data different from Seamless.AI's?",
-      a: "Seamless.AI generates contacts on the fly from its database. Our lists are researched per brief and verified by a person, focused on Indian decision-makers and direct mobiles. You get a clean list instead of raw search output to sift.",
+      a: "Seamless.AI generates contacts on the fly from its database. Our lists are researched per brief and verified by a person, focused on the right decision-makers and direct mobiles. You get a clean list instead of raw search output to sift.",
     },
     {
       q: "Do I need credits?",

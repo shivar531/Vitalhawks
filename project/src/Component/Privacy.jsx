@@ -17,7 +17,7 @@ const sections = [
   },
   {
     title: "4. Legal basis and compliance",
-    body: `For individuals in India, we process personal data in accordance with the Digital Personal Data Protection Act, 2023, relying on consent and legitimate uses as applicable. For individuals in other jurisdictions, including the European Union, we align our practices with the GDPR, relying on legitimate interest for business-to-business contact data, balanced against the rights and interests of the individuals concerned.`,
+    body: `For individuals in India, we process personal data in accordance with the Digital Personal Data Protection Act, 2023, relying on consent and legitimate uses as applicable. For individuals in other jurisdictions, including the European Union, we align our practices with the GDPR, relying on legitimate interest for business-to-business contact data, balanced against the rights and interests of the individuals concerned. For individuals in California, we honor rights under the CCPA, including the right to know, delete and opt out. US mobile numbers are scrubbed against the National Do Not Call Registry.`,
   },
   {
     title: "5. Your rights",
@@ -45,7 +45,7 @@ export default function Privacy() {
   useSeo({
     title: "Privacy Policy | VitalHawks",
     description:
-      "How VitalHawks collects, uses and protects personal data — aligned with India DPDP Act 2023 and GDPR. Access, correction and deletion rights explained.",
+      "How VitalHawks collects, uses and protects personal data — aligned with CCPA, GDPR and India's DPDP Act 2023. Access, correction and deletion rights explained.",
     path: "/Privacy",
   });
 

@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "Is the data handled compliantly?",
-    a: "Our data practices are aligned with India's DPDP Act 2023, and with GDPR for international operations. See our Privacy Policy for full details.",
+    a: "US mobile numbers are scrubbed against the National Do Not Call Registry, we honor CCPA opt-out and deletion requests, and our practices are aligned with GDPR. See our Privacy Policy for full details.",
   },
 ];
 
@@ -33,7 +33,7 @@ export default function Manufacturing() {
   const [open, setOpen] = useState(null);
 
   useSeo({
-    title: "B2B Manufacturing Database India | VitalHawks",
+    title: "B2B Manufacturing Database | VitalHawks",
     description:
       "Verified manufacturing contacts — direct mobiles and work emails of R&D, quality and plant heads across pharma, chemicals, plastics and textiles.",
     path: "/manufacturing-database",
@@ -110,12 +110,12 @@ export default function Manufacturing() {
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
               <h3 className="font-semibold mb-2 text-purple-300">
-                Beyond the metros
+                Beyond the big hubs
               </h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                India's manufacturing sits in industrial belts and Tier-2
+                Manufacturing sits in industrial belts and smaller
                 cities. Coverage in global tools thins out fast outside the
-                metros — that's where we research by hand.
+                big hubs — that's where we research by hand.
               </p>
             </div>
           </div>
@@ -171,7 +171,7 @@ export default function Manufacturing() {
             500–600 verified contacts a day. Every day. For three weeks.
           </h2>
           <p className="text-gray-400 max-w-3xl mb-8 leading-relaxed">
-            When a leading Indian marketplace needed verified contacts delivered
+            When a leading marketplace needed verified contacts delivered
             continuously, at volume, we delivered 500–600 hand-verified contacts
             every working day for three consecutive weeks — with no drop in
             accuracy from day one to day twenty-one. Whether you need one

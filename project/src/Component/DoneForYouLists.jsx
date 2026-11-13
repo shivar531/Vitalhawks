@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: "Which roles and industries do you cover?",
-    a: "Any decision-maker role across any industry, pan-India — founders, CXOs, and functional heads in SaaS, financial services, manufacturing, healthcare, real estate, logistics and more. You name the roles, industries and geography; we build to it.",
+    a: "Any decision-maker role across any industry, nationwide — founders, CXOs, and functional heads in SaaS, financial services, manufacturing, healthcare, real estate, logistics and more. You name the roles, industries and geography; we build to it.",
   },
   {
     q: "How is it priced?",
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: "Is the data handled compliantly?",
-    a: "Our data practices are aligned with India's DPDP Act 2023, and with GDPR for international operations. See our Privacy Policy for full details.",
+    a: "US mobile numbers are scrubbed against the National Do Not Call Registry, we honor CCPA opt-out and deletion requests, and our practices are aligned with GDPR. See our Privacy Policy for full details.",
   },
 ];
 
@@ -37,7 +37,7 @@ export default function DoneForYouLists() {
   const [open, setOpen] = useState(null);
 
   useSeo({
-    title: "Done-for-You B2B Lead Lists India | VitalHawks",
+    title: "Done-for-You B2B Lead Lists | VitalHawks",
     description:
       "Stop your reps building lists. VitalHawks delivers done-for-you verified prospect lists — direct mobiles and work emails, 95% accuracy, next morning.",
     path: "/done-for-you-lead-lists",
@@ -140,7 +140,7 @@ export default function DoneForYouLists() {
               <ul className="text-gray-400 text-sm leading-relaxed space-y-2">
                 <li>→ The roles you want to reach</li>
                 <li>→ The industries and company profile</li>
-                <li>→ The geography — a city, a region, or pan-India</li>
+                <li>→ The geography — a city, a state, or nationwide</li>
                 <li>→ How many contacts, and how often</li>
               </ul>
               <p className="text-gray-500 text-sm leading-relaxed mt-4">
@@ -183,7 +183,7 @@ export default function DoneForYouLists() {
             research, cross-checking and dead-number dialing quietly eats two to
             three hours. Across a team, that's the better part of a full-time
             role spent on admin instead of pipeline. Done-for-you lists hand that
-            time straight back — and when a leading Indian marketplace needed
+            time straight back — and when a leading marketplace needed
             volume, we delivered 500–600 hand-verified contacts every working day
             for three straight weeks, with no drop in accuracy from day one to
             day twenty-one.

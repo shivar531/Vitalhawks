@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "Is the data handled compliantly?",
-    a: "Our data practices are aligned with India's DPDP Act 2023, and with GDPR for international operations. See our Privacy Policy for full details.",
+    a: "US mobile numbers are scrubbed against the National Do Not Call Registry, we honor CCPA opt-out and deletion requests, and our practices are aligned with GDPR. See our Privacy Policy for full details.",
   },
 ];
 
@@ -33,9 +33,9 @@ export default function HRDatabase() {
   const [open, setOpen] = useState(null);
 
   useSeo({
-    title: "HR Director Database India | CHRO & HR Head Contacts | VitalHawks",
+    title: "HR Director Database | CHRO & HR Head Contacts | VitalHawks",
     description:
-      "Verified HR contact lists — direct mobile numbers and work emails of CHROs, HR directors and talent heads at Indian companies. 95% accuracy, fast delivery.",
+      "Verified HR contact lists — direct mobile numbers and work emails of CHROs, HR directors and talent heads at the companies you target. 95% accuracy, fast delivery.",
     path: "/hr-director-database",
     faqs,
   });
@@ -141,10 +141,10 @@ export default function HRDatabase() {
               <ul className="text-gray-400 text-sm leading-relaxed space-y-2">
                 <li>→ IT services, SaaS and technology</li>
                 <li>→ Manufacturing and industrial companies</li>
-                <li>→ Banking, NBFCs and insurance</li>
+                <li>→ Banking, lending and insurance</li>
                 <li>→ Healthcare and hospital groups</li>
                 <li>→ Retail, logistics and staffing</li>
-                <li>→ Mid-market companies beyond the metros</li>
+                <li>→ Mid-market companies beyond the major cities</li>
               </ul>
             </div>
           </div>
@@ -161,7 +161,7 @@ export default function HRDatabase() {
             500–600 verified contacts a day. Every day. For three weeks.
           </h2>
           <p className="text-gray-400 max-w-3xl mb-8 leading-relaxed">
-            When a leading Indian marketplace needed verified contacts delivered
+            When a leading marketplace needed verified contacts delivered
             continuously, at volume, we delivered 500–600 hand-verified contacts
             every working day for three consecutive weeks — with no drop in
             accuracy from day one to day twenty-one. Whether you need one

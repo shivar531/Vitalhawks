@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "Is the data handled compliantly?",
-    a: "Our data practices are aligned with India's DPDP Act 2023, and with GDPR for international operations. See our Privacy Policy for full details.",
+    a: "US mobile numbers are scrubbed against the National Do Not Call Registry, we honor CCPA opt-out and deletion requests, and our practices are aligned with GDPR. See our Privacy Policy for full details.",
   },
 ];
 
@@ -33,9 +33,9 @@ export default function CIODatabase() {
   const [open, setOpen] = useState(null);
 
   useSeo({
-    title: "CIO Database India | CIO & IT Head Contacts | VitalHawks",
+    title: "CIO Database | CIO & IT Head Contacts | VitalHawks",
     description:
-      "Verified CIO contact lists — direct mobile numbers and work emails of CIOs, IT heads and technology leaders at Indian companies. 95% accuracy, fast delivery.",
+      "Verified CIO contact lists — direct mobile numbers and work emails of CIOs, IT heads and technology leaders at the companies you target. 95% accuracy, fast delivery.",
     path: "/cio-database",
     faqs,
   });
@@ -141,10 +141,10 @@ export default function CIODatabase() {
               <ul className="text-gray-400 text-sm leading-relaxed space-y-2">
                 <li>→ Manufacturing and industrial enterprises</li>
                 <li>→ Hospitals and diagnostics chains</li>
-                <li>→ Banking, NBFCs and insurance</li>
+                <li>→ Banking, lending and insurance</li>
                 <li>→ IT services and SaaS companies</li>
                 <li>→ Retail and logistics</li>
-                <li>→ Mid-market companies beyond the metros</li>
+                <li>→ Mid-market companies beyond the major cities</li>
               </ul>
             </div>
           </div>
@@ -161,7 +161,7 @@ export default function CIODatabase() {
             500–600 verified contacts a day. Every day. For three weeks.
           </h2>
           <p className="text-gray-400 max-w-3xl mb-8 leading-relaxed">
-            When a leading Indian marketplace needed verified contacts delivered
+            When a leading marketplace needed verified contacts delivered
             continuously, at volume, we delivered 500–600 hand-verified contacts
             every working day for three consecutive weeks — with no drop in
             accuracy from day one to day twenty-one. Whether you need one

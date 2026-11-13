@@ -3,12 +3,12 @@ import AlternativeLayout from "./AlternativeLayout";
 
 const data = {
   competitor: "Adapt.io",
-  path: "/adapt-io-alternative-india",
-  title: "Adapt.io Alternative in India | VitalHawks",
+  path: "/adapt-io-alternative",
+  title: "Adapt.io Alternative | VitalHawks",
   description:
-    "A done-for-you alternative to Adapt.io for Indian B2B teams — hand-verified direct mobiles and work emails delivered as a finished list, no credits or extensions to run. 95% accuracy, next morning.",
+    "A done-for-you alternative to Adapt.io for B2B sales teams — hand-verified direct mobiles and work emails delivered as a finished list, no credits or extensions to run. 95% accuracy, next morning.",
   heroSub:
-    "Adapt.io gives you a large B2B database and a prospecting extension. But if you'd rather brief someone and be handed a hand-verified India list than search, filter and export it yourself, a done-for-you list may fit better.",
+    "Adapt.io gives you a large B2B database and a prospecting extension. But if you'd rather brief someone and be handed a hand-verified list than search, filter and export it yourself, a done-for-you list may fit better.",
   fairPlay:
     "Adapt.io is a solid B2B contact and company database with a handy browser extension for building lists while you prospect on LinkedIn, backed by firmographic filters and a large record count. For a team that wants a self-serve database and enjoys building its own lists, it's a reasonable choice — and it's well known in the region.",
   stayIf:
@@ -20,8 +20,8 @@ const data = {
     { label: "What you get per contact", them: "Email and phone from the database", us: "Hand-verified work email + direct mobile" },
     { label: "Accuracy guarantee", them: "See Adapt.io's current terms", us: "95% guaranteed - wrong contacts replaced free" },
     { label: "Verification", them: "Platform-verified at database scale", us: "Checked by a person before every delivery" },
-    { label: "Coverage of hard-to-find roles", them: "Whatever the database happens to hold", us: "We research niche roles and Tier-2/3 firms by hand" },
-    { label: "Best suited to", them: "Self-serve list-building from a database", us: "Done-for-you India lists with verified mobiles" },
+    { label: "Coverage of hard-to-find roles", them: "Whatever the database happens to hold", us: "We research niche roles and smaller regional firms by hand" },
+    { label: "Best suited to", them: "Self-serve list-building from a database", us: "Done-for-you lists with verified mobiles" },
   ],
   tableNote:
     "Adapt.io details reflect the vendor's publicly published plans and widely reported product behaviour. Coverage and pricing may have changed - check their site for current figures, as plans change.",
@@ -33,7 +33,7 @@ const data = {
     },
     {
       q: "How is your data different from Adapt.io's?",
-      a: "Adapt.io serves a large database through self-serve filters and an extension. Our lists are researched on our own platform and verified by hand for each brief, with a focus on Indian decision-makers, direct mobiles, and roles that sit outside typical database coverage.",
+      a: "Adapt.io serves a large database through self-serve filters and an extension. Our lists are researched on our own platform and verified by hand for each brief, with a focus on direct mobiles and roles that sit outside typical database coverage.",
     },
     {
       q: "Do I need a subscription or credits?",

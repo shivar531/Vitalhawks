@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: "Can you filter by logistics sub-sector and size?",
-    a: "Yes. Every list is custom-built around your ICP — sub-sector (3PL, freight forwarding, warehousing, last-mile, cold chain, e-commerce fulfilment), company size, revenue band and geography. We can deliver ops heads at 3PL firms in NCR, or supply chain heads at cold-chain companies pan-India, or whatever your target is.",
+    a: "Yes. Every list is custom-built around your ICP — sub-sector (3PL, freight forwarding, warehousing, last-mile, cold chain, e-commerce fulfilment), company size, revenue band and geography. We can deliver ops heads at 3PL firms in Chicago, or supply chain heads at cold-chain companies nationwide, or whatever your target is.",
   },
   {
     q: "Do you provide direct mobile numbers?",
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "Is the data handled compliantly?",
-    a: "Our data practices are aligned with India's DPDP Act 2023, and with GDPR for international operations. See our Privacy Policy for full details.",
+    a: "US mobile numbers are scrubbed against the National Do Not Call Registry, we honor CCPA opt-out and deletion requests, and our practices are aligned with GDPR. See our Privacy Policy for full details.",
   },
 ];
 
@@ -33,9 +33,9 @@ export default function LogisticsDatabase() {
   const [open, setOpen] = useState(null);
 
   useSeo({
-    title: "Logistics & Supply Chain Database India | Verified Contacts | VitalHawks",
+    title: "Logistics & Supply Chain Database | Verified Contacts | VitalHawks",
     description:
-      "Verified contact lists of decision-makers at Indian logistics, 3PL, freight and warehousing companies — direct mobile numbers and work emails of founders, ops and supply chain heads. 95% accuracy, next-morning delivery.",
+      "Verified contact lists of decision-makers at logistics, 3PL, freight and warehousing companies — direct mobile numbers and work emails of founders, ops and supply chain heads. 95% accuracy, next-morning delivery.",
     path: "/logistics-database",
     faqs,
   });
@@ -59,7 +59,7 @@ export default function LogisticsDatabase() {
         </h1>
 
         <p className="mt-6 text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
-          Direct mobile numbers and verified work emails of founders, operations and supply chain leaders at Indian logistics, 3PL, freight and warehousing companies — filtered by sub-sector, size and geography. Verified by hand, in your inbox by the next morning.
+          Direct mobile numbers and verified work emails of founders, operations and supply chain leaders at logistics, 3PL, freight and warehousing companies — filtered by sub-sector, size and geography. Verified by hand, in your inbox by the next morning.
         </p>
 
         <div className="mt-10 flex items-center justify-center">
@@ -92,7 +92,7 @@ export default function LogisticsDatabase() {
             <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
               <h3 className="font-semibold mb-2 text-purple-300">A long tail beyond the big names</h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Past the national 3PLs sits a huge base of regional freight, warehousing and last-mile firms in Tier-2 and Tier-3 cities — where global databases thin out and we research by hand.
+                Past the national 3PLs sits a huge base of regional freight, warehousing and last-mile firms in smaller cities — where global databases thin out and we research by hand.
               </p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
@@ -146,7 +146,7 @@ export default function LogisticsDatabase() {
             500–600 verified contacts a day. Every day. For three weeks.
           </h2>
           <p className="text-gray-400 max-w-3xl mb-8 leading-relaxed">
-            When a leading Indian marketplace needed verified contacts delivered
+            When a leading marketplace needed verified contacts delivered
             continuously, at volume, we delivered 500–600 hand-verified contacts
             every working day for three consecutive weeks — with no drop in
             accuracy from day one to day twenty-one. Whether you need one

@@ -47,20 +47,20 @@ const seoSections = [
   {
     heading: "Compare",
     links: [
-      { name: "Apollo.io alternative", path: "/apollo-alternative-india" },
-      { name: "Lusha alternative", path: "/lusha-alternative-india" },
-      { name: "ZoomInfo alternative", path: "/zoominfo-alternative-india" },
-      { name: "RocketReach alternative", path: "/rocketreach-alternative-india" },
-      { name: "SignalHire alternative", path: "/signalhire-alternative-india" },
-      { name: "Cognism alternative", path: "/cognism-alternative-india" },
-      { name: "Seamless.AI alternative", path: "/seamless-ai-alternative-india" },
-      { name: "UpLead alternative", path: "/uplead-alternative-india" },
-      { name: "Kaspr alternative", path: "/kaspr-alternative-india" },
-      { name: "Ampliz alternative", path: "/ampliz-alternative-india" },
-      { name: "Clearbit alternative", path: "/clearbit-alternative-india" },
-      { name: "Hunter.io alternative", path: "/hunter-alternative-india" },
-      { name: "Snov.io alternative", path: "/snov-io-alternative-india" },
-      { name: "Adapt.io alternative", path: "/adapt-io-alternative-india" },
+      { name: "Apollo.io alternative", path: "/apollo-alternative" },
+      { name: "Lusha alternative", path: "/lusha-alternative" },
+      { name: "ZoomInfo alternative", path: "/zoominfo-alternative" },
+      { name: "RocketReach alternative", path: "/rocketreach-alternative" },
+      { name: "SignalHire alternative", path: "/signalhire-alternative" },
+      { name: "Cognism alternative", path: "/cognism-alternative" },
+      { name: "Seamless.AI alternative", path: "/seamless-ai-alternative" },
+      { name: "UpLead alternative", path: "/uplead-alternative" },
+      { name: "Kaspr alternative", path: "/kaspr-alternative" },
+      { name: "Ampliz alternative", path: "/ampliz-alternative" },
+      { name: "Clearbit alternative", path: "/clearbit-alternative" },
+      { name: "Hunter.io alternative", path: "/hunter-alternative" },
+      { name: "Snov.io alternative", path: "/snov-io-alternative" },
+      { name: "Adapt.io alternative", path: "/adapt-io-alternative" },
     ],
   },
 ];
@@ -162,8 +162,7 @@ export default function Footer() {
         <div className="border-t border-white/10 mt-10 pt-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-500">
           <p>© 2025–{year} VitalHawks. All rights reserved.</p>
           <p className="text-center sm:text-right">
-            Data practices aligned with India's DPDP Act 2023 · GDPR aligned for
-            international operations.
+            DNC-scrubbed mobiles · CCPA opt-outs honored · GDPR aligned.
           </p>
         </div>
       </div>

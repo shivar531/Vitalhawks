@@ -3,14 +3,14 @@ import AlternativeLayout from "./AlternativeLayout";
 
 const data = {
   competitor: "Ampliz",
-  path: "/ampliz-alternative-india",
-  title: "Ampliz Alternative in India | VitalHawks",
+  path: "/ampliz-alternative",
+  title: "Ampliz Alternative | VitalHawks",
   description:
-    "A done-for-you alternative to Ampliz for Indian B2B teams — hand-verified direct mobiles and work emails delivered as a finished list, no self-serve platform to run.",
+    "A done-for-you alternative to Ampliz for B2B sales teams — hand-verified direct mobiles and work emails delivered as a finished list, no self-serve platform to run.",
   heroSub:
-    "Ampliz offers a self-serve database with real APAC and India strength. But if you'd rather receive a hand-verified list built to your brief than filter a platform yourself, a done-for-you service fits better.",
+    "Ampliz offers a self-serve database with real APAC strength. But if you'd rather receive a hand-verified list built to your brief than filter a platform yourself, a done-for-you service fits better.",
   fairPlay:
-    "Ampliz is a capable B2B data provider with genuine strength in APAC and India, including specialised intelligence in areas like healthcare. For teams that want a self-serve database platform to search and filter on their own, it's a credible option with good regional coverage.",
+    "Ampliz is a capable B2B data provider with genuine strength in APAC, including specialised intelligence in areas like healthcare. For teams that want a self-serve database platform to search and filter on their own, it's a credible option with good regional coverage.",
   stayIf:
     "you want a self-serve database platform to filter yourself, you value its APAC and healthcare intelligence, and your team prefers to build and manage lists in-house.",
   table: [
@@ -29,11 +29,11 @@ const data = {
   faqs: [
     {
       q: "Is VitalHawks a replacement for Ampliz?",
-      a: "They solve it differently. Ampliz gives you a platform to search Indian and APAC data yourself. VitalHawks delivers a finished, hand-verified list to your brief. Teams that would rather receive the list than run the platform choose us.",
+      a: "They solve it differently. Ampliz gives you a platform to search its data yourself. VitalHawks delivers a finished, hand-verified list to your brief. Teams that would rather receive the list than run the platform choose us.",
     },
     {
       q: "How is your data different from Ampliz's?",
-      a: "Both cover India. The difference is model and verification: Ampliz is a self-serve database you filter; we research and hand-verify each list per brief, focused on direct mobile numbers, and deliver it ready to use with a replace-if-wrong guarantee.",
+      a: "Both give you contact data. The difference is model and verification: Ampliz is a self-serve database you filter; we research and hand-verify each list per brief, focused on direct mobile numbers, and deliver it ready to use with a replace-if-wrong guarantee.",
     },
     {
       q: "Do I need to learn a platform?",

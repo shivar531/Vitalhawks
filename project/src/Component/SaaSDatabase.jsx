@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: "Can you filter SaaS companies by stage, size or category?",
-    a: "Yes. Every list is custom-built around your ICP — funding stage, headcount, revenue band, SaaS category (vertical, horizontal, fintech, martech, devtools, HR tech) and geography. We can deliver Series A fintech-SaaS founders in Bengaluru, or marketing heads at 200+ employee SaaS firms pan-India, or whatever your target is.",
+    a: "Yes. Every list is custom-built around your ICP — funding stage, headcount, revenue band, SaaS category (vertical, horizontal, fintech, martech, devtools, HR tech) and geography. We can deliver Series A fintech-SaaS founders in San Francisco, or marketing heads at 200+ employee SaaS firms nationwide, or whatever your target is.",
   },
   {
     q: "Do you provide direct mobile numbers?",
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "Is the data handled compliantly?",
-    a: "Our data practices are aligned with India's DPDP Act 2023, and with GDPR for international operations. See our Privacy Policy for full details.",
+    a: "US mobile numbers are scrubbed against the National Do Not Call Registry, we honor CCPA opt-out and deletion requests, and our practices are aligned with GDPR. See our Privacy Policy for full details.",
   },
 ];
 
@@ -33,9 +33,9 @@ export default function SaaSDatabase() {
   const [open, setOpen] = useState(null);
 
   useSeo({
-    title: "SaaS Company Database India | Verified Decision-Maker Contacts | VitalHawks",
+    title: "SaaS Company Database | Verified Decision-Maker Contacts | VitalHawks",
     description:
-      "Verified contact lists of decision-makers at Indian SaaS and software companies — direct mobile numbers and work emails of founders, sales, marketing and growth leaders. 95% accuracy, next-morning delivery.",
+      "Verified contact lists of decision-makers at SaaS and software companies — direct mobile numbers and work emails of founders, sales, marketing and growth leaders. 95% accuracy, next-morning delivery.",
     path: "/saas-companies-database",
     faqs,
   });
@@ -59,7 +59,7 @@ export default function SaaSDatabase() {
         </h1>
 
         <p className="mt-6 text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
-          Direct mobile numbers and verified work emails of founders, sales, marketing and growth leaders at Indian SaaS and software companies — filtered by funding stage, category, size and geography. Verified by hand, in your inbox by the next morning.
+          Direct mobile numbers and verified work emails of founders, sales, marketing and growth leaders at SaaS and software companies — filtered by funding stage, category, size and geography. Verified by hand, in your inbox by the next morning.
         </p>
 
         <div className="mt-10 flex items-center justify-center">
@@ -131,7 +131,7 @@ export default function SaaSDatabase() {
                 <li>→ Martech, sales tech and RevOps tools</li>
                 <li>→ Developer tools and infrastructure</li>
                 <li>→ HR tech, ed-tech and D2C enablement</li>
-                <li>→ Early-stage to growth-stage, pan-India</li>
+                <li>→ Early-stage to growth-stage, nationwide</li>
               </ul>
             </div>
           </div>
@@ -146,7 +146,7 @@ export default function SaaSDatabase() {
             500–600 verified contacts a day. Every day. For three weeks.
           </h2>
           <p className="text-gray-400 max-w-3xl mb-8 leading-relaxed">
-            When a leading Indian marketplace needed verified contacts delivered
+            When a leading marketplace needed verified contacts delivered
             continuously, at volume, we delivered 500–600 hand-verified contacts
             every working day for three consecutive weeks — with no drop in
             accuracy from day one to day twenty-one. Whether you need one

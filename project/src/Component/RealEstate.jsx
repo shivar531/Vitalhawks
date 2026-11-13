@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "Is the data handled compliantly?",
-    a: "Our data practices are aligned with India's DPDP Act 2023, and with GDPR for international operations. See our Privacy Policy for full details.",
+    a: "US mobile numbers are scrubbed against the National Do Not Call Registry, we honor CCPA opt-out and deletion requests, and our practices are aligned with GDPR. See our Privacy Policy for full details.",
   },
 ];
 
@@ -33,7 +33,7 @@ export default function RealEstate() {
   const [open, setOpen] = useState(null);
 
   useSeo({
-    title: "Real Estate Company Database India | VitalHawks",
+    title: "Real Estate Company Database | VitalHawks",
     description:
       "Verified real estate contacts — direct mobiles and work emails of builders, developers and project heads. Brokers excluded. 95% accuracy.",
     path: "/real-estate-database",
@@ -112,9 +112,9 @@ export default function RealEstate() {
                 Regional developers matter
               </h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Beyond the national names, India's building is done by regional
-                developers and EPC contractors that no global database properly
-                covers.
+                Beyond the national names, much of the building is done by regional
+                developers and contractors that large databases rarely cover
+                well.
               </p>
             </div>
           </div>
@@ -170,7 +170,7 @@ export default function RealEstate() {
             500–600 verified contacts a day. Every day. For three weeks.
           </h2>
           <p className="text-gray-400 max-w-3xl mb-8 leading-relaxed">
-            When a leading Indian marketplace needed verified contacts delivered
+            When a leading marketplace needed verified contacts delivered
             continuously, at volume, we delivered 500–600 hand-verified contacts
             every working day for three consecutive weeks — with no drop in
             accuracy from day one to day twenty-one. Whether you need one

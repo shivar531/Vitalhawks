@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: "Which technology sub-sectors do you cover?",
-    a: "IT services and consulting, SaaS and product companies, enterprise IT and system integrators, cybersecurity firms, cloud and infrastructure providers, and technology staffing — from the big hubs to mid-sized firms in Pune, Chennai, Noida, and Ahmedabad.",
+    a: "IT services and consulting, SaaS and product companies, enterprise IT and system integrators, cybersecurity firms, cloud and infrastructure providers, and technology staffing — from the big names to the mid-sized firms most tools overlook.",
   },
   {
     q: "Do you provide direct mobile numbers?",
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "Is the data handled compliantly?",
-    a: "Our data practices are aligned with India's DPDP Act 2023, and with GDPR for international operations. See our Privacy Policy for full details.",
+    a: "US mobile numbers are scrubbed against the National Do Not Call Registry, we honor CCPA opt-out and deletion requests, and our practices are aligned with GDPR. See our Privacy Policy for full details.",
   },
 ];
 
@@ -33,9 +33,9 @@ export default function ITCompanies() {
   const [open, setOpen] = useState(null);
 
   useSeo({
-    title: "IT Company Database India | CTO & CIO Contacts | VitalHawks",
+    title: "IT Company Database | CTO & CIO Contacts | VitalHawks",
     description:
-      "Verified IT and SaaS contacts — direct mobiles and work emails of CTOs, CIOs and engineering leaders at Indian technology companies. 95% accuracy.",
+      "Verified IT and SaaS contacts — direct mobiles and work emails of CTOs, CIOs and engineering leaders at technology companies. 95% accuracy.",
     path: "/it-company-database",
     faqs,
   });
@@ -109,11 +109,11 @@ export default function ITCompanies() {
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
               <h3 className="font-semibold mb-2 text-purple-300">
-                Beyond the big four
+                Beyond the big names
               </h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Bengaluru and Hyderabad are well covered by every tool. The
-                mid-sized IT firms in Pune, Chennai, Noida and Ahmedabad are
+                The big tech names are well covered by every tool. The
+                mid-sized IT firms most databases overlook are
                 where we do the work.
               </p>
             </div>
@@ -170,7 +170,7 @@ export default function ITCompanies() {
             500–600 verified contacts a day. Every day. For three weeks.
           </h2>
           <p className="text-gray-400 max-w-3xl mb-8 leading-relaxed">
-            When a leading Indian marketplace needed verified contacts delivered
+            When a leading marketplace needed verified contacts delivered
             continuously, at volume, we delivered 500–600 hand-verified contacts
             every working day for three consecutive weeks — with no drop in
             accuracy from day one to day twenty-one. Whether you need one

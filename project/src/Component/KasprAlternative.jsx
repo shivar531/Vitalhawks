@@ -3,12 +3,12 @@ import AlternativeLayout from "./AlternativeLayout";
 
 const data = {
   competitor: "Kaspr",
-  path: "/kaspr-alternative-india",
-  title: "Kaspr Alternative in India | VitalHawks",
+  path: "/kaspr-alternative",
+  title: "Kaspr Alternative | VitalHawks",
   description:
-    "A done-for-you alternative to Kaspr for Indian B2B teams — hand-verified direct mobiles and work emails delivered as a finished list, no per-profile reveals or credits.",
+    "A done-for-you alternative to Kaspr for B2B sales teams — hand-verified direct mobiles and work emails delivered as a finished list, no per-profile reveals or credits.",
   heroSub:
-    "Kaspr is handy for revealing contacts one profile at a time on LinkedIn. But if you need a whole verified list of Indian decision-makers without doing the manual work yourself, a done-for-you service fits better.",
+    "Kaspr is handy for revealing contacts one profile at a time on LinkedIn. But if you need a whole verified list of decision-makers without doing the manual work yourself, a done-for-you service fits better.",
   fairPlay:
     "Kaspr is a well-liked LinkedIn prospecting tool, offering a browser extension that reveals phone numbers and emails as you browse, plus a freemium plan to start for free. For individual reps and small teams doing hands-on, one-by-one prospecting on LinkedIn, it's a quick and convenient option.",
   stayIf:
@@ -21,7 +21,7 @@ const data = {
     { label: "Accuracy guarantee", them: "See Kaspr's current terms", us: "95% guaranteed - wrong contacts replaced free" },
     { label: "Verification", them: "Reveal-time from aggregated sources", us: "Checked by a person before every delivery" },
     { label: "Turnaround", them: "Instant per profile, list built manually by you", us: "Brief by 5 PM, list by 11 AM next day" },
-    { label: "Best suited to", them: "Hands-on, one-by-one LinkedIn prospecting", us: "Whole India lists, done for you, at volume" },
+    { label: "Best suited to", them: "Hands-on, one-by-one LinkedIn prospecting", us: "Whole lists, done for you, at volume" },
   ],
   tableNote:
     "Kaspr details reflect the vendor's publicly reported product and plans. Check their site for current figures, as plans change.",
@@ -33,7 +33,7 @@ const data = {
     },
     {
       q: "How is your data different from Kaspr's?",
-      a: "Kaspr surfaces a contact per profile while you prospect. We research and hand-verify a full list of Indian decision-makers with direct mobiles, then deliver it ready to use — no browsing or reveal-by-reveal work.",
+      a: "Kaspr surfaces a contact per profile while you prospect. We research and hand-verify a full list of decision-makers with direct mobiles, then deliver it ready to use — no browsing or reveal-by-reveal work.",
     },
     {
       q: "Do I need to prospect on LinkedIn myself?",

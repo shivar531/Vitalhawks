@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "Is the data handled compliantly?",
-    a: "Our data practices are aligned with India's DPDP Act 2023, and with GDPR for international operations. See our Privacy Policy for full details.",
+    a: "US mobile numbers are scrubbed against the National Do Not Call Registry, we honor CCPA opt-out and deletion requests, and our practices are aligned with GDPR. See our Privacy Policy for full details.",
   },
 ];
 
@@ -33,9 +33,9 @@ export default function CybersecurityDatabase() {
   const [open, setOpen] = useState(null);
 
   useSeo({
-    title: "Cybersecurity Company Database India | Verified CISO & Security Contacts | VitalHawks",
+    title: "Cybersecurity Company Database | Verified CISO & Security Contacts | VitalHawks",
     description:
-      "Verified contact lists across the Indian cybersecurity space — direct mobile numbers and work emails of CISOs, security heads and decision-makers at security vendors and enterprises. 95% accuracy, next-morning delivery.",
+      "Verified contact lists across the cybersecurity space — direct mobile numbers and work emails of CISOs, security heads and decision-makers at security vendors and enterprises. 95% accuracy, next-morning delivery.",
     path: "/cybersecurity-companies-database",
     faqs,
   });
@@ -59,7 +59,7 @@ export default function CybersecurityDatabase() {
         </h1>
 
         <p className="mt-6 text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
-          Direct mobile numbers and verified work emails of CISOs, security heads and decision-makers — at Indian security vendors and at the enterprises that buy security. Filtered by role, industry and geography, verified by hand, in your inbox by the next morning.
+          Direct mobile numbers and verified work emails of CISOs, security heads and decision-makers — at security vendors and at the enterprises that buy security. Filtered by role, industry and geography, verified by hand, in your inbox by the next morning.
         </p>
 
         <div className="mt-10 flex items-center justify-center">
@@ -131,7 +131,7 @@ export default function CybersecurityDatabase() {
                 <li>→ IT services and SaaS companies</li>
                 <li>→ Healthcare, pharma and regulated industries</li>
                 <li>→ Large enterprises and manufacturers</li>
-                <li>→ Mid-sized firms beyond the metros</li>
+                <li>→ Mid-sized firms beyond the major cities</li>
               </ul>
             </div>
           </div>
@@ -146,7 +146,7 @@ export default function CybersecurityDatabase() {
             500–600 verified contacts a day. Every day. For three weeks.
           </h2>
           <p className="text-gray-400 max-w-3xl mb-8 leading-relaxed">
-            When a leading Indian marketplace needed verified contacts delivered
+            When a leading marketplace needed verified contacts delivered
             continuously, at volume, we delivered 500–600 hand-verified contacts
             every working day for three consecutive weeks — with no drop in
             accuracy from day one to day twenty-one. Whether you need one
