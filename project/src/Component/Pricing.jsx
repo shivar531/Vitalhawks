@@ -420,6 +420,7 @@ export default function Pricing() {
               { icon: <FiLock />, t: "CCPA opt-outs honored", d: "Anyone who asks to be removed is deleted from our data." },
               { icon: <FiGlobe />, t: "GDPR-aligned", d: "Practices aligned with GDPR for international contacts." },
               { icon: <FiShield />, t: "Public & business sources only", d: "No scraped personal data — ever." },
+              { icon: <FiFileText />, t: "DPA on request", d: "We'll sign a Data Processing Agreement with your team." },
             ].map((c, i) => (
               <li key={i} className="flex gap-3">
                 <span className="text-emerald-400 mt-0.5">{c.icon}</span>
