@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Popupform from "./Popupform";
+import { FiPhoneOff, FiLock, FiGlobe, FiShield, FiFileText } from "react-icons/fi";
 
 const delivered = [
   { roles: "CEOs & Managing Directors", volume: "100,000+" },
@@ -109,6 +110,42 @@ export default function Hero() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* DATA PROTECTION / TRUST BADGES */}
+      <section className="bg-[#050507] text-white px-4 sm:px-6 lg:px-8 pt-10 sm:pt-12">
+        <div className="max-w-7xl mx-auto">
+          <p className="text-center text-xs tracking-[0.25em] text-emerald-400 mb-6">
+            DATA PROTECTION &amp; COMPLIANCE
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
+            {[
+              { icon: <FiPhoneOff />, t: "DNC-Scrubbed", d: "US National Do Not Call Registry" },
+              { icon: <FiLock />, t: "CCPA", d: "Opt-out & deletion requests honored" },
+              { icon: <FiGlobe />, t: "GDPR-Aligned", d: "For EU & UK contacts" },
+              { icon: <FiShield />, t: "Public Sources Only", d: "Business data — nothing scraped" },
+              { icon: <FiFileText />, t: "DPA Available", d: "Data Processing Agreement on request" },
+            ].map((b, i) => (
+              <div
+                key={i}
+                className="flex flex-col items-center text-center gap-2 p-4 rounded-2xl border border-emerald-500/20 bg-emerald-500/[0.04]"
+              >
+                <span className="w-10 h-10 flex items-center justify-center rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
+                  {b.icon}
+                </span>
+                <p className="text-sm font-medium text-gray-100">{b.t}</p>
+                <p className="text-xs text-gray-500 leading-snug">{b.d}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-xs text-gray-500 mt-4">
+            Details in our{" "}
+            <Link to="/Privacy" className="text-gray-300 underline underline-offset-2 hover:text-white">
+              Privacy Policy
+            </Link>
+            .
+          </p>
         </div>
       </section>
 
