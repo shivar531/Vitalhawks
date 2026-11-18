@@ -9,7 +9,7 @@ const sections = [
   },
   {
     title: "2. Data we collect from website visitors",
-    body: `When you fill a form on this website or contact us on WhatsApp or email, we collect the details you provide: your name, work email, company, role, and the requirements you describe. We use this information to respond to your enquiry, prepare and deliver your requested lists, and communicate with you about our services. Form submissions are transmitted to us through a third-party email delivery service; we do not sell website visitor information.`,
+    body: `When you fill a form on this website or contact us by email or a booked call, we collect the details you provide: your name, work email, company, role, and the requirements you describe. We use this information to respond to your enquiry, prepare and deliver your requested lists, and communicate with you about our services. Form submissions are transmitted to us through a third-party email delivery service; we do not sell website visitor information.`,
   },
   {
     title: "3. Data in our B2B contact datasets",
@@ -25,7 +25,7 @@ const sections = [
   },
   {
     title: "6. Data retention and security",
-    body: `We retain website enquiry data for as long as needed to serve you and meet legal obligations. Records in our datasets are retained while they remain accurate and relevant, and are removed upon verified deletion requests. We protect data through access controls, restricted internal handling, and secure storage, and we share data only with the client who commissioned a list and the service providers needed to operate this website.`,
+    body: `We retain website enquiry data for as long as needed to serve you and meet legal obligations. Records in our datasets are retained while they remain accurate and relevant, and are removed upon verified deletion requests. We protect data through access controls, restricted internal handling, and secure storage, and we share data only with the client who commissioned a list and the service providers needed to operate this website. Clients who need one can request a Data Processing Agreement (DPA) at info@vitalhawks.com.`,
   },
   {
     title: "7. Third-party services",
@@ -33,7 +33,7 @@ const sections = [
   },
   {
     title: "8. Grievances and contact",
-    body: `For any question, complaint, or grievance about how your personal data is handled, contact our grievance contact at info@vitalhawks.com or on WhatsApp at +91 89237 05237. If you are in India and remain unsatisfied with our response, you may escalate to the Data Protection Board of India as provided under the DPDP Act, 2023.`,
+    body: `For any question, complaint, or grievance about how your personal data is handled, contact our grievance contact at info@vitalhawks.com. If you are in India and remain unsatisfied with our response, you may escalate to the Data Protection Board of India as provided under the DPDP Act, 2023.`,
   },
   {
     title: "9. Changes to this policy",
