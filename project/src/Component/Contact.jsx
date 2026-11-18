@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import useSeo from "../utils/useSeo";
-import { FiMail, FiPhone, FiVideo } from "react-icons/fi";
+import { FiMail, FiVideo } from "react-icons/fi";
 import emailjs from "@emailjs/browser";
 
 export default function ContactPage() {
   useSeo({
     title: "Contact VitalHawks | Get a Verified Sample List",
     description:
-      "Tell us who you need to reach and get a verified B2B contact list in 24-48 hours. Email info@vitalhawks.com or message us on WhatsApp.",
+      "Tell us who you need to reach and get a verified B2B contact list in 24-48 hours. Email info@vitalhawks.com or book a 15-minute call.",
     path: "/Contact",
   });
 
@@ -176,27 +176,6 @@ export default function ContactPage() {
                   <p className="text-xs text-gray-500">EMAIL US</p>
                   <p className="text-gray-200">info@vitalhawks.com</p>
                 </div>
-              </div>
-              <span className="text-gray-500">→</span>
-            </div>
-
-            {/* WHATSAPP CARD */}
-            <div className="flex items-center justify-between p-4 sm:p-6 rounded-2xl bg-white/5 border border-white/10 mb-6 lg:mb-10">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-green-500/10 border border-green-500/20">
-                  <FiPhone className="text-green-400" />
-                </div>
-                <a
-                  href="https://wa.me/message/736XGT4OAVRBF1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 hover:opacity-80 transition"
-                >
-                  <div>
-                    <p className="text-xs text-gray-500">WHATSAPP US</p>
-                    <p className="text-gray-200">+91 89237 05237</p>
-                  </div>
-                </a>
               </div>
               <span className="text-gray-500">→</span>
             </div>
@@ -492,7 +471,7 @@ export default function ContactPage() {
               </h3>
               <p className="text-gray-400 mb-8">
                 We respond within a few hours — usually the same day. For urgent
-                requests, WhatsApp us directly for the fastest response.
+                requests, book a quick call and we’ll pick it up right away.
               </p>
 
               <h3 className="text-gray-200 font-medium mb-2">
@@ -511,7 +490,7 @@ export default function ContactPage() {
                 Can I just ask a question before committing?
               </h3>
               <p className="text-gray-400 mb-8">
-                Absolutely. Use the form, email, or WhatsApp — no obligation,
+                Absolutely. Use the form, email, or a quick call — no obligation,
                 just a quick conversation.
               </p>
 
@@ -528,7 +507,7 @@ export default function ContactPage() {
           {/* Divider */}
           <div className="border-t border-white/10 mb-6 lg:mb-10 lg:mb-16"></div>
 
-          {/* WHATSAPP CTA */}
+          {/* BOOK A CALL CTA */}
           <div className="flex flex-col md:flex-row items-center justify-between gap-5 sm:p-5 sm:p-4 sm:p-6 lg:p-8 lg:p-10 rounded-3xl border border-white/10 bg-[#0b0b12] px-10 md:px-16 py-12 md:py-14">
             {/* Left */}
             <div className="max-w-xl">
@@ -537,8 +516,8 @@ export default function ContactPage() {
               </h3>
 
               <p className="text-gray-400 leading-relaxed">
-                Just drop us a WhatsApp. Tell us who you need to reach and we’ll
-                take it from there. No forms, no friction — just a quick message
+                Book a 15-minute call. Tell us who you need to reach and we’ll
+                take it from there. No forms, no friction — just a quick chat
                 and a verified list on its way.
               </p>
             </div>
@@ -546,12 +525,12 @@ export default function ContactPage() {
             {/* Button */}
             <div>
               <a
-                href="https://wa.me/message/736XGT4OAVRBF1"
+                href="https://calendly.com/shiva-vitalhawks/15min"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="px-10 py-4 rounded-xl bg-green-500 text-white text-lg font-medium hover:scale-[1.03] transition">
-                  WhatsApp us now
+                <button className="px-10 py-4 rounded-xl bg-purple-500 text-white text-lg font-medium hover:scale-[1.03] transition">
+                  Book a 15-min call
                 </button>
               </a>
             </div>
