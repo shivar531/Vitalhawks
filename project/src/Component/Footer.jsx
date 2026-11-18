@@ -120,16 +120,6 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://wa.me/918923705237"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={linkClass}
-                >
-                  WhatsApp: +91 89237 05237
-                </a>
-              </li>
-              <li>
-                <a
                   href="https://www.linkedin.com/company/113018113/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -162,7 +152,7 @@ export default function Footer() {
         <div className="border-t border-white/10 mt-10 pt-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-500">
           <p>© 2025–{year} VitalHawks. All rights reserved.</p>
           <p className="text-center sm:text-right">
-            DNC-scrubbed mobiles · CCPA opt-outs honored · GDPR aligned.
+            DNC-scrubbed mobiles · CCPA opt-outs honored · GDPR aligned · DPA on request.
           </p>
         </div>
       </div>
