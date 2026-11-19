@@ -13,7 +13,7 @@
 
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs'
 import { join, dirname } from 'node:path'
-import { fileURLToPath } from 'node:url'
+import { fileURLToPath, pathToFileURL } from 'node:url'
 import { SITE_URL, DEFAULT_OG_IMAGE, pages } from './seo-pages.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -26,6 +26,50 @@ if (!existsSync(templatePath)) {
 }
 
 const template = readFileSync(templatePath, 'utf8')
+
+// Full page render (built by `vite build --ssr src/entry-server.jsx`). If it is
+// missing or fails, each page falls back to the basic body below, so the build
+// never breaks because of it.
+const ssrEntry = join(__dirname, '..', 'dist-ssr', 'entry-server.js')
+let renderPage = null
+if (existsSync(ssrEntry)) {
+  try {
+    const mod = await import(pathToFileURL(ssrEntry).href)
+    renderPage = mod.render
+  } catch (err) {
+    console.warn(`[seo] could not load SSR bundle, using basic prerender: ${err?.message || err}`)
+  }
+} else {
+  console.warn('[seo] dist-ssr/entry-server.js not found, using basic prerender')
+}
+
+// React logs a lot during server render (e.g. useLayoutEffect warnings); keep
+// the build log readable while rendering.
+async function quietly(fn) {
+  const { error, warn } = console
+  console.error = () => {}
+  console.warn = () => {}
+  try {
+    return await fn()
+  } finally {
+    console.error = error
+    console.warn = warn
+  }
+}
+
+async function fullBody(page) {
+  if (!renderPage) return null
+  try {
+    const html = await quietly(() => renderPage(page.path))
+    // Sanity check: real content, not an empty shell or the loading screen.
+    const text = html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()
+    if (text.split(' ').length < 80 || /Loading Experience/i.test(text)) return null
+    return `<div id="root">${html}</div>`
+  } catch (err) {
+    console.warn(`[seo] full render failed for ${page.path}: ${err?.message || err}`)
+    return null
+  }
+}
 
 // --- helpers ---------------------------------------------------------------
 
@@ -136,16 +180,19 @@ ${nav}
     </div>`
 }
 
-function writePage(page, indexable) {
+async function writePage(page, indexable) {
+  const full = await fullBody(page)
+  const body = full || buildBody(page, indexable)
   const html = stripExistingMeta(template)
     .replace(/<\/head>/i, `${buildHead(page)}  </head>`)
-    .replace(/<div id="root"><\/div>/i, buildBody(page, indexable))
+    .replace(/<div id="root"><\/div>/i, () => body)
 
   const outDir =
     page.path === '/' ? distDir : join(distDir, page.path.replace(/^\//, ''))
 
   mkdirSync(outDir, { recursive: true })
   writeFileSync(join(outDir, 'index.html'), html, 'utf8')
+  return Boolean(full)
 }
 
 // --- sitemap ---------------------------------------------------------------
@@ -186,6 +233,7 @@ Sitemap: ${SITE_URL}/sitemap.xml
 const indexable = pages.filter((p) => !p.noindex)
 
 const seen = new Set()
+let fullCount = 0
 for (const page of pages) {
   if (seen.has(page.path)) {
     console.error(`[seo] duplicate path in seo-pages.mjs: ${page.path}`)
@@ -196,7 +244,7 @@ for (const page of pages) {
     process.exit(1)
   }
   seen.add(page.path)
-  writePage(page, indexable)
+  if (await writePage(page, indexable)) fullCount++
 }
 
 writeSitemap(indexable)
@@ -206,4 +254,5 @@ console.log(
   `\n[seo] generated ${pages.length} page(s) — ${indexable.length} in sitemap, ` +
     `${pages.length - indexable.length} noindex`
 )
+console.log(`[seo] full content rendered for ${fullCount}/${pages.length} page(s), basic fallback for the rest`)
 console.log('[seo] wrote sitemap.xml + robots.txt\n')
