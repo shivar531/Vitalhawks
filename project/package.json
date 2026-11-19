@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/prerender-seo.mjs",
+    "build": "vite build && (vite build --ssr src/entry-server.jsx --outDir dist-ssr || echo '[seo] SSR build failed - using basic prerender') && node scripts/prerender-seo.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },
