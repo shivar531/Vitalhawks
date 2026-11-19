@@ -51,9 +51,11 @@ const SnovAlternative = lazy(() => import('./Component/SnovAlternative.jsx'));
 const AdaptAlternative = lazy(() => import('./Component/AdaptAlternative.jsx'));
 const NotFound = lazy(() => import('./Component/NotFound.jsx'));
 
-function App() {
+// Everything inside the router. Used by the browser (App below) and by the
+// build-time prerender (src/entry-server.jsx), which wraps it in a StaticRouter.
+export function AppShell() {
   return (
-    <Router>
+    <>
       <ScrollToTop />
       <div>
         <Navbar />
@@ -107,6 +109,14 @@ function App() {
         </Suspense>
         <Footer />
       </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppShell />
     </Router>
   );
 }
