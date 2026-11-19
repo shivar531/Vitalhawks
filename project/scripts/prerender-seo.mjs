@@ -82,11 +82,64 @@ ${robots}
 `
 }
 
-function writePage(page) {
-  const html = stripExistingMeta(template).replace(
-    /<\/head>/i,
-    `${buildHead(page)}  </head>`
-  )
+// --- crawlable body ----------------------------------------------------------
+// The React app mounts into <div id="root"> with createRoot, which replaces
+// whatever is inside it. So we put real text + plain <a href> links in there:
+// Google (and anyone without JS) sees the page heading, its description and
+// links to every other page, and visitors get the full React page a moment later.
+
+const ROLE_PATHS = /^\/(cfo|ceo|cio|cmo|coo|hr-director|procurement-head|sales-head)-database$/
+
+function linkGroups(indexable) {
+  const groups = [
+    ['Company', []],
+    ['Data by industry', []],
+    ['Data by role', []],
+    ['Compare', []],
+  ]
+  for (const p of indexable) {
+    let i = 0
+    if (p.path.endsWith('-alternative')) i = 3
+    else if (ROLE_PATHS.test(p.path)) i = 2
+    else if (p.path !== '/' && /database|contact-data|financial-services|lead-lists/.test(p.path)) i = 1
+    groups[i][1].push(p)
+  }
+  return groups.filter(([, list]) => list.length)
+}
+
+const linkLabel = (p) =>
+  p.path === '/' ? 'Home' : p.title.split(/\s[|—–-]\s/)[0].trim()
+
+function buildBody(page, indexable) {
+  const nav = linkGroups(indexable)
+    .map(
+      ([name, list]) => `        <section>
+          <h2>${escapeHtml(name)}</h2>
+          <ul>
+${list
+  .map((p) => `            <li><a href="${escapeHtml(p.path)}">${escapeHtml(linkLabel(p))}</a></li>`)
+  .join('\n')}
+          </ul>
+        </section>`
+    )
+    .join('\n')
+
+  return `<div id="root">
+      <main>
+        <h1>${escapeHtml(page.h1 || page.title)}</h1>
+        <p>${escapeHtml(page.description)}</p>
+        <p><a href="/SampleList">Get a free sample list</a> · <a href="/Pricing">See pricing</a> · <a href="/Contact">Contact us</a></p>
+      </main>
+      <nav aria-label="Site">
+${nav}
+      </nav>
+    </div>`
+}
+
+function writePage(page, indexable) {
+  const html = stripExistingMeta(template)
+    .replace(/<\/head>/i, `${buildHead(page)}  </head>`)
+    .replace(/<div id="root"><\/div>/i, buildBody(page, indexable))
 
   const outDir =
     page.path === '/' ? distDir : join(distDir, page.path.replace(/^\//, ''))
@@ -130,6 +183,8 @@ Sitemap: ${SITE_URL}/sitemap.xml
 
 // --- run -------------------------------------------------------------------
 
+const indexable = pages.filter((p) => !p.noindex)
+
 const seen = new Set()
 for (const page of pages) {
   if (seen.has(page.path)) {
@@ -141,10 +196,9 @@ for (const page of pages) {
     process.exit(1)
   }
   seen.add(page.path)
-  writePage(page)
+  writePage(page, indexable)
 }
 
-const indexable = pages.filter((p) => !p.noindex)
 writeSitemap(indexable)
 writeRobots()
 
